@@ -73,7 +73,7 @@ const HendersonPage = () => {
               Henderson Homes for Sale
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Discover Henderson, Nevada's family-friendly community with excellent schools, 
+              Discover Henderson, Nevada's family-friendly community with excellent schools,
               beautiful parks, and a strong sense of community. Perfect for families and professionals.
             </p>
             <a
@@ -92,7 +92,7 @@ const HendersonPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-vegas-deep-blue text-center mb-12">
             Why Choose Henderson?
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
@@ -126,7 +126,7 @@ const HendersonPage = () => {
             Ready to Find Your Henderson Home?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Let Dr. Jan Duffy help you find the perfect home in Henderson. 
+            Let Dr. Jan Duffy help you find the perfect home in Henderson.
             From Green Valley to Anthem, I know every neighborhood.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

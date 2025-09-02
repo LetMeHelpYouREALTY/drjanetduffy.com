@@ -80,7 +80,7 @@ const MarketAnalysisPage = () => {
               Las Vegas Real Estate Market Analysis
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Get expert insights into the Las Vegas real estate market. Current trends, 
+              Get expert insights into the Las Vegas real estate market. Current trends,
               home values, and neighborhood analysis to help you make informed decisions.
             </p>
             <a
@@ -100,7 +100,7 @@ const MarketAnalysisPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-vegas-deep-blue text-center mb-12">
             Current Market Statistics
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {marketStats.map((stat, index) => (
               <div key={index} className="bg-gradient-to-br from-vegas-deep-blue to-vegas-accent-blue rounded-xl p-6 text-white text-center">
@@ -119,7 +119,7 @@ const MarketAnalysisPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-vegas-deep-blue text-center mb-12">
             Market Analysis Services
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
@@ -153,7 +153,7 @@ const MarketAnalysisPage = () => {
             Get Your Free Market Analysis
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Ready to understand the Las Vegas real estate market? Get a free, 
+            Ready to understand the Las Vegas real estate market? Get a free,
             comprehensive market analysis tailored to your specific needs and goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -101,7 +101,7 @@ const ContactSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
+            <div className="card-hover p-6 md:p-8">
               <h3 className="text-2xl font-bold text-vegas-deep-blue mb-6">Send Me a Message</h3>
 
               {isSubmitted ? (
@@ -131,7 +131,7 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-colors duration-200"
+                        className="form-input"
                         placeholder="Your full name"
                       />
                     </div>
@@ -150,7 +150,7 @@ const ContactSection = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-colors duration-200"
+                        className="form-input"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -170,7 +170,7 @@ const ContactSection = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-colors duration-200"
+                        className="form-input"
                         placeholder="(702) 555-0123"
                       />
                     </div>
@@ -187,7 +187,7 @@ const ContactSection = () => {
                         name="interest"
                         value={formData.interest}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-colors duration-200"
+                        className="form-input"
                       >
                         <option value="buying">Buying a Home</option>
                         <option value="selling">Selling a Home</option>
@@ -212,7 +212,7 @@ const ContactSection = () => {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-colors duration-200 resize-none"
+                      className="form-textarea"
                       placeholder="Tell me about your real estate needs..."
                     />
                   </div>
@@ -261,7 +261,7 @@ const ContactSection = () => {
                         {info.link ? (
                           <a
                             href={info.link}
-                            className="text-vegas-gold hover:text-vegas-gold-dark font-semibold transition-colors duration-200"
+                            className={info.title === 'Phone' ? 'phone-number' : 'text-vegas-gold hover:text-vegas-gold-dark font-semibold transition-colors duration-200'}
                           >
                             {info.value}
                           </a>
@@ -290,9 +290,9 @@ const ContactSection = () => {
               </p>
               <a
                 href="tel:702-222-1964"
-                className="inline-flex items-center space-x-2 bg-vegas-gold hover:bg-vegas-gold-dark text-vegas-deep-blue px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="btn-phone"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5 mr-2" />
                 <span>Call 702-222-1964</span>
               </a>
             </motion.div>

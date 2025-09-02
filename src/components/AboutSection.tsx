@@ -78,7 +78,7 @@ const AboutSection = () => {
               </a>
               <a
                 href="tel:702-222-1964"
-                className="btn-secondary inline-flex items-center justify-center"
+                className="btn-phone"
               >
                 Call 702-222-1964
               </a>
@@ -138,7 +138,7 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center"
+                className="card-hover p-6 text-center"
               >
                 <div className="w-16 h-16 bg-vegas-gold rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon className="w-8 h-8 text-vegas-deep-blue" />

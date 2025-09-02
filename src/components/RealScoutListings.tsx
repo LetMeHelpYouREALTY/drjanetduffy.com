@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 declare global {
   namespace JSX {
@@ -24,6 +24,8 @@ interface RealScoutListingsProps {
 
 const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     // Ensure the RealScout script is loaded
@@ -32,11 +34,22 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
         if (!window.customElements.get('realscout-office-listings')) {
           // Script not loaded yet, wait and try again
           setTimeout(checkScript, 100);
+        } else {
+          // Script is loaded, hide loading state after a short delay
+          setTimeout(() => setIsLoading(false), 1000);
         }
       }
     };
 
     checkScript();
+
+    // Set a timeout to hide loading state even if script doesn't load
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+      setHasError(true);
+    }, 10000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
@@ -55,7 +68,7 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
         {/* RealScout Listings Container */}
         <div
           ref={containerRef}
-          className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 border border-gray-200"
+          className="realscout-container"
           style={
             {
               '--rs-listing-divider-color': 'rgb(101, 141, 172)',
@@ -66,24 +79,57 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
               '--rs-background-color': '#ffffff',
               '--rs-border-color': '#e5e7eb',
               '--rs-hover-color': '#f3f4f6',
-              '--rs-shadow':
-                '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              '--rs-shadow': 'var(--shadow-lg)',
               '--rs-border-radius': '0.5rem',
               '--rs-font-family': 'Inter, system-ui, sans-serif',
             } as React.CSSProperties
           }
         >
-          <realscout-office-listings
-            agent-encoded-id="QWdlbnQtMjI1MDUw"
-            sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
-            listing-status="For Sale"
-            property-types="SFR,MF,TC"
-            style={{
-              width: '100%',
-              minHeight: '600px',
-              display: 'block',
-            }}
-          />
+          {isLoading && (
+            <div className="realscout-loading">
+              <div className="text-center">
+                <div className="text-vegas-deep-blue text-lg font-semibold mb-2">
+                  Loading Properties...
+                </div>
+                <div className="text-gray-600 text-sm">
+                  Fetching the latest Las Vegas real estate listings
+                </div>
+              </div>
+            </div>
+          )}
+          
+          {hasError && !isLoading && (
+            <div className="text-center py-12">
+              <div className="text-vegas-deep-blue text-lg font-semibold mb-4">
+                Properties Loading...
+              </div>
+              <p className="text-gray-600 mb-6">
+                Our property listings are being updated. Please call for immediate assistance.
+              </p>
+              <a
+                href="tel:702-222-1964"
+                className="btn-phone"
+              >
+                Call 702-222-1964
+              </a>
+            </div>
+          )}
+
+          {!hasError && (
+            <realscout-office-listings
+              agent-encoded-id="QWdlbnQtMjI1MDUw"
+              sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
+              listing-status="For Sale"
+              property-types="SFR,MF,TC"
+              style={{
+                width: '100%',
+                minHeight: '600px',
+                display: 'block',
+                opacity: isLoading ? 0 : 1,
+                transition: 'opacity 0.3s ease-in-out',
+              }}
+            />
+          )}
         </div>
 
         {/* Call to Action */}
@@ -93,10 +139,10 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
           </p>
           <a
             href="tel:702-222-1964"
-            className="inline-flex items-center space-x-2 bg-vegas-gold hover:bg-vegas-gold-dark text-vegas-deep-blue px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="btn-phone"
           >
             <span>Call Dr. Jan Duffy</span>
-            <span className="font-mono">702-222-1964</span>
+            <span className="font-mono ml-2">702-222-1964</span>
           </a>
         </div>
       </div>

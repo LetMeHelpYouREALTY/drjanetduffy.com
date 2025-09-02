@@ -6,6 +6,10 @@
 
 :root {
   --rs-listing-divider-color: rgb(101, 141, 172);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -25,6 +29,10 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -50,15 +58,33 @@ realscout-office-listings {
 /* Custom component styles */
 @layer components {
   .btn-primary {
-    @apply bg-vegas-gold hover:bg-vegas-gold-dark text-vegas-deep-blue font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    @apply bg-vegas-gold text-vegas-deep-blue font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-vegas-gold/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2 active:scale-95;
+    min-height: 44px; /* Better touch target */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn-secondary {
-    @apply bg-vegas-deep-blue hover:bg-vegas-accent-blue text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    @apply bg-transparent border-2 border-vegas-gold text-vegas-gold font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-vegas-gold hover:text-vegas-deep-blue focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2 active:scale-95;
+    min-height: 44px; /* Better touch target */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-phone {
+    @apply bg-vegas-gold text-vegas-deep-blue font-bold px-6 py-4 rounded-lg transition-all duration-200 hover:bg-vegas-gold/90 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2 active:scale-95;
+    min-height: 48px; /* Larger touch target for phone numbers */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-lg);
   }
 
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    @apply py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8;
   }
 
   .container-max {
@@ -70,11 +96,69 @@ realscout-office-listings {
   }
 
   .card-shadow {
-    @apply shadow-xl hover:shadow-2xl transition-shadow duration-300;
+    @apply bg-white rounded-xl shadow-md transition-all duration-200 hover:shadow-lg border border-gray-100;
+  }
+
+  .card-hover {
+    @apply card-shadow hover:shadow-xl hover:-translate-y-1;
   }
 
   .vegas-border {
     @apply border-2 border-vegas-gold;
+  }
+
+  /* Form Styles */
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-all duration-200;
+    min-height: 44px; /* Better touch target */
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-all duration-200 resize-none;
+    min-height: 120px;
+  }
+
+  /* Phone Number Styling */
+  .phone-number {
+    @apply text-vegas-gold font-bold text-lg md:text-xl hover:text-vegas-gold/80 transition-colors duration-200;
+    text-decoration: none;
+  }
+
+  .phone-number:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobile Navigation */
+  .mobile-nav-toggle {
+    @apply p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .mobile-nav-link {
+    @apply block px-4 py-3 text-lg font-medium text-vegas-deep-blue hover:bg-vegas-gold/10 hover:text-vegas-gold transition-all duration-200;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* RealScout Styling */
+  .realscout-container {
+    @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6;
+  }
+
+  .realscout-loading {
+    @apply flex items-center justify-center py-12;
+  }
+
+  .realscout-loading::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f4f6;
+    border-top: 4px solid #d4af37;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
   }
 }
 
@@ -90,6 +174,43 @@ realscout-office-listings {
 
   .animate-pulse-gold {
     animation: pulseGold 2s infinite;
+  }
+}
+
+/* Keyframe animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
   }
 }
 
@@ -137,6 +258,32 @@ realscout-office-listings {
 *:focus {
   outline: 2px solid #ffd700;
   outline-offset: 2px;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-phone {
+    @apply w-full justify-center;
+  }
+  
+  .phone-number {
+    @apply text-xl;
+  }
+  
+  .section-padding {
+    @apply py-8;
+  }
+
+  .mobile-nav-link {
+    @apply text-base;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.focus-visible {
+  @apply focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2;
 }
 
 /* Print styles */

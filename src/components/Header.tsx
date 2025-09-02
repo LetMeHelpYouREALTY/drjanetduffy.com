@@ -65,9 +65,9 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:702-222-1964"
-              className="flex items-center space-x-2 bg-vegas-gold hover:bg-vegas-gold-dark text-vegas-deep-blue px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="btn-phone"
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-4 h-4 mr-2" />
               <span>702-222-1964</span>
             </a>
           </div>
@@ -76,7 +76,7 @@ const Header = () => {
           <button
             type="button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-vegas-deep-blue hover:bg-vegas-gold/20 transition-colors duration-200"
+            className="mobile-nav-toggle md:hidden"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -93,10 +93,10 @@ const Header = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="flex items-center space-x-3 text-vegas-deep-blue hover:text-vegas-gold transition-colors duration-200 font-medium py-2"
+                    className="mobile-nav-link"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-5 h-5 mr-3" />
                     <span>{item.name}</span>
                   </Link>
                 );
@@ -106,9 +106,9 @@ const Header = () => {
               <div className="pt-4 border-t border-vegas-gold/20">
                 <a
                   href="tel:702-222-1964"
-                  className="flex items-center justify-center space-x-2 bg-vegas-gold hover:bg-vegas-gold-dark text-vegas-deep-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300 w-full"
+                  className="btn-phone w-full"
                 >
-                  <Phone className="w-5 h-5" />
+                  <Phone className="w-5 h-5 mr-2" />
                   <span>702-222-1964</span>
                 </a>
               </div>
