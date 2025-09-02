@@ -1,5 +1,6 @@
 import { Award, Clock, DollarSign, Phone, TrendingUp } from 'lucide-react';
 import type { Metadata } from 'next';
+import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Sell Your Las Vegas Home | Dr. Jan Duffy Real Estate',
@@ -139,6 +140,11 @@ const SellPage = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* RealScout Listings */}
+      <section className="section-padding bg-gray-50">
+        <RealScoutListings />
       </section>
 
       {/* CTA Section */}

@@ -1,4 +1,5 @@
 import ContactSection from '@/components/ContactSection';
+import RealScoutListings from '@/components/RealScoutListings';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -19,6 +20,11 @@ const ContactPage = () => {
   return (
     <div className="pt-16">
       <ContactSection />
+      
+      {/* RealScout Listings */}
+      <section className="section-padding bg-gray-50">
+        <RealScoutListings />
+      </section>
     </div>
   );
 };

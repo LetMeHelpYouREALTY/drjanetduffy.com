@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Calendar, DollarSign, Home, MapPin, TrendingDown, TrendingUp } from 'lucide-react';
+import RealScoutListings from './RealScoutListings';
 
 const MarketInsights = () => {
   const marketStats = [
@@ -246,6 +247,11 @@ const MarketInsights = () => {
             </div>
           </div>
         </motion.div>
+      </div>
+
+      {/* RealScout Listings */}
+      <div className="mt-16">
+        <RealScoutListings />
       </div>
     </section>
   );
