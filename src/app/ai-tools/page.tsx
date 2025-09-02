@@ -38,6 +38,7 @@ export const metadata: Metadata = {
 };
 
 const AIToolsPage = () => {
+  // AI-powered real estate tools page
   const features = [
     {
       icon: Brain,
