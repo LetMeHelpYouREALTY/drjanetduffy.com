@@ -23,7 +23,7 @@ const AIMarketInsights = () => {
       const data = await response.json();
       setInsights(data.insights);
       setLastUpdated(new Date(data.generatedAt));
-    } catch (err) {
+    } catch (_err) {
       setError('Failed to load market insights. Please try again.');
     } finally {
       setIsLoading(false);
@@ -32,7 +32,7 @@ const AIMarketInsights = () => {
 
   useEffect(() => {
     fetchInsights();
-  }, []);
+  }, [fetchInsights]);
 
   const formatInsights = (text: string) => {
     // Split by common section headers and format
@@ -114,13 +114,14 @@ const AIMarketInsights = () => {
             </div>
 
             <button
+              type="button"
               onClick={fetchInsights}
               disabled={isLoading}
               className="btn-primary bg-vegas-gold text-vegas-deep-blue hover:bg-vegas-gold/90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <div className="flex items-center">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-vegas-deep-blue mr-2"></div>
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-vegas-deep-blue mr-2" />
                   <span>Generating...</span>
                 </div>
               ) : (
@@ -143,7 +144,7 @@ const AIMarketInsights = () => {
             {error && (
               <div className="bg-red-500/20 border border-red-500/30 rounded-lg p-4 text-red-200 mb-6">
                 <div className="flex items-center">
-                  <div className="w-4 h-4 bg-red-500 rounded-full mr-3"></div>
+                  <div className="w-4 h-4 bg-red-500 rounded-full mr-3" />
                   {error}
                 </div>
               </div>
@@ -151,7 +152,7 @@ const AIMarketInsights = () => {
 
             {isLoading && !insights && (
               <div className="text-center py-12">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-vegas-gold mx-auto mb-4"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-vegas-gold mx-auto mb-4" />
                 <p className="text-gray-200">Generating AI-powered market insights...</p>
               </div>
             )}

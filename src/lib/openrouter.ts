@@ -50,7 +50,8 @@ export async function analyzeProperty(propertyDetails: {
       messages: [
         {
           role: 'system',
-          content: `You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Provide detailed, professional analysis of properties in Las Vegas, Henderson, Summerlin, and surrounding areas. Focus on market trends, neighborhood insights, and investment potential. Be specific about Las Vegas market conditions and local knowledge.`,
+          content:
+            'You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Provide detailed, professional analysis of properties in Las Vegas, Henderson, Summerlin, and surrounding areas. Focus on market trends, neighborhood insights, and investment potential. Be specific about Las Vegas market conditions and local knowledge.',
         },
         {
           role: 'user',
@@ -100,7 +101,8 @@ export async function analyzeClientProfile(clientInfo: {
       messages: [
         {
           role: 'system',
-          content: `You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Help analyze client profiles and provide personalized recommendations for buying or selling homes in Las Vegas. Consider local market conditions, neighborhoods, and investment opportunities.`,
+          content:
+            'You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Help analyze client profiles and provide personalized recommendations for buying or selling homes in Las Vegas. Consider local market conditions, neighborhoods, and investment opportunities.',
         },
         {
           role: 'user',
@@ -142,7 +144,8 @@ export async function generateMarketInsights(): Promise<string> {
       messages: [
         {
           role: 'system',
-          content: `You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Provide current market insights, trends, and analysis for the Las Vegas real estate market. Include specific data about neighborhoods like Summerlin, Henderson, Green Valley, and Anthem.`,
+          content:
+            'You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Provide current market insights, trends, and analysis for the Las Vegas real estate market. Include specific data about neighborhoods like Summerlin, Henderson, Green Valley, and Anthem.',
         },
         {
           role: 'user',
@@ -176,7 +179,8 @@ export async function generateBlogPost(topic: string, targetAudience: string): P
       messages: [
         {
           role: 'system',
-          content: `You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Write engaging, informative blog posts about Las Vegas real estate. Include local knowledge, market insights, and practical advice. Use a professional but approachable tone.`,
+          content:
+            'You are a Las Vegas real estate expert AI assistant for Dr. Jan Duffy. Write engaging, informative blog posts about Las Vegas real estate. Include local knowledge, market insights, and practical advice. Use a professional but approachable tone.',
         },
         {
           role: 'user',
@@ -216,7 +220,8 @@ export async function generateEmailResponse(
       messages: [
         {
           role: 'system',
-          content: `You are Dr. Jan Duffy, a Las Vegas real estate expert with 20+ years of experience. Respond to client inquiries with professionalism, local expertise, and genuine care. Always include your phone number (702-222-1964) and offer to schedule a consultation.`,
+          content:
+            'You are Dr. Jan Duffy, a Las Vegas real estate expert with 20+ years of experience. Respond to client inquiries with professionalism, local expertise, and genuine care. Always include your phone number (702-222-1964) and offer to schedule a consultation.',
         },
         {
           role: 'user',

@@ -38,7 +38,7 @@ const AIPropertyAnalyzer = () => {
     try {
       const result = await analyzeProperty(propertyDetails);
       setAnalysis(result);
-    } catch (err) {
+    } catch (_err) {
       setError('Failed to analyze property. Please try again.');
     } finally {
       setIsLoading(false);
@@ -85,10 +85,11 @@ const AIPropertyAnalyzer = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-semibold text-gray-200 mb-2">
+                <label htmlFor="address" className="block text-sm font-semibold text-gray-200 mb-2">
                   Property Address *
                 </label>
                 <input
+                  id="address"
                   type="text"
                   value={propertyDetails.address}
                   onChange={(e) => handleInputChange('address', e.target.value)}
@@ -100,10 +101,11 @@ const AIPropertyAnalyzer = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-200 mb-2">
+                  <label htmlFor="price" className="block text-sm font-semibold text-gray-200 mb-2">
                     Price ($) *
                   </label>
                   <input
+                    id="price"
                     type="number"
                     value={propertyDetails.price || ''}
                     onChange={(e) =>
@@ -116,10 +118,14 @@ const AIPropertyAnalyzer = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-200 mb-2">
+                  <label
+                    htmlFor="neighborhood"
+                    className="block text-sm font-semibold text-gray-200 mb-2"
+                  >
                     Neighborhood *
                   </label>
                   <select
+                    id="neighborhood"
                     value={propertyDetails.neighborhood}
                     onChange={(e) => handleInputChange('neighborhood', e.target.value)}
                     required
@@ -213,7 +219,7 @@ const AIPropertyAnalyzer = () => {
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center">
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-vegas-deep-blue mr-2"></div>
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-vegas-deep-blue mr-2" />
                     Analyzing Property...
                   </div>
                 ) : (
@@ -278,7 +284,7 @@ const AIPropertyAnalyzer = () => {
                   <ul className="space-y-2">
                     {analysis.recommendations.map((recommendation, index) => (
                       <li key={index} className="flex items-start">
-                        <div className="w-2 h-2 bg-vegas-gold rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-vegas-gold rounded-full mt-2 mr-3 flex-shrink-0" />
                         <span className="text-gray-200">{recommendation}</span>
                       </li>
                     ))}
