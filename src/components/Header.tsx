@@ -36,12 +36,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-vegas-gold rounded-full flex items-center justify-center">
-              <span className="text-vegas-deep-blue font-bold text-lg">JD</span>
+            <div className="w-10 h-10 bg-luxury-gold rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-luxury-navy font-bold text-lg">JD</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-vegas-deep-blue">Dr. Jan Duffy</h1>
-              <p className="text-sm text-vegas-accent-blue">Las Vegas Real Estate Expert 🎰</p>
+              <h1 className="text-xl font-bold text-luxury-navy">Dr. Jan Duffy</h1>
+              <p className="text-sm text-luxury-royal-blue">Las Vegas Real Estate Expert 🎰</p>
             </div>
           </Link>
 
@@ -53,7 +53,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="flex items-center space-x-1 text-vegas-deep-blue hover:text-vegas-gold transition-colors duration-200 font-medium"
+                  className="flex items-center space-x-1 text-luxury-navy hover:text-luxury-gold transition-colors duration-200 font-medium"
                 >
                   <Icon className="w-4 h-4" />
                   <span>{item.name}</span>
@@ -83,7 +83,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-vegas-gold/20">
+          <div className="md:hidden bg-luxury-pearl/95 backdrop-blur-md border-t border-luxury-gold/20">
             <div className="px-4 py-6 space-y-4">
               {navigation.map((item) => {
                 const Icon = item.icon;
@@ -101,7 +101,7 @@ const Header = () => {
               })}
 
               {/* Mobile Phone Number */}
-              <div className="pt-4 border-t border-vegas-gold/20">
+              <div className="pt-4 border-t border-luxury-gold/20">
                 <a href="tel:702-222-1964" className="btn-phone w-full">
                   <Phone className="w-5 h-5 mr-2" />
                   <span>702-222-1964</span>

@@ -8,26 +8,54 @@ export default {
   theme: {
     extend: {
       colors: {
+        luxury: {
+          // Primary luxury colors - deep, rich, trustworthy
+          'navy': '#1a2332',        // Deep navy for trust and stability
+          'navy-light': '#2d3748',  // Lighter navy for accents
+          'navy-dark': '#0f1419',   // Darkest navy for headers
+          
+          // Gold accents - sophisticated and premium
+          'gold': '#d4af37',        // Classic luxury gold
+          'gold-light': '#f4e4a6',  // Light gold for backgrounds
+          'gold-dark': '#b8860b',   // Dark gold for text
+          'gold-accent': '#ffd700', // Bright gold for highlights
+          
+          // Platinum and silver - modern luxury
+          'platinum': '#e5e7eb',    // Light platinum
+          'platinum-dark': '#9ca3af', // Dark platinum
+          'silver': '#f8fafc',      // Light silver background
+          
+          // Accent colors - sophisticated blues
+          'royal-blue': '#1e40af',  // Royal blue for trust
+          'steel-blue': '#475569',  // Steel blue for secondary text
+          'sky-blue': '#0ea5e9',    // Sky blue for links
+          
+          // Neutral luxury colors
+          'cream': '#fefce8',       // Warm cream background
+          'charcoal': '#374151',    // Charcoal for text
+          'pearl': '#f9fafb',       // Pearl white
+        },
+        // Keep original vegas colors for backward compatibility
         vegas: {
-          gold: '#FFD700',
-          'gold-dark': '#B8860B',
-          'deep-blue': '#0A2540',
-          'light-blue': '#3A8DDE',
-          'accent-blue': '#1E3A8A',
-          silver: '#C0C0C0',
-          'dark-silver': '#808080',
+          gold: '#d4af37',
+          'gold-dark': '#b8860b',
+          'deep-blue': '#1a2332',
+          'light-blue': '#0ea5e9',
+          'accent-blue': '#1e40af',
+          silver: '#e5e7eb',
+          'dark-silver': '#9ca3af',
         },
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#fefce8',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#d4af37',
+          600: '#b8860b',
+          700: '#92400e',
+          800: '#78350f',
+          900: '#451a03',
         },
       },
       fontFamily: {
@@ -56,8 +84,13 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'vegas-gradient': 'linear-gradient(135deg, #FFD700 0%, #B8860B 100%)',
-        'blue-gradient': 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
+        'luxury-gradient': 'linear-gradient(135deg, #d4af37 0%, #b8860b 100%)',
+        'navy-gradient': 'linear-gradient(135deg, #1a2332 0%, #2d3748 100%)',
+        'royal-gradient': 'linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%)',
+        'pearl-gradient': 'linear-gradient(135deg, #f9fafb 0%, #fefce8 100%)',
+        // Keep original gradients for backward compatibility
+        'vegas-gradient': 'linear-gradient(135deg, #d4af37 0%, #b8860b 100%)',
+        'blue-gradient': 'linear-gradient(135deg, #1a2332 0%, #0ea5e9 100%)',
       },
     },
   },

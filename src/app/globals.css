@@ -42,14 +42,14 @@ a {
 
 /* Custom RealScout Styling */
 realscout-office-listings {
-  --rs-listing-divider-color: rgb(101, 141, 172);
-  --rs-primary-color: #0a2540;
-  --rs-secondary-color: #ffd700;
-  --rs-accent-color: #3a8dde;
-  --rs-text-color: #1f2937;
+  --rs-listing-divider-color: rgb(71, 85, 105);
+  --rs-primary-color: #1a2332;
+  --rs-secondary-color: #d4af37;
+  --rs-accent-color: #0ea5e9;
+  --rs-text-color: #374151;
   --rs-background-color: #ffffff;
   --rs-border-color: #e5e7eb;
-  --rs-hover-color: #f3f4f6;
+  --rs-hover-color: #f9fafb;
   --rs-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --rs-border-radius: 0.5rem;
   --rs-font-family: "Inter", system-ui, sans-serif;
@@ -58,7 +58,7 @@ realscout-office-listings {
 /* Custom component styles */
 @layer components {
   .btn-primary {
-    @apply bg-vegas-gold text-vegas-deep-blue font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-vegas-gold/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2 active:scale-95;
+    @apply bg-luxury-gold text-luxury-navy font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2 active:scale-95;
     min-height: 44px; /* Better touch target */
     display: inline-flex;
     align-items: center;
@@ -66,7 +66,7 @@ realscout-office-listings {
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-vegas-gold text-vegas-gold font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-vegas-gold hover:text-vegas-deep-blue focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2 active:scale-95;
+    @apply bg-transparent border-2 border-luxury-gold text-luxury-gold font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold hover:text-luxury-navy focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2 active:scale-95;
     min-height: 44px; /* Better touch target */
     display: inline-flex;
     align-items: center;
@@ -74,7 +74,7 @@ realscout-office-listings {
   }
 
   .btn-phone {
-    @apply bg-vegas-gold text-vegas-deep-blue font-bold px-6 py-4 rounded-lg transition-all duration-200 hover:bg-vegas-gold/90 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2 active:scale-95;
+    @apply bg-luxury-gold text-luxury-navy font-bold px-6 py-4 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2 active:scale-95;
     min-height: 48px; /* Larger touch target for phone numbers */
     display: inline-flex;
     align-items: center;
@@ -92,35 +92,35 @@ realscout-office-listings {
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-vegas-gold to-vegas-gold-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent;
   }
 
   .card-shadow {
-    @apply bg-white rounded-xl shadow-md transition-all duration-200 hover:shadow-lg border border-gray-100;
+    @apply bg-luxury-pearl rounded-xl shadow-md transition-all duration-200 hover:shadow-lg border border-luxury-platinum;
   }
 
   .card-hover {
     @apply card-shadow hover:shadow-xl hover:-translate-y-1;
   }
 
-  .vegas-border {
-    @apply border-2 border-vegas-gold;
+  .luxury-border {
+    @apply border-2 border-luxury-gold;
   }
 
   /* Form Styles */
   .form-input {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-all duration-200;
+    @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all duration-200 bg-luxury-pearl;
     min-height: 44px; /* Better touch target */
   }
 
   .form-textarea {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:border-transparent transition-all duration-200 resize-none;
+    @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all duration-200 resize-none bg-luxury-pearl;
     min-height: 120px;
   }
 
   /* Phone Number Styling */
   .phone-number {
-    @apply text-vegas-gold font-bold text-lg md:text-xl hover:text-vegas-gold/80 transition-colors duration-200;
+    @apply text-luxury-gold font-bold text-lg md:text-xl hover:text-luxury-gold/80 transition-colors duration-200;
     text-decoration: none;
   }
 
@@ -130,13 +130,13 @@ realscout-office-listings {
 
   /* Mobile Navigation */
   .mobile-nav-toggle {
-    @apply p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2;
+    @apply p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2;
     min-height: 44px;
     min-width: 44px;
   }
 
   .mobile-nav-link {
-    @apply block px-4 py-3 text-lg font-medium text-vegas-deep-blue hover:bg-vegas-gold/10 hover:text-vegas-gold transition-all duration-200;
+    @apply block px-4 py-3 text-lg font-medium text-luxury-navy hover:bg-luxury-gold/10 hover:text-luxury-gold transition-all duration-200;
     min-height: 44px;
     display: flex;
     align-items: center;
@@ -144,7 +144,7 @@ realscout-office-listings {
 
   /* RealScout Styling */
   .realscout-container {
-    @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6;
+    @apply bg-luxury-pearl rounded-xl shadow-lg border border-luxury-platinum p-6;
   }
 
   .realscout-loading {
@@ -261,7 +261,7 @@ realscout-office-listings {
 
 /* Focus styles for accessibility */
 *:focus {
-  outline: 2px solid #ffd700;
+  outline: 2px solid #d4af37;
   outline-offset: 2px;
 }
 
@@ -288,7 +288,7 @@ realscout-office-listings {
 
 /* Focus Styles for Accessibility */
 .focus-visible {
-  @apply focus:outline-none focus:ring-2 focus:ring-vegas-gold focus:ring-offset-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2;
 }
 
 /* Print styles */
