@@ -8,6 +8,7 @@ const Footer = () => {
     { name: 'Home', href: '/' },
     { name: 'Buy Homes', href: '/buy' },
     { name: 'Sell Homes', href: '/sell' },
+    { name: 'AI Tools', href: '/ai-tools' },
     { name: 'About Dr. Jan', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];

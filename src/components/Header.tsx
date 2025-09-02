@@ -1,6 +1,6 @@
 'use client';
 
-import { DollarSign, Home, Mail, Menu, Phone, Search, User, X } from 'lucide-react';
+import { DollarSign, Home, Mail, Menu, Phone, Search, Sparkles, User, X } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -21,6 +21,7 @@ const Header = () => {
     { name: 'Home', href: '/', icon: Home },
     { name: 'Buy', href: '/buy', icon: Search },
     { name: 'Sell', href: '/sell', icon: DollarSign },
+    { name: 'AI Tools', href: '/ai-tools', icon: Sparkles },
     { name: 'About', href: '/about', icon: User },
     { name: 'Contact', href: '/contact', icon: Mail },
   ];

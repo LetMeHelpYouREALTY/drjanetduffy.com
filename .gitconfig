@@ -30,7 +30,7 @@
 	amend = commit --amend --no-edit
 	undo = reset --soft HEAD~1
 	cleanup = "!git branch --merged | grep -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d"
-	
+
 [color]
 	ui = auto
 	branch = auto
