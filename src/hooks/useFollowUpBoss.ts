@@ -127,7 +127,7 @@ export const useFollowUpBoss = (): UseFollowUpBossReturn => {
         return await response.json();
       });
 
-      return result || [];
+      return (result as FUBContact[]) || [];
     },
     [handleApiCall]
   );
@@ -208,7 +208,7 @@ export const useFollowUpBoss = (): UseFollowUpBossReturn => {
         return await response.json();
       });
 
-      return result || [];
+      return (result as FUBProperty[]) || [];
     },
     [handleApiCall]
   );

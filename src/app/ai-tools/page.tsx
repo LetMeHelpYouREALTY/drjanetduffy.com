@@ -68,11 +68,11 @@ const AIToolsPage = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-vegas-deep-blue to-vegas-accent-blue text-white">
+      <section className="section-padding bg-gradient-to-br from-luxury-navy to-luxury-royal-blue text-white">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <Sparkles className="w-12 h-12 text-vegas-gold mr-4" />
+              <Sparkles className="w-12 h-12 text-luxury-gold mr-4" />
               <h1 className="text-4xl md:text-5xl font-bold">AI-Powered Real Estate Tools</h1>
             </div>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
@@ -83,13 +83,13 @@ const AIToolsPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#property-analyzer"
-                className="btn-primary bg-vegas-gold text-vegas-deep-blue hover:bg-vegas-gold/90"
+                className="btn-primary bg-luxury-gold text-luxury-navy hover:bg-luxury-gold/90"
               >
                 Try Property Analyzer
               </a>
               <a
                 href="tel:702-222-1964"
-                className="btn-secondary border-white text-white hover:bg-white hover:text-vegas-deep-blue"
+                className="btn-secondary border-white text-white hover:bg-white hover:text-luxury-navy"
               >
                 Call 702-222-1964
               </a>
@@ -102,7 +102,7 @@ const AIToolsPage = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-vegas-deep-blue mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-luxury-navy mb-4">
               Advanced AI Capabilities
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -116,10 +116,10 @@ const AIToolsPage = () => {
               const Icon = feature.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-vegas-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-vegas-deep-blue" />
+                  <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-luxury-navy" />
                   </div>
-                  <h3 className="text-xl font-semibold text-vegas-deep-blue mb-3">
+                  <h3 className="text-xl font-semibold text-luxury-navy mb-3">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">{feature.description}</p>
@@ -146,7 +146,7 @@ const AIToolsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-vegas-deep-blue to-vegas-accent-blue text-white">
+      <section className="section-padding bg-gradient-to-r from-luxury-navy to-luxury-royal-blue text-white">
         <div className="container-max text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Experience AI-Powered Real Estate?
@@ -158,13 +158,13 @@ const AIToolsPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:702-222-1964"
-              className="btn-primary bg-vegas-gold text-vegas-deep-blue hover:bg-vegas-gold/90"
+              className="btn-primary bg-luxury-gold text-luxury-navy hover:bg-luxury-gold/90"
             >
               Call Dr. Jan: 702-222-1964
             </a>
             <a
               href="/contact"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-vegas-deep-blue"
+              className="btn-secondary border-white text-white hover:bg-white hover:text-luxury-navy"
             >
               Schedule AI Consultation
             </a>
