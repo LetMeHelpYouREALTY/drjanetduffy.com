@@ -97,7 +97,7 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
               </div>
             </div>
           )}
-          
+
           {hasError && !isLoading && (
             <div className="text-center py-12">
               <div className="text-vegas-deep-blue text-lg font-semibold mb-4">

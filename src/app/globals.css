@@ -267,11 +267,11 @@ realscout-office-listings {
   .btn-phone {
     @apply w-full justify-center;
   }
-  
+
   .phone-number {
     @apply text-xl;
   }
-  
+
   .section-padding {
     @apply py-8;
   }
