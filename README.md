@@ -80,11 +80,48 @@ The website features RealScout web components for displaying property listings:
 
 ## Deployment
 
-This project is configured for Vercel deployment:
+This project is optimized for Vercel deployment with automated workflows:
 
-1. Connect your GitHub repository to Vercel
-2. Set environment variables in Vercel dashboard
-3. Deploy automatically on push to main branch
+### Automatic Deployment
+- **GitHub Integration**: Connected to Vercel for automatic deployments
+- **Branch Strategy**: Main branch deploys to production
+- **Preview Deployments**: Feature branches get preview URLs
+
+### Manual Deployment
+```bash
+# Full deployment with quality checks
+npm run deploy
+
+# Skip quality checks (faster)
+npm run deploy:skip-checks
+
+# Run checks only (no deployment)
+npm run deploy:checks-only
+```
+
+### Vercel Configuration
+- **Build Command**: `npm run build`
+- **Output Directory**: `.next`
+- **Install Command**: `npm install`
+- **Node Version**: 18.x
+
+### Environment Variables
+Set these in your Vercel dashboard:
+- `NODE_ENV=production`
+- `NEXT_TELEMETRY_DISABLED=1`
+
+### Performance Optimizations
+- **Image Optimization**: Next.js automatic image optimization
+- **Static Generation**: Pre-rendered pages for better SEO
+- **Edge Functions**: API routes optimized for edge deployment
+- **Caching**: Aggressive caching for static assets
+- **Compression**: Gzip/Brotli compression enabled
+
+### Security Headers
+- X-Frame-Options: DENY
+- X-Content-Type-Options: nosniff
+- Referrer-Policy: origin-when-cross-origin
+- Strict-Transport-Security: enabled
 
 ## Contact Information
 

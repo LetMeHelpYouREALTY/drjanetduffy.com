@@ -1,6 +1,6 @@
+import RealScoutListings from '@/components/RealScoutListings';
 import { Award, CheckCircle, Heart, Home, Star, Users } from 'lucide-react';
 import type { Metadata } from 'next';
-import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'About Dr. Jan Duffy | Las Vegas Real Estate Expert | 20+ Years Experience',
@@ -26,7 +26,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'About Dr. Jan Duffy | Las Vegas Real Estate Expert | 20+ Years Experience',
-    description: 'Meet Dr. Jan Duffy, Las Vegas native and real estate expert with 20+ years experience. 500+ happy clients helped find homes.',
+    description:
+      'Meet Dr. Jan Duffy, Las Vegas native and real estate expert with 20+ years experience. 500+ happy clients helped find homes.',
     url: 'https://drjanetduffy.com/about',
     type: 'profile',
   },

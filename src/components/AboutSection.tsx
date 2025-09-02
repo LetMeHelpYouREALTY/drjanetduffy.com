@@ -76,10 +76,7 @@ const AboutSection = () => {
               <a href="/about" className="btn-primary inline-flex items-center justify-center">
                 Learn More About Jan
               </a>
-              <a
-                href="tel:702-222-1964"
-                className="btn-phone"
-              >
+              <a href="tel:702-222-1964" className="btn-phone">
                 Call 702-222-1964
               </a>
             </div>

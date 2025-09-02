@@ -261,7 +261,11 @@ const ContactSection = () => {
                         {info.link ? (
                           <a
                             href={info.link}
-                            className={info.title === 'Phone' ? 'phone-number' : 'text-vegas-gold hover:text-vegas-gold-dark font-semibold transition-colors duration-200'}
+                            className={
+                              info.title === 'Phone'
+                                ? 'phone-number'
+                                : 'text-vegas-gold hover:text-vegas-gold-dark font-semibold transition-colors duration-200'
+                            }
                           >
                             {info.value}
                           </a>
@@ -288,10 +292,7 @@ const ContactSection = () => {
               <p className="text-lg mb-6 opacity-90">
                 Call me directly for urgent real estate questions or to schedule a showing.
               </p>
-              <a
-                href="tel:702-222-1964"
-                className="btn-phone"
-              >
+              <a href="tel:702-222-1964" className="btn-phone">
                 <Phone className="w-5 h-5 mr-2" />
                 <span>Call 702-222-1964</span>
               </a>

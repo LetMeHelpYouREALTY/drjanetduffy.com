@@ -30,7 +30,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Contact Dr. Jan Duffy | Las Vegas Real Estate Expert | 702-222-1964',
-    description: 'Contact Dr. Jan Duffy for all your Las Vegas real estate needs. Free consultation for buying or selling homes.',
+    description:
+      'Contact Dr. Jan Duffy for all your Las Vegas real estate needs. Free consultation for buying or selling homes.',
     url: 'https://drjanetduffy.com/contact',
     type: 'website',
   },

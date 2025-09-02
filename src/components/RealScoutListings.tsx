@@ -106,10 +106,7 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
               <p className="text-gray-600 mb-6">
                 Our property listings are being updated. Please call for immediate assistance.
               </p>
-              <a
-                href="tel:702-222-1964"
-                className="btn-phone"
-              >
+              <a href="tel:702-222-1964" className="btn-phone">
                 Call 702-222-1964
               </a>
             </div>
@@ -137,10 +134,7 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
           <p className="text-lg text-gray-600 mb-4">
             Don't see what you're looking for? Let me help you find the perfect home.
           </p>
-          <a
-            href="tel:702-222-1964"
-            className="btn-phone"
-          >
+          <a href="tel:702-222-1964" className="btn-phone">
             <span>Call Dr. Jan Duffy</span>
             <span className="font-mono ml-2">702-222-1964</span>
           </a>

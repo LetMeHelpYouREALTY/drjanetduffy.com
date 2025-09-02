@@ -1,6 +1,6 @@
-import type { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
-import { Home, MapPin, School, ShoppingBag, Mountain } from 'lucide-react';
+import { Home, MapPin, Mountain, School, ShoppingBag } from 'lucide-react';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Henderson Homes for Sale | Dr. Jan Duffy Real Estate | Las Vegas',
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Henderson Homes for Sale | Dr. Jan Duffy Real Estate | Las Vegas',
-    description: 'Find your dream home in Henderson, NV. Family-friendly community with excellent schools, parks, and amenities.',
+    description:
+      'Find your dream home in Henderson, NV. Family-friendly community with excellent schools, parks, and amenities.',
     url: 'https://drjanetduffy.com/neighborhoods/henderson',
     type: 'website',
   },
@@ -44,7 +45,8 @@ const HendersonPage = () => {
     {
       icon: School,
       title: 'Excellent Schools',
-      description: 'Top-rated public schools including Green Valley High School and Coronado High School',
+      description:
+        'Top-rated public schools including Green Valley High School and Coronado High School',
     },
     {
       icon: Mountain,
@@ -54,7 +56,8 @@ const HendersonPage = () => {
     {
       icon: ShoppingBag,
       title: 'Shopping & Dining',
-      description: 'The District at Green Valley Ranch, Galleria at Sunset, and diverse dining options',
+      description:
+        'The District at Green Valley Ranch, Galleria at Sunset, and diverse dining options',
     },
     {
       icon: Home,
@@ -69,17 +72,13 @@ const HendersonPage = () => {
       <section className="section-padding bg-gradient-to-br from-vegas-deep-blue to-vegas-accent-blue text-white">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Henderson Homes for Sale
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Henderson Homes for Sale</h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
               Discover Henderson, Nevada's family-friendly community with excellent schools,
-              beautiful parks, and a strong sense of community. Perfect for families and professionals.
+              beautiful parks, and a strong sense of community. Perfect for families and
+              professionals.
             </p>
-            <a
-              href="tel:702-222-1964"
-              className="btn-primary inline-flex items-center space-x-2"
-            >
+            <a href="tel:702-222-1964" className="btn-primary inline-flex items-center space-x-2">
               <span>Call 702-222-1964</span>
             </a>
           </div>
@@ -104,9 +103,7 @@ const HendersonPage = () => {
                   <h3 className="text-xl font-semibold text-vegas-deep-blue mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}
@@ -126,8 +123,8 @@ const HendersonPage = () => {
             Ready to Find Your Henderson Home?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Let Dr. Jan Duffy help you find the perfect home in Henderson.
-            From Green Valley to Anthem, I know every neighborhood.
+            Let Dr. Jan Duffy help you find the perfect home in Henderson. From Green Valley to
+            Anthem, I know every neighborhood.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -136,10 +133,7 @@ const HendersonPage = () => {
             >
               Call 702-222-1964
             </a>
-            <a
-              href="/contact"
-              className="btn-secondary inline-flex items-center justify-center"
-            >
+            <a href="/contact" className="btn-secondary inline-flex items-center justify-center">
               Schedule Consultation
             </a>
           </div>

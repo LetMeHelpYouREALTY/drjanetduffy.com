@@ -30,7 +30,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Buy a Home in Las Vegas | Dr. Jan Duffy Real Estate | 702-222-1964',
-    description: 'Find your dream home in Las Vegas with Dr. Jan Duffy. Expert home buying guidance in Summerlin, Henderson, Green Valley.',
+    description:
+      'Find your dream home in Las Vegas with Dr. Jan Duffy. Expert home buying guidance in Summerlin, Henderson, Green Valley.',
     url: 'https://drjanetduffy.com/buy',
     type: 'website',
   },

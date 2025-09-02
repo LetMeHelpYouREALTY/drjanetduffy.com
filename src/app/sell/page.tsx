@@ -1,6 +1,6 @@
+import RealScoutListings from '@/components/RealScoutListings';
 import { Award, Clock, DollarSign, Phone, TrendingUp } from 'lucide-react';
 import type { Metadata } from 'next';
-import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
   title: 'Sell Your Las Vegas Home | Dr. Jan Duffy Real Estate | 702-222-1964',
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Sell Your Las Vegas Home | Dr. Jan Duffy Real Estate | 702-222-1964',
-    description: 'Sell your Las Vegas home with Dr. Jan Duffy. Expert guidance, market analysis, and maximum value for your property.',
+    description:
+      'Sell your Las Vegas home with Dr. Jan Duffy. Expert guidance, market analysis, and maximum value for your property.',
     url: 'https://drjanetduffy.com/sell',
     type: 'website',
   },

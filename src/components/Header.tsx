@@ -63,10 +63,7 @@ const Header = () => {
 
           {/* Phone Number - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a
-              href="tel:702-222-1964"
-              className="btn-phone"
-            >
+            <a href="tel:702-222-1964" className="btn-phone">
               <Phone className="w-4 h-4 mr-2" />
               <span>702-222-1964</span>
             </a>
@@ -104,10 +101,7 @@ const Header = () => {
 
               {/* Mobile Phone Number */}
               <div className="pt-4 border-t border-vegas-gold/20">
-                <a
-                  href="tel:702-222-1964"
-                  className="btn-phone w-full"
-                >
+                <a href="tel:702-222-1964" className="btn-phone w-full">
                   <Phone className="w-5 h-5 mr-2" />
                   <span>702-222-1964</span>
                 </a>

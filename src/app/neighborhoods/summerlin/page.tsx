@@ -1,6 +1,6 @@
-import type { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 import { Home, MapPin, School, ShoppingBag, TreePine } from 'lucide-react';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Summerlin Homes for Sale | Dr. Jan Duffy Real Estate | Las Vegas',
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Summerlin Homes for Sale | Dr. Jan Duffy Real Estate | Las Vegas',
-    description: 'Find your dream home in Summerlin, Las Vegas. Master-planned community with top schools, parks, and amenities.',
+    description:
+      'Find your dream home in Summerlin, Las Vegas. Master-planned community with top schools, parks, and amenities.',
     url: 'https://drjanetduffy.com/neighborhoods/summerlin',
     type: 'website',
   },
@@ -44,7 +45,8 @@ const SummerlinPage = () => {
     {
       icon: School,
       title: 'Top-Rated Schools',
-      description: 'Excellent public and private schools including The Meadows School and Palo Verde High School',
+      description:
+        'Excellent public and private schools including The Meadows School and Palo Verde High School',
     },
     {
       icon: TreePine,
@@ -69,17 +71,12 @@ const SummerlinPage = () => {
       <section className="section-padding bg-gradient-to-br from-vegas-deep-blue to-vegas-accent-blue text-white">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Summerlin Homes for Sale
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Summerlin Homes for Sale</h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Discover the premier master-planned community in Las Vegas. Summerlin offers
-              luxury living with top-rated schools, beautiful parks, and world-class amenities.
+              Discover the premier master-planned community in Las Vegas. Summerlin offers luxury
+              living with top-rated schools, beautiful parks, and world-class amenities.
             </p>
-            <a
-              href="tel:702-222-1964"
-              className="btn-primary inline-flex items-center space-x-2"
-            >
+            <a href="tel:702-222-1964" className="btn-primary inline-flex items-center space-x-2">
               <span>Call 702-222-1964</span>
             </a>
           </div>
@@ -104,9 +101,7 @@ const SummerlinPage = () => {
                   <h3 className="text-xl font-semibold text-vegas-deep-blue mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}
@@ -126,8 +121,8 @@ const SummerlinPage = () => {
             Ready to Find Your Summerlin Home?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Let Dr. Jan Duffy help you find the perfect home in Summerlin.
-            With 20+ years of Las Vegas real estate experience, I know every neighborhood.
+            Let Dr. Jan Duffy help you find the perfect home in Summerlin. With 20+ years of Las
+            Vegas real estate experience, I know every neighborhood.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -136,10 +131,7 @@ const SummerlinPage = () => {
             >
               Call 702-222-1964
             </a>
-            <a
-              href="/contact"
-              className="btn-secondary inline-flex items-center justify-center"
-            >
+            <a href="/contact" className="btn-secondary inline-flex items-center justify-center">
               Schedule Consultation
             </a>
           </div>

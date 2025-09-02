@@ -15,7 +15,13 @@
     "check:fix": "biome check --write .",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next dist build",
-    "pre-commit": "biome check --write . && tsc --noEmit"
+    "pre-commit": "biome check --write . && tsc --noEmit",
+    "deploy": "node scripts/deploy.js",
+    "deploy:skip-checks": "node scripts/deploy.js --skip-checks",
+    "deploy:checks-only": "node scripts/deploy.js --skip-deploy",
+    "vercel:build": "next build",
+    "vercel:dev": "next dev",
+    "postinstall": "next telemetry disable"
   },
   "dependencies": {
     "next": "^14.2.0",
