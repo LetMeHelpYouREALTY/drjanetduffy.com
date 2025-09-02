@@ -10,30 +10,30 @@ export default {
       colors: {
         luxury: {
           // Primary luxury colors - deep, rich, trustworthy
-          'navy': '#1a2332',        // Deep navy for trust and stability
-          'navy-light': '#2d3748',  // Lighter navy for accents
-          'navy-dark': '#0f1419',   // Darkest navy for headers
-          
+          navy: '#1a2332', // Deep navy for trust and stability
+          'navy-light': '#2d3748', // Lighter navy for accents
+          'navy-dark': '#0f1419', // Darkest navy for headers
+
           // Gold accents - sophisticated and premium
-          'gold': '#d4af37',        // Classic luxury gold
-          'gold-light': '#f4e4a6',  // Light gold for backgrounds
-          'gold-dark': '#b8860b',   // Dark gold for text
+          gold: '#d4af37', // Classic luxury gold
+          'gold-light': '#f4e4a6', // Light gold for backgrounds
+          'gold-dark': '#b8860b', // Dark gold for text
           'gold-accent': '#ffd700', // Bright gold for highlights
-          
+
           // Platinum and silver - modern luxury
-          'platinum': '#e5e7eb',    // Light platinum
+          platinum: '#e5e7eb', // Light platinum
           'platinum-dark': '#9ca3af', // Dark platinum
-          'silver': '#f8fafc',      // Light silver background
-          
+          silver: '#f8fafc', // Light silver background
+
           // Accent colors - sophisticated blues
-          'royal-blue': '#1e40af',  // Royal blue for trust
-          'steel-blue': '#475569',  // Steel blue for secondary text
-          'sky-blue': '#0ea5e9',    // Sky blue for links
-          
+          'royal-blue': '#1e40af', // Royal blue for trust
+          'steel-blue': '#475569', // Steel blue for secondary text
+          'sky-blue': '#0ea5e9', // Sky blue for links
+
           // Neutral luxury colors
-          'cream': '#fefce8',       // Warm cream background
-          'charcoal': '#374151',    // Charcoal for text
-          'pearl': '#f9fafb',       // Pearl white
+          cream: '#fefce8', // Warm cream background
+          charcoal: '#374151', // Charcoal for text
+          pearl: '#f9fafb', // Pearl white
         },
         // Keep original vegas colors for backward compatibility
         vegas: {
