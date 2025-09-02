@@ -1,18 +1,24 @@
-import { type NextRequest, NextResponse } from 'next/server';
 import { followUpBossService } from '@/lib/followupboss';
+import { type NextRequest, NextResponse } from 'next/server';
 
 // GET /api/followupboss/properties - Get properties with caching
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    
+
     // Parse query parameters
     const filters = {
       city: searchParams.get('city') || undefined,
       state: searchParams.get('state') || undefined,
-      priceMin: searchParams.get('priceMin') ? Number.parseInt(searchParams.get('priceMin')!) : undefined,
-      priceMax: searchParams.get('priceMax') ? Number.parseInt(searchParams.get('priceMax')!) : undefined,
-      bedrooms: searchParams.get('bedrooms') ? Number.parseInt(searchParams.get('bedrooms')!) : undefined,
+      priceMin: searchParams.get('priceMin')
+        ? Number.parseInt(searchParams.get('priceMin')!)
+        : undefined,
+      priceMax: searchParams.get('priceMax')
+        ? Number.parseInt(searchParams.get('priceMax')!)
+        : undefined,
+      bedrooms: searchParams.get('bedrooms')
+        ? Number.parseInt(searchParams.get('bedrooms')!)
+        : undefined,
       propertyType: searchParams.get('propertyType') || undefined,
     };
 
@@ -33,10 +39,7 @@ export async function GET(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in GET /api/followupboss/properties:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }
 
@@ -44,7 +47,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    
+
     // Validate required fields
     if (!body.address || !body.city || !body.state || !body.zipCode) {
       return NextResponse.json(
@@ -62,9 +65,6 @@ export async function POST(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in POST /api/followupboss/properties:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }

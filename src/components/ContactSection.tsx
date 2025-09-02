@@ -52,9 +52,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-luxury-navy mb-4">
-            Let's Connect
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-luxury-navy mb-4">Let's Connect</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ready to start your Las Vegas real estate journey? I'm here to help you every step of
             the way. Get in touch today for a free consultation.

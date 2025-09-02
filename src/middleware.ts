@@ -67,7 +67,10 @@ function handleFollowUpBossAPI(request: NextRequest, ip: string) {
 
     // Add cache headers for client-side caching
     const response = NextResponse.next();
-    response.headers.set('Cache-Control', `public, s-maxage=${CACHE_DURATION}, stale-while-revalidate=${STALE_WHILE_REVALIDATE}`);
+    response.headers.set(
+      'Cache-Control',
+      `public, s-maxage=${CACHE_DURATION}, stale-while-revalidate=${STALE_WHILE_REVALIDATE}`
+    );
     response.headers.set('X-Cache', 'MISS');
     return response;
   }
@@ -75,14 +78,14 @@ function handleFollowUpBossAPI(request: NextRequest, ip: string) {
   // Handle POST/PUT/DELETE requests
   if (['POST', 'PUT', 'DELETE'].includes(method)) {
     const response = NextResponse.next();
-    
+
     // Clear related cache entries
     clearRelatedCache(pathname);
-    
+
     // Add no-cache headers for write operations
     response.headers.set('Cache-Control', 'no-cache, no-store, must-revalidate');
     response.headers.set('X-Cache', 'BYPASS');
-    
+
     return response;
   }
 
@@ -102,7 +105,7 @@ function handleAPIRateLimit(request: NextRequest, ip: string) {
 
 function checkRateLimit(ip: string): boolean {
   const now = Date.now();
-  const windowStart = now - (RATE_LIMIT_WINDOW * 1000);
+  const windowStart = now - RATE_LIMIT_WINDOW * 1000;
 
   // Clean up expired entries
   for (const [key, value] of rateLimitStore.entries()) {
@@ -112,9 +115,9 @@ function checkRateLimit(ip: string): boolean {
   }
 
   const current = rateLimitStore.get(ip);
-  
+
   if (!current) {
-    rateLimitStore.set(ip, { count: 1, resetTime: now + (RATE_LIMIT_WINDOW * 1000) });
+    rateLimitStore.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW * 1000 });
     return true;
   }
 
@@ -150,23 +153,19 @@ function setCache(key: string, data: any, ttl: number = CACHE_DURATION * 1000): 
 function clearRelatedCache(pathname: string): void {
   // Clear cache entries related to the modified resource
   const keysToDelete: string[] = [];
-  
+
   for (const key of cacheStore.keys()) {
     if (key.includes(pathname) || pathname.includes(key.split('?')[0])) {
       keysToDelete.push(key);
     }
   }
 
-  keysToDelete.forEach(key => cacheStore.delete(key));
+  keysToDelete.forEach((key) => cacheStore.delete(key));
 }
 
 // Export cache functions for use in API routes
 export { setCache, getFromCache, clearRelatedCache };
 
 export const config = {
-  matcher: [
-    '/api/:path*',
-    '/_next/static/:path*',
-    '/images/:path*',
-  ],
+  matcher: ['/api/:path*', '/_next/static/:path*', '/images/:path*'],
 };

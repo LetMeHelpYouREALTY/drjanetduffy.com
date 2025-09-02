@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { CheckCircle, Mail, Phone, User, MapPin, MessageSquare, AlertCircle } from 'lucide-react';
 import { useFollowUpBoss, useFollowUpBossTracking } from '@/hooks/useFollowUpBoss';
+import { motion } from 'framer-motion';
+import { AlertCircle, CheckCircle, Mail, MapPin, MessageSquare, Phone, User } from 'lucide-react';
+import { useState } from 'react';
 
 interface FollowUpBossContactFormProps {
   title?: string;
@@ -25,11 +25,11 @@ interface FormData {
 }
 
 const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
-  title = "Get Your Free Consultation",
-  subtitle = "Connect with Dr. Jan Duffy for expert Las Vegas real estate guidance",
-  source = "Website Contact Form",
-  propertyInterest = "",
-  className = "",
+  title = 'Get Your Free Consultation',
+  subtitle = 'Connect with Dr. Jan Duffy for expert Las Vegas real estate guidance',
+  source = 'Website Contact Form',
+  propertyInterest = '',
+  className = '',
   onSuccess,
 }) => {
   const [formData, setFormData] = useState<FormData>({
@@ -49,13 +49,13 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
   const { trackFormInteraction } = useFollowUpBossTracking(contactId || undefined);
 
   const handleInputChange = (field: keyof FormData, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
     clearError();
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Track form start
     if (contactId) {
       await trackFormInteraction('contact', 'start', {
@@ -82,7 +82,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
       if (result) {
         setContactId(result.id || '');
         setIsSubmitted(true);
-        
+
         // Track form completion
         if (result.id) {
           await trackFormInteraction('contact', 'complete', {
@@ -110,7 +110,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
       }
     } catch (err) {
       console.error('Error submitting form:', err);
-      
+
       // Track form abandonment
       if (contactId) {
         await trackFormInteraction('contact', 'abandon', {
@@ -180,7 +180,10 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="firstName" className="block text-sm font-semibold text-luxury-navy mb-2">
+            <label
+              htmlFor="firstName"
+              className="block text-sm font-semibold text-luxury-navy mb-2"
+            >
               First Name *
             </label>
             <div className="relative">
@@ -254,7 +257,10 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
         </div>
 
         <div>
-          <label htmlFor="propertyInterest" className="block text-sm font-semibold text-luxury-navy mb-2">
+          <label
+            htmlFor="propertyInterest"
+            className="block text-sm font-semibold text-luxury-navy mb-2"
+          >
             Property Interest
           </label>
           <div className="relative">
@@ -316,7 +322,8 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
         </button>
 
         <p className="text-xs text-luxury-platinum-dark text-center">
-          By submitting this form, you agree to be contacted by Dr. Jan Duffy regarding your real estate needs.
+          By submitting this form, you agree to be contacted by Dr. Jan Duffy regarding your real
+          estate needs.
         </p>
       </form>
     </motion.div>

@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import { followUpBossService } from '@/lib/followupboss';
+import { NextResponse } from 'next/server';
 
 // GET /api/followupboss/health - Health check for Follow Up Boss API
 export async function GET() {

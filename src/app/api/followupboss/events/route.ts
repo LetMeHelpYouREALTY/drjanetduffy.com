@@ -1,11 +1,11 @@
+import { followUpBossService, trackPhoneCall, trackPropertyView } from '@/lib/followupboss';
 import { type NextRequest, NextResponse } from 'next/server';
-import { followUpBossService, trackPropertyView, trackPhoneCall } from '@/lib/followupboss';
 
 // POST /api/followupboss/events - Track events
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    
+
     // Validate required fields
     if (!body.contactId || !body.type) {
       return NextResponse.json(
@@ -21,7 +21,10 @@ export async function POST(request: NextRequest) {
       case 'property_view':
         if (!body.propertyId || !body.propertyAddress) {
           return NextResponse.json(
-            { success: false, message: 'Property ID and address are required for property_view events' },
+            {
+              success: false,
+              message: 'Property ID and address are required for property_view events',
+            },
             { status: 400 }
           );
         }
@@ -57,10 +60,7 @@ export async function POST(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in POST /api/followupboss/events:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }
 
@@ -87,9 +87,6 @@ export async function GET(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in GET /api/followupboss/events:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }

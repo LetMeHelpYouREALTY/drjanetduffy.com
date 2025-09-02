@@ -1,5 +1,5 @@
+import { createWebsiteLead, followUpBossService } from '@/lib/followupboss';
 import { type NextRequest, NextResponse } from 'next/server';
-import { followUpBossService, createWebsiteLead } from '@/lib/followupboss';
 
 // GET /api/followupboss/contacts - Search contacts
 export async function GET(request: NextRequest) {
@@ -24,10 +24,7 @@ export async function GET(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in GET /api/followupboss/contacts:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }
 
@@ -35,7 +32,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    
+
     // Validate required fields
     if (!body.firstName || !body.lastName || !body.email) {
       return NextResponse.json(
@@ -62,10 +59,7 @@ export async function POST(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in POST /api/followupboss/contacts:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }
 
@@ -92,9 +86,6 @@ export async function PUT(request: NextRequest) {
     }
   } catch (error) {
     console.error('Error in PUT /api/followupboss/contacts:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }

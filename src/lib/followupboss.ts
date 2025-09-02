@@ -65,9 +65,9 @@ class FollowUpBossService {
     this.api = axios.create({
       baseURL: FUB_API_BASE_URL,
       headers: {
-        'Authorization': `Bearer ${FUB_API_KEY}`,
+        Authorization: `Bearer ${FUB_API_KEY}`,
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        Accept: 'application/json',
         // Custom system headers for higher rate limits
         'X-System': FUB_SYSTEM_NAME,
         'X-System-Key': FUB_SYSTEM_KEY,
@@ -104,7 +104,7 @@ class FollowUpBossService {
   }
 
   // Cache management
-  private setCache(key: string, data: any, ttl: number = 300): void {
+  private setCache(key: string, data: any, ttl = 300): void {
     this.cache.set(key, {
       data,
       timestamp: Date.now(),
@@ -174,13 +174,16 @@ class FollowUpBossService {
     }
   }
 
-  async updateContact(contactId: string, updates: Partial<FUBContact>): Promise<FUBResponse<FUBContact>> {
+  async updateContact(
+    contactId: string,
+    updates: Partial<FUBContact>
+  ): Promise<FUBResponse<FUBContact>> {
     try {
       const response = await this.api.put(`/contacts/${contactId}`, updates);
-      
+
       // Clear cache for this contact
       this.cache.delete(`contact_${contactId}`);
-      
+
       return {
         data: response.data,
         success: true,
@@ -382,7 +385,7 @@ export const createWebsiteLead = async (formData: {
   };
 
   const result = await followUpBossService.createContact(contact);
-  
+
   // Track the form submission event
   if (result.success && result.data.id) {
     await followUpBossService.trackEvent({
@@ -399,7 +402,11 @@ export const createWebsiteLead = async (formData: {
   return result;
 };
 
-export const trackPropertyView = async (contactId: string, propertyId: string, propertyAddress: string) => {
+export const trackPropertyView = async (
+  contactId: string,
+  propertyId: string,
+  propertyAddress: string
+) => {
   return await followUpBossService.trackEvent({
     contactId,
     type: 'property_view',
