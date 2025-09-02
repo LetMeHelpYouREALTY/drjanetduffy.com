@@ -18,9 +18,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰',
+  title: 'Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰 | 702-222-1964',
   description:
-    'Be the expert neighbor who knows every sale and genuinely helps. Las Vegas real estate expert with 20+ years experience. Call 702-222-1964.',
+    'Las Vegas real estate expert Dr. Jan Duffy with 20+ years experience. Find your dream home in Summerlin, Henderson, Green Valley. Call 702-222-1964 for expert guidance.',
   keywords: [
     'Las Vegas real estate',
     'Las Vegas homes for sale',
@@ -32,6 +32,16 @@ export const metadata: Metadata = {
     'Las Vegas neighborhoods',
     'Las Vegas home buying',
     'Las Vegas home selling',
+    'Summerlin homes',
+    'Henderson real estate',
+    'Green Valley properties',
+    'Anthem Las Vegas',
+    'Southern Highlands homes',
+    'Las Vegas MLS',
+    'Las Vegas property values',
+    'Las Vegas real estate market',
+    'Las Vegas home prices',
+    'Las Vegas investment properties',
   ],
   authors: [{ name: 'Dr. Jan Duffy' }],
   creator: 'Dr. Jan Duffy',
@@ -46,9 +56,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰',
+    title: 'Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰 | 702-222-1964',
     description:
-      'Be the expert neighbor who knows every sale and genuinely helps. Las Vegas real estate expert with 20+ years experience.',
+      'Las Vegas real estate expert Dr. Jan Duffy with 20+ years experience. Find your dream home in Summerlin, Henderson, Green Valley. Call 702-222-1964.',
     url: 'https://drjanetduffy.com',
     siteName: 'Dr. Jan Duffy Real Estate',
     images: [
@@ -56,7 +66,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Dr. Jan Duffy - Las Vegas Real Estate Expert',
+        alt: 'Dr. Jan Duffy - Las Vegas Real Estate Expert with 20+ years experience',
       },
     ],
     locale: 'en_US',
@@ -64,9 +74,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰',
+    title: 'Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰 | 702-222-1964',
     description:
-      'Be the expert neighbor who knows every sale and genuinely helps. Las Vegas real estate expert.',
+      'Las Vegas real estate expert Dr. Jan Duffy with 20+ years experience. Find your dream home in Summerlin, Henderson, Green Valley.',
     images: ['/og-image.jpg'],
   },
   robots: {

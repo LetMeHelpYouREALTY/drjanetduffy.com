@@ -3,9 +3,9 @@ import { DollarSign, Home, MapPin, Phone, Search } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Buy a Home in Las Vegas | Dr. Jan Duffy Real Estate',
+  title: 'Buy a Home in Las Vegas | Dr. Jan Duffy Real Estate | 702-222-1964',
   description:
-    'Find your dream home in Las Vegas with Dr. Jan Duffy. Browse current listings and get expert guidance on home buying.',
+    'Find your dream home in Las Vegas with Dr. Jan Duffy. Expert home buying guidance in Summerlin, Henderson, Green Valley. Browse MLS listings. Call 702-222-1964.',
   keywords: [
     'Las Vegas homes for sale',
     'buy home Las Vegas',
@@ -13,7 +13,30 @@ export const metadata: Metadata = {
     'home buying Las Vegas',
     'Las Vegas properties',
     'real estate agent Las Vegas',
+    'Las Vegas MLS listings',
+    'Summerlin homes for sale',
+    'Henderson homes for sale',
+    'Green Valley homes for sale',
+    'Anthem homes for sale',
+    'Southern Highlands homes',
+    'Las Vegas home buying process',
+    'Las Vegas first time home buyer',
+    'Las Vegas home buying tips',
+    'Las Vegas property search',
+    'Las Vegas real estate market',
+    'Las Vegas home prices',
+    'Las Vegas neighborhoods',
+    'Las Vegas school districts',
   ],
+  openGraph: {
+    title: 'Buy a Home in Las Vegas | Dr. Jan Duffy Real Estate | 702-222-1964',
+    description: 'Find your dream home in Las Vegas with Dr. Jan Duffy. Expert home buying guidance in Summerlin, Henderson, Green Valley.',
+    url: 'https://drjanetduffy.com/buy',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/buy',
+  },
 };
 
 const BuyPage = () => {

@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
-  title: 'Sell Your Las Vegas Home | Dr. Jan Duffy Real Estate',
+  title: 'Sell Your Las Vegas Home | Dr. Jan Duffy Real Estate | 702-222-1964',
   description:
-    'Sell your Las Vegas home with Dr. Jan Duffy. Get expert guidance, market analysis, and maximum value for your property.',
+    'Sell your Las Vegas home with Dr. Jan Duffy. Expert guidance, market analysis, and maximum value for your property. Free home valuation. Call 702-222-1964.',
   keywords: [
     'sell home Las Vegas',
     'Las Vegas home selling',
@@ -13,7 +13,30 @@ export const metadata: Metadata = {
     'home valuation Las Vegas',
     'sell house Las Vegas',
     'Las Vegas property sales',
+    'Las Vegas home prices',
+    'Las Vegas real estate market',
+    'Las Vegas home staging',
+    'Las Vegas home marketing',
+    'Las Vegas home selling process',
+    'Las Vegas home selling tips',
+    'Las Vegas property values',
+    'Las Vegas home appraisal',
+    'Las Vegas real estate commission',
+    'Las Vegas home selling timeline',
+    'Las Vegas home selling costs',
+    'Las Vegas home selling checklist',
+    'Las Vegas home selling strategy',
+    'Las Vegas home selling preparation',
   ],
+  openGraph: {
+    title: 'Sell Your Las Vegas Home | Dr. Jan Duffy Real Estate | 702-222-1964',
+    description: 'Sell your Las Vegas home with Dr. Jan Duffy. Expert guidance, market analysis, and maximum value for your property.',
+    url: 'https://drjanetduffy.com/sell',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/sell',
+  },
 };
 
 const SellPage = () => {

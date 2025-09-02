@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import RealScoutListings from '@/components/RealScoutListings';
 
 export const metadata: Metadata = {
-  title: 'About Dr. Jan Duffy | Las Vegas Real Estate Expert',
+  title: 'About Dr. Jan Duffy | Las Vegas Real Estate Expert | 20+ Years Experience',
   description:
-    'Learn about Dr. Jan Duffy, Las Vegas real estate expert with 20+ years of experience helping families find their dream homes.',
+    'Meet Dr. Jan Duffy, Las Vegas native and real estate expert with 20+ years experience. 500+ happy clients helped find homes in Summerlin, Henderson, Green Valley. Call 702-222-1964.',
   keywords: [
     'Dr. Jan Duffy',
     'Las Vegas real estate agent',
@@ -14,7 +14,25 @@ export const metadata: Metadata = {
     'Las Vegas neighborhoods',
     'home buying expert',
     'home selling expert',
+    'Las Vegas native',
+    'Summerlin real estate',
+    'Henderson real estate',
+    'Green Valley real estate',
+    'Las Vegas real estate testimonials',
+    'Las Vegas real estate reviews',
+    'Las Vegas real estate success stories',
+    'Las Vegas real estate agent bio',
+    'Las Vegas real estate credentials',
   ],
+  openGraph: {
+    title: 'About Dr. Jan Duffy | Las Vegas Real Estate Expert | 20+ Years Experience',
+    description: 'Meet Dr. Jan Duffy, Las Vegas native and real estate expert with 20+ years experience. 500+ happy clients helped find homes.',
+    url: 'https://drjanetduffy.com/about',
+    type: 'profile',
+  },
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 const AboutPage = () => {
