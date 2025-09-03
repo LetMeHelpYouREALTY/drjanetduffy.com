@@ -1,7 +1,7 @@
-import { useFollowUpBoss, useFollowUpBossTracking } from '../hooks/useFollowUpBoss';
 import { motion } from 'framer-motion';
 import { AlertCircle, CheckCircle, Mail, MapPin, MessageSquare, Phone, User } from 'lucide-react';
 import { useState } from 'react';
+import { useFollowUpBoss, useFollowUpBossTracking } from '../hooks/useFollowUpBoss';
 
 interface FollowUpBossContactFormProps {
   title?: string;

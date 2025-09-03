@@ -1,7 +1,7 @@
-import { type PropertyAnalysis, analyzeProperty } from '../lib/openrouter';
 import { motion } from 'framer-motion';
 import { BarChart3, Clock, DollarSign, Home, MapPin, Sparkles, TrendingUp } from 'lucide-react';
 import { useState } from 'react';
+import { type PropertyAnalysis, analyzeProperty } from '../lib/openrouter';
 
 interface PropertyDetails {
   address: string;

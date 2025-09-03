@@ -1,5 +1,5 @@
-import type { FUBContact, FUBEvent, FUBProperty } from '../lib/followupboss';
 import { useCallback, useEffect, useState } from 'react';
+import type { FUBContact, FUBEvent, FUBProperty } from '../lib/followupboss';
 
 interface UseFollowUpBossReturn {
   // Contact operations
