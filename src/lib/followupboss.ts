@@ -1,4 +1,4 @@
-import axios, { type AxiosInstance, type AxiosResponse } from 'axios';
+import axios, { type AxiosInstance } from 'axios';
 
 // Follow Up Boss API Configuration
 const FUB_API_BASE_URL = 'https://api.followupboss.com/v1';
@@ -373,12 +373,12 @@ export const createWebsiteLead = async (formData: {
     firstName: formData.firstName,
     lastName: formData.lastName,
     email: formData.email,
-    phone: formData.phone,
+    ...(formData.phone && { phone: formData.phone }),
     source: formData.source || 'Website Contact Form',
-    notes: formData.message,
+    ...(formData.message && { notes: formData.message }),
     tags: ['Website Lead', 'Dr. Jan Duffy', 'Las Vegas Real Estate'],
     customFields: {
-      propertyInterest: formData.propertyInterest,
+      ...(formData.propertyInterest && { propertyInterest: formData.propertyInterest }),
       leadSource: 'Website',
       timestamp: new Date().toISOString(),
     },

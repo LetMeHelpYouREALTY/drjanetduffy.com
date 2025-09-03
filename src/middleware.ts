@@ -157,7 +157,7 @@ function clearRelatedCache(pathname: string): void {
   const keysToDelete: string[] = [];
 
   for (const key of cacheStore.keys()) {
-    if (key.includes(pathname) || pathname.includes(key.split('?')[0])) {
+    if (key.includes(pathname) || pathname.includes(key.split('?')[0] || '')) {
       keysToDelete.push(key);
     }
   }

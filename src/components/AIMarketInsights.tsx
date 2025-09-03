@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { BarChart3, DollarSign, MapPin, RefreshCw, Sparkles, TrendingUp } from 'lucide-react';
+import { BarChart3, RefreshCw, Sparkles, TrendingUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const AIMarketInsights = () => {

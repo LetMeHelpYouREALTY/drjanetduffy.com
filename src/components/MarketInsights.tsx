@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, DollarSign, Home, MapPin, TrendingDown, TrendingUp } from 'lucide-react';
+import { Calendar, DollarSign, Home, TrendingDown, TrendingUp } from 'lucide-react';
 import RealScoutListings from './RealScoutListings';
 
 const MarketInsights = () => {
