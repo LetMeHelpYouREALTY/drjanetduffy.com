@@ -1,65 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --rs-listing-divider-color: rgb(101, 141, 172);
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-yellow-500 ring-offset-2;
+  }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Custom RealScout Styling */
-realscout-office-listings {
-  --rs-listing-divider-color: rgb(71, 85, 105);
-  --rs-primary-color: #1a2332;
-  --rs-secondary-color: #d4af37;
-  --rs-accent-color: #0ea5e9;
-  --rs-text-color: #374151;
-  --rs-background-color: #ffffff;
-  --rs-border-color: #e5e7eb;
-  --rs-hover-color: #f9fafb;
-  --rs-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --rs-border-radius: 0.5rem;
-  --rs-font-family: "Inter", system-ui, sans-serif;
-}
-
-/* Custom component styles */
+/* Component styles */
 @layer components {
+  /* Button Components */
   .btn-primary {
     @apply bg-luxury-gold text-luxury-navy font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 active:scale-95;
-    min-height: 44px; /* Better touch target */
+    min-height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +31,7 @@ realscout-office-listings {
 
   .btn-secondary {
     @apply bg-transparent border-2 border-luxury-gold text-luxury-gold font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold hover:text-luxury-navy focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 active:scale-95;
-    min-height: 44px; /* Better touch target */
+    min-height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -75,42 +39,26 @@ realscout-office-listings {
 
   .btn-phone {
     @apply bg-luxury-gold text-luxury-navy font-bold px-6 py-4 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 active:scale-95;
-    min-height: 48px; /* Larger touch target for phone numbers */
+    min-height: 48px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 1.1rem;
-    box-shadow: var(--shadow-lg);
+  }
+
+  /* Container Components */
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .section-padding {
-    @apply py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8;
+    @apply py-16 lg:py-24;
   }
 
-  .container-max {
-    @apply max-w-7xl mx-auto;
-  }
-
-  .text-gradient {
-    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent;
-  }
-
-  .card-shadow {
-    @apply bg-luxury-pearl rounded-xl shadow-md transition-all duration-200 hover:shadow-lg border border-luxury-platinum;
-  }
-
-  .card-hover {
-    @apply card-shadow hover:shadow-xl hover:-translate-y-1;
-  }
-
-  .luxury-border {
-    @apply border-2 border-luxury-gold;
-  }
-
-  /* Form Styles */
+  /* Form Components */
   .form-input {
     @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 bg-luxury-pearl;
-    min-height: 44px; /* Better touch target */
+    min-height: 44px;
   }
 
   .form-textarea {
@@ -118,17 +66,7 @@ realscout-office-listings {
     min-height: 120px;
   }
 
-  /* Phone Number Styling */
-  .phone-number {
-    @apply text-luxury-gold font-bold text-lg md:text-xl hover:text-luxury-gold/80 transition-colors duration-200;
-    text-decoration: none;
-  }
-
-  .phone-number:hover {
-    text-decoration: underline;
-  }
-
-  /* Mobile Navigation */
+  /* Navigation Components */
   .mobile-nav-toggle {
     @apply p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2;
     min-height: 44px;
@@ -136,69 +74,84 @@ realscout-office-listings {
   }
 
   .mobile-nav-link {
-    @apply block px-4 py-3 text-lg font-medium text-luxury-navy hover:bg-luxury-gold/10 hover:text-luxury-gold transition-all duration-200;
+    @apply flex items-center px-4 py-3 text-luxury-navy hover:bg-luxury-gold/10 hover:text-luxury-gold transition-colors duration-200 rounded-lg;
     min-height: 44px;
-    display: flex;
-    align-items: center;
   }
 
-  /* RealScout Styling */
-  .realscout-container {
-    @apply bg-luxury-pearl rounded-xl shadow-lg border border-luxury-platinum p-6;
+  /* Phone Number Styling */
+  .phone-number {
+    @apply text-luxury-gold font-semibold hover:text-luxury-gold-dark transition-colors duration-200;
+    text-decoration: none;
   }
 
-  .realscout-loading {
-    @apply flex items-center justify-center py-12;
+  .phone-number:hover {
+    text-decoration: underline;
   }
 
-  .realscout-loading::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f3f4f6;
-    border-top: 4px solid #d4af37;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  /* Card Components */
+  .card {
+    @apply bg-white rounded-xl shadow-lg border border-luxury-platinum overflow-hidden;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Text Components */
+  .text-gradient {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent;
+  }
+
+  .heading-primary {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-luxury-navy;
+  }
+
+  .heading-secondary {
+    @apply text-3xl md:text-4xl font-bold text-luxury-navy;
+  }
+
+  .heading-tertiary {
+    @apply text-2xl md:text-3xl font-semibold text-luxury-navy;
+  }
+
+  /* Background Components */
+  .bg-luxury-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(26, 35, 50, 0.1) 0%, transparent 50%);
+  }
+
+  /* Animation Components */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up-delay {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+  }
+
+  .animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.6s ease-out 0.4s both;
   }
 }
 
-/* Animation utilities */
+/* Utility styles */
 @layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-in-out;
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .animate-slide-up {
-    animation: slideUp 0.5s ease-out;
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
-  .animate-pulse-gold {
-    animation: pulseGold 2s infinite;
+  .backdrop-blur-xs {
+    backdrop-filter: blur(2px);
   }
 }
 
 /* Keyframe animations */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -209,91 +162,32 @@ realscout-office-listings {
   }
 }
 
-@keyframes pulseGold {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
-  }
-}
-
-/* Responsive typography */
+/* Responsive utilities */
 @media (max-width: 640px) {
-  .hero-title {
-    font-size: 2.5rem;
-    line-height: 1.1;
+  .container-max {
+    @apply px-4;
   }
-}
-
-@media (min-width: 641px) {
-  .hero-title {
-    font-size: 3.5rem;
-    line-height: 1.1;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-title {
-    font-size: 4.5rem;
-    line-height: 1.1;
-  }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ffd700;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #b8860b;
-}
-
-/* Focus styles for accessibility */
-*:focus {
-  outline: 2px solid #d4af37;
-  outline-offset: 2px;
-}
-
-/* Mobile Optimizations */
-@media (max-width: 768px) {
-  .btn-primary,
-  .btn-secondary,
-  .btn-phone {
-    @apply w-full justify-center;
-  }
-
-  .phone-number {
-    @apply text-xl;
-  }
-
+  
   .section-padding {
-    @apply py-8;
+    @apply py-12;
   }
-
-  .mobile-nav-link {
-    @apply text-base;
+  
+  .heading-primary {
+    @apply text-3xl;
   }
-}
-
-/* Focus Styles for Accessibility */
-.focus-visible {
-  @apply focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2;
+  
+  .heading-secondary {
+    @apply text-2xl;
+  }
 }
 
 /* Print styles */
 @media print {
   .no-print {
     display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
   }
 }
