@@ -58,7 +58,7 @@ realscout-office-listings {
 /* Custom component styles */
 @layer components {
   .btn-primary {
-    @apply bg-luxury-gold text-luxury-navy font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2 active:scale-95;
+    @apply bg-luxury-gold text-luxury-navy font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 active:scale-95;
     min-height: 44px; /* Better touch target */
     display: inline-flex;
     align-items: center;
@@ -66,7 +66,7 @@ realscout-office-listings {
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-luxury-gold text-luxury-gold font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold hover:text-luxury-navy focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2 active:scale-95;
+    @apply bg-transparent border-2 border-luxury-gold text-luxury-gold font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-luxury-gold hover:text-luxury-navy focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 active:scale-95;
     min-height: 44px; /* Better touch target */
     display: inline-flex;
     align-items: center;
@@ -74,7 +74,7 @@ realscout-office-listings {
   }
 
   .btn-phone {
-    @apply bg-luxury-gold text-luxury-navy font-bold px-6 py-4 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2 active:scale-95;
+    @apply bg-luxury-gold text-luxury-navy font-bold px-6 py-4 rounded-lg transition-all duration-200 hover:bg-luxury-gold/90 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 active:scale-95;
     min-height: 48px; /* Larger touch target for phone numbers */
     display: inline-flex;
     align-items: center;
@@ -109,12 +109,12 @@ realscout-office-listings {
 
   /* Form Styles */
   .form-input {
-    @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all duration-200 bg-luxury-pearl;
+    @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 bg-luxury-pearl;
     min-height: 44px; /* Better touch target */
   }
 
   .form-textarea {
-    @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all duration-200 resize-none bg-luxury-pearl;
+    @apply w-full px-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 resize-none bg-luxury-pearl;
     min-height: 120px;
   }
 
@@ -130,7 +130,7 @@ realscout-office-listings {
 
   /* Mobile Navigation */
   .mobile-nav-toggle {
-    @apply p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2;
+    @apply p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2;
     min-height: 44px;
     min-width: 44px;
   }
@@ -288,7 +288,7 @@ realscout-office-listings {
 
 /* Focus Styles for Accessibility */
 .focus-visible {
-  @apply focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:ring-offset-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2;
 }
 
 /* Print styles */

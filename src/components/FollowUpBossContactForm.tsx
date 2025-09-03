@@ -192,7 +192,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
                 value={formData.firstName}
                 onChange={(e) => handleInputChange('firstName', e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent bg-white"
+                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent bg-white"
                 placeholder="John"
               />
             </div>
@@ -210,7 +210,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
                 value={formData.lastName}
                 onChange={(e) => handleInputChange('lastName', e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent bg-white"
+                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent bg-white"
                 placeholder="Doe"
               />
             </div>
@@ -230,7 +230,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent bg-white"
+                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent bg-white"
                 placeholder="john@example.com"
               />
             </div>
@@ -247,7 +247,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => handleInputChange('phone', e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent bg-white"
+                className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent bg-white"
                 placeholder="(702) 555-0123"
               />
             </div>
@@ -295,7 +295,7 @@ const FollowUpBossContactForm: React.FC<FollowUpBossContactFormProps> = ({
               value={formData.message}
               onChange={(e) => handleInputChange('message', e.target.value)}
               rows={4}
-              className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent bg-white resize-none"
+              className="w-full pl-10 pr-4 py-3 border border-luxury-platinum rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent bg-white resize-none"
               placeholder="Tell us about your real estate needs..."
             />
           </div>

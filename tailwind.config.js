@@ -88,11 +88,7 @@ export default {
         'vegas-gradient': 'linear-gradient(135deg, #d4af37 0%, #b8860b 100%)',
         'blue-gradient': 'linear-gradient(135deg, #1a2332 0%, #0ea5e9 100%)',
       },
-      ringColor: {
-        'luxury-gold': '#d4af37',
-        'luxury-navy': '#1a2332',
-        'vegas-gold': '#d4af37',
-      },
+
     },
   },
   plugins: [],

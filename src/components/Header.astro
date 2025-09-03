@@ -148,7 +148,7 @@
 
   mobileMenuButton?.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
-    
+
     if (isMenuOpen) {
       mobileMenu?.classList.remove('hidden');
       menuIcon?.classList.add('hidden');
@@ -173,7 +173,7 @@
 
   // Header scroll effect
   let isScrolled = false;
-  
+
   const handleScroll = () => {
     const scrolled = window.scrollY > 50;
     if (scrolled !== isScrolled) {
