@@ -7,11 +7,11 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply font-sans antialiased;
   }
-  
+
   /* Focus styles for accessibility */
   *:focus-visible {
     @apply outline-none ring-2 ring-yellow-500 ring-offset-2;
@@ -116,9 +116,11 @@
 
   /* Background Components */
   .bg-luxury-pattern {
-    background-image: 
-      radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(26, 35, 50, 0.1) 0%, transparent 50%);
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        rgba(212, 175, 55, 0.1) 0%,
+        transparent 50%
+      ), radial-gradient(circle at 75% 75%, rgba(26, 35, 50, 0.1) 0%, transparent 50%);
   }
 
   /* Animation Components */
@@ -167,15 +169,15 @@
   .container-max {
     @apply px-4;
   }
-  
+
   .section-padding {
     @apply py-12;
   }
-  
+
   .heading-primary {
     @apply text-3xl;
   }
-  
+
   .heading-secondary {
     @apply text-2xl;
   }
@@ -186,7 +188,7 @@
   .no-print {
     display: none !important;
   }
-  
+
   .print-only {
     display: block !important;
   }
