@@ -63,11 +63,7 @@
       "permanent": true
     }
   ],
-  "functions": {
-    "src/pages/api/**/*.ts": {
-      "maxDuration": 10
-    }
-  },
+
   "env": {
     "NODE_ENV": "production"
   },
