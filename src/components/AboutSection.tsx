@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import { Award, CheckCircle, Heart, Home, Quote, Users } from 'lucide-react';
 

@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import { BarChart3, DollarSign, MapPin, RefreshCw, Sparkles, TrendingUp } from 'lucide-react';
 import { useEffect, useState } from 'react';

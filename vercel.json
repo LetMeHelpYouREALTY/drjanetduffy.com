@@ -1,12 +1,6 @@
 {
   "version": 2,
   "name": "drjanetduffy.com",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "routes": [
     {
       "src": "/sitemap.xml",
@@ -84,7 +78,7 @@
     }
   ],
   "functions": {
-    "src/app/api/**/*.ts": {
+    "src/pages/api/**/*.ts": {
       "maxDuration": 10
     }
   },
@@ -93,7 +87,7 @@
   },
   "build": {
     "env": {
-      "NEXT_TELEMETRY_DISABLED": "1"
+      "NODE_ENV": "production"
     }
   }
 }

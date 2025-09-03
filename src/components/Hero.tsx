@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, Phone, Star, TrendingUp } from 'lucide-react';
 

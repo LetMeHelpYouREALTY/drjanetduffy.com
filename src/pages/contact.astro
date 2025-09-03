@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactSection from '../components/ContactSection.tsx';
+import RealScoutListings from '../components/RealScoutListings.tsx';
+---
+
+<Layout
+  title="Contact Dr. Jan Duffy | Las Vegas Real Estate Expert | 702-222-1964"
+  description="Contact Dr. Jan Duffy for all your Las Vegas real estate needs. Free consultation for buying or selling homes. Call 702-222-1964 or send a message today."
+  canonical="/contact"
+>
+  <Header />
+  <main class="pt-16">
+    <ContactSection client:load />
+
+    <!-- RealScout Listings -->
+    <section class="section-padding bg-gray-50">
+      <RealScoutListings client:load />
+    </section>
+  </main>
+  <Footer />
+</Layout>

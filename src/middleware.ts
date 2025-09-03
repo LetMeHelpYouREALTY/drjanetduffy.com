@@ -1,5 +1,4 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import type { MiddlewareHandler } from 'astro';
 
 // Cache configuration
 const CACHE_DURATION = 300; // 5 minutes
@@ -15,41 +14,43 @@ const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
 // Cache store for API responses
 const cacheStore = new Map<string, { data: any; timestamp: number; ttl: number }>();
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-  const ip = request.ip || request.headers.get('x-forwarded-for') || 'unknown';
+export const onRequest: MiddlewareHandler = async (context, next) => {
+  const { url, request } = context;
+  const pathname = new URL(url).pathname;
+  const ip =
+    request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
 
   // Handle Follow Up Boss API routes
   if (pathname.startsWith('/api/followupboss/')) {
-    return handleFollowUpBossAPI(request, ip);
+    return handleFollowUpBossAPI(context, ip);
   }
 
   // Handle static assets with long-term caching
-  if (pathname.startsWith('/_next/static/') || pathname.startsWith('/images/')) {
-    return NextResponse.next({
-      headers: {
-        'Cache-Control': 'public, max-age=31536000, immutable',
-      },
-    });
+  if (pathname.startsWith('/_astro/') || pathname.startsWith('/images/')) {
+    const response = await next();
+    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+    return response;
   }
 
   // Handle other API routes with basic rate limiting
   if (pathname.startsWith('/api/')) {
-    return handleAPIRateLimit(request, ip);
+    return handleAPIRateLimit(context, ip);
   }
 
-  return NextResponse.next();
-}
+  return next();
+};
 
-function handleFollowUpBossAPI(request: NextRequest, ip: string) {
-  const { pathname, searchParams } = request.nextUrl;
+async function handleFollowUpBossAPI(context: any, ip: string) {
+  const { url, request } = context;
+  const pathname = new URL(url).pathname;
+  const searchParams = new URL(url).searchParams;
   const method = request.method;
 
   // Rate limiting for Follow Up Boss API
   if (!checkRateLimit(ip)) {
-    return NextResponse.json(
-      { success: false, message: 'Rate limit exceeded. Please try again later.' },
-      { status: 429 }
+    return new Response(
+      JSON.stringify({ success: false, message: 'Rate limit exceeded. Please try again later.' }),
+      { status: 429, headers: { 'Content-Type': 'application/json' } }
     );
   }
 
@@ -59,14 +60,16 @@ function handleFollowUpBossAPI(request: NextRequest, ip: string) {
     const cached = getFromCache(cacheKey);
 
     if (cached) {
-      const response = NextResponse.json(cached);
+      const response = new Response(JSON.stringify(cached), {
+        headers: { 'Content-Type': 'application/json' },
+      });
       response.headers.set('X-Cache', 'HIT');
       response.headers.set('X-Cache-Timestamp', new Date(cached.timestamp).toISOString());
       return response;
     }
 
     // Add cache headers for client-side caching
-    const response = NextResponse.next();
+    const response = await context.next();
     response.headers.set(
       'Cache-Control',
       `public, s-maxage=${CACHE_DURATION}, stale-while-revalidate=${STALE_WHILE_REVALIDATE}`
@@ -77,7 +80,7 @@ function handleFollowUpBossAPI(request: NextRequest, ip: string) {
 
   // Handle POST/PUT/DELETE requests
   if (['POST', 'PUT', 'DELETE'].includes(method)) {
-    const response = NextResponse.next();
+    const response = await context.next();
 
     // Clear related cache entries
     clearRelatedCache(pathname);
@@ -89,23 +92,22 @@ function handleFollowUpBossAPI(request: NextRequest, ip: string) {
     return response;
   }
 
-  return NextResponse.next();
+  return context.next();
 }
 
-function handleAPIRateLimit(request: NextRequest, ip: string) {
+async function handleAPIRateLimit(context: any, ip: string) {
   if (!checkRateLimit(ip)) {
-    return NextResponse.json(
-      { success: false, message: 'Rate limit exceeded. Please try again later.' },
-      { status: 429 }
+    return new Response(
+      JSON.stringify({ success: false, message: 'Rate limit exceeded. Please try again later.' }),
+      { status: 429, headers: { 'Content-Type': 'application/json' } }
     );
   }
 
-  return NextResponse.next();
+  return context.next();
 }
 
 function checkRateLimit(ip: string): boolean {
   const now = Date.now();
-  const windowStart = now - RATE_LIMIT_WINDOW * 1000;
 
   // Clean up expired entries
   for (const [key, value] of rateLimitStore.entries()) {
@@ -165,7 +167,3 @@ function clearRelatedCache(pathname: string): void {
 
 // Export cache functions for use in API routes
 export { setCache, getFromCache, clearRelatedCache };
-
-export const config = {
-  matcher: ['/api/:path*', '/_next/static/:path*', '/images/:path*'],
-};

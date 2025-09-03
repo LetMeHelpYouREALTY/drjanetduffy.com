@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RealScoutListings from '../components/RealScoutListings.tsx';
+
+const services = [
+  {
+    icon: 'Search',
+    title: 'Property Search',
+    description: 'Access to all MLS listings and off-market properties',
+  },
+  {
+    icon: 'Home',
+    title: 'Home Tours',
+    description: 'Personalized property tours with expert insights',
+  },
+  {
+    icon: 'MapPin',
+    title: 'Neighborhood Analysis',
+    description: 'Detailed information about schools, amenities, and community',
+  },
+  {
+    icon: 'DollarSign',
+    title: 'Negotiation',
+    description: 'Expert negotiation to get you the best deal',
+  },
+];
+---
+
+<Layout
+  title="Buy a Home in Las Vegas | Dr. Jan Duffy Real Estate | 702-222-1964"
+  description="Find your dream home in Las Vegas with Dr. Jan Duffy. Expert home buying guidance in Summerlin, Henderson, Green Valley. Browse MLS listings. Call 702-222-1964."
+  canonical="/buy"
+>
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-luxury-navy to-luxury-royal-blue text-white">
+      <div class="container-max">
+        <div class="text-center max-w-4xl mx-auto">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Find Your Dream Home in Las Vegas
+          </h1>
+          <p class="text-xl text-gray-200 mb-8 leading-relaxed">
+            With 20+ years of Las Vegas real estate experience, I'll help you find the perfect
+            home in the perfect neighborhood. Let's start your journey today.
+          </p>
+          <a href="tel:702-222-1964" class="btn-primary inline-flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span>Call 702-222-1964</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section-padding bg-white">
+      <div class="container-max">
+        <h2 class="text-3xl md:text-4xl font-bold text-luxury-navy text-center mb-12">
+          How I Help You Buy
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service) => (
+            <div class="text-center">
+              <div class="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                {service.icon === 'Search' && (
+                  <svg class="w-8 h-8 text-luxury-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                )}
+                {service.icon === 'Home' && (
+                  <svg class="w-8 h-8 text-luxury-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                  </svg>
+                )}
+                {service.icon === 'MapPin' && (
+                  <svg class="w-8 h-8 text-luxury-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                )}
+                {service.icon === 'DollarSign' && (
+                  <svg class="w-8 h-8 text-luxury-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                  </svg>
+                )}
+              </div>
+              <h3 class="text-xl font-semibold text-luxury-navy mb-3">
+                {service.title}
+              </h3>
+              <p class="text-gray-600 leading-relaxed">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings -->
+    <section class="section-padding bg-gray-50">
+      <RealScoutListings client:load />
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-luxury-navy to-luxury-royal-blue text-white">
+      <div class="container-max text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Home Search?</h2>
+        <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Let's discuss your needs, preferences, and budget to find the perfect Las Vegas home for
+          you and your family.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:702-222-1964" class="btn-primary inline-flex items-center justify-center">
+            Call 702-222-1964
+          </a>
+          <a href="/contact" class="btn-secondary inline-flex items-center justify-center">
+            Schedule Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

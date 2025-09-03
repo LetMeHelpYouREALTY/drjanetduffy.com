@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import { Calendar, DollarSign, Home, MapPin, TrendingDown, TrendingUp } from 'lucide-react';
 import RealScoutListings from './RealScoutListings';

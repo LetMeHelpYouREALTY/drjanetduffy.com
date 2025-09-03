@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.tsx';
+import AboutSection from '../components/AboutSection.tsx';
+import ContactSection from '../components/ContactSection.tsx';
+import MarketInsights from '../components/MarketInsights.tsx';
+import RealScoutListings from '../components/RealScoutListings.tsx';
+---
+
+<Layout
+  title="Dr. Jan Duffy | Las Vegas Real Estate Expert 🎰 | 702-222-1964"
+  description="Las Vegas real estate expert Dr. Jan Duffy with 20+ years experience. Find your dream home in Summerlin, Henderson, Green Valley. Call 702-222-1964 for expert guidance."
+>
+  <Header />
+  <main class="min-h-screen">
+    <Hero client:load />
+    <section id="listings" class="section-padding bg-white">
+      <RealScoutListings client:load />
+    </section>
+    <AboutSection client:load />
+    <MarketInsights client:load />
+    <ContactSection client:load />
+  </main>
+  <Footer />
+</Layout>

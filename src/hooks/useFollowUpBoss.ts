@@ -1,5 +1,3 @@
-'use client';
-
 import type { FUBContact, FUBEvent, FUBProperty } from '@/lib/followupboss';
 import { useCallback, useEffect, useState } from 'react';
 
