@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-  ],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
       colors: {
@@ -89,6 +87,11 @@ export default {
         // Keep original gradients for backward compatibility
         'vegas-gradient': 'linear-gradient(135deg, #d4af37 0%, #b8860b 100%)',
         'blue-gradient': 'linear-gradient(135deg, #1a2332 0%, #0ea5e9 100%)',
+      },
+      ringColor: {
+        'luxury-gold': '#d4af37',
+        'luxury-navy': '#1a2332',
+        'vegas-gold': '#d4af37',
       },
     },
   },
