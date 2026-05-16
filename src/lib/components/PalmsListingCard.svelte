@@ -20,6 +20,14 @@
 <div class="palms-card">
   <div class="gold-bar"></div>
 
+  <!-- Listing photo -->
+  <img
+    src="https://cdn.propertypanorama.com/las/2782527/0.jpg"
+    alt="4381 W Flamingo Rd #822 · Palms Place Las Vegas"
+    class="listing-photo"
+    on:error={(e) => { e.currentTarget.style.display = 'none' }}
+  />
+
   <div class="badge-row">
     <span class="featured-badge">✦ Featured Listing</span>
     <span class="agent-name">Dr. Jan Duffy · BHHS Nevada Properties</span>
@@ -40,7 +48,7 @@
   <div class="cta-row">
     <a href="tel:702-222-1964" class="cta-primary">📞 Call/Text 702-222-1964</a>
     <a
-      href="https://drjanduffy.com/property/4381-w-flamingo-rd-822-las-vegas-nv-89103"
+      href="https://www.luxevegasliving.com/idx/4381-w-flamingo-rd-las-vegas-nv-89103/1801545223_spid/"
       target="_blank"
       rel="noopener noreferrer"
       class="cta-link"
@@ -62,6 +70,14 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
+  .listing-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+  }
   .gold-bar {
     position: absolute;
     top: 0;
