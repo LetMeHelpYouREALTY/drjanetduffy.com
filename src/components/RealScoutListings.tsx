@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import PalmsListingCard from './PalmsListingCard';
 
 declare global {
   namespace JSX {
@@ -126,6 +127,8 @@ const RealScoutListings: React.FC<RealScoutListingsProps> = ({ className = '' })
             />
           )}
         </div>
+
+        <PalmsListingCard />
 
         {/* Call to Action */}
         <div className="text-center mt-8">
