@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
+	import PalmsListingCard from './PalmsListingCard.svelte';
 
 	let mounted = $state(false);
 
@@ -48,6 +49,7 @@
 			price-min={priceMin}
 		></realscout-office-listings>
 	{/if}
+	<PalmsListingCard />
 {:else}
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 		{#each Array(6) as _}
