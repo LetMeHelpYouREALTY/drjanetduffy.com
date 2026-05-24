@@ -6,6 +6,15 @@
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
+@layer base {
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @layer components {
   .container-premium {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
@@ -18,10 +27,49 @@
   .font-display {
     font-family: var(--font-playfair), Georgia, serif;
   }
+
+  .realscout-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    contain: layout style paint;
+    position: relative;
+  }
 }
 
+/* RealScout office listings — grid + divider (legacy site parity) */
 realscout-office-listings {
   --rs-listing-divider-color: #0e64c8;
+  --rs-grid-columns: 3;
+  --rs-card-hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
   width: 100%;
+  max-width: 100%;
   display: block;
+  box-sizing: border-box;
+}
+
+realscout-simple-search {
+  --rs-ss-font-primary-color: #1e293b;
+  --rs-ss-searchbar-border-color: #e2e8f0;
+  --rs-ss-widget-width: 100% !important;
+  --rs-ss-border-radius: 9999px;
+  width: 100%;
+  max-width: 36rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  realscout-office-listings {
+    --rs-grid-columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  realscout-office-listings {
+    --rs-grid-columns: 1;
+  }
+
+  realscout-simple-search {
+    max-width: 100%;
+  }
 }

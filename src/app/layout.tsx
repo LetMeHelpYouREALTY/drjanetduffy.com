@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 import { CalendlyRoot } from '@/components/calendly/CalendlyRoot';
 import { GlobalListingsSection } from '@/components/realscout/GlobalListingsSection';
+import { RealScoutImageConstraints } from '@/components/realscout/RealScoutImageConstraints';
 import { ScheduleCTA } from '@/components/sections/ScheduleCTA';
 import { siteConfig } from '@/config/site.config';
 import { globalSchemaGraph } from '@/lib/schema';
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GlobalListingsSection />
         <Footer />
         <CalendlyRoot />
+        <RealScoutImageConstraints />
 
         <Script
           src="https://em.realscout.com/widgets/realscout-web-components.umd.js"

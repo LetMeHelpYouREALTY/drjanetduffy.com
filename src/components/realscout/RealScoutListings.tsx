@@ -37,7 +37,7 @@ export function RealScoutListings({
           )}
         </div>
       )}
-      <div dangerouslySetInnerHTML={{ __html: widgetHtml }} />
+      <div className="realscout-wrapper" dangerouslySetInnerHTML={{ __html: widgetHtml }} />
     </div>
   );
 }
