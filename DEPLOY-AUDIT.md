@@ -72,7 +72,9 @@ vercel --prod
 2. Validate fix on the **Redirect error** report.
 3. Request indexing for key URLs if needed.
 
-**Vercel dashboard:** [Domains](https://vercel.com/janet-duffys-projects/drjanetduffy.com/settings/domains) — set **www.drjanetduffy.com** as primary; `drjanetduffy.com` should redirect to www (not serve duplicate content).
+**Vercel dashboard:** [Domains](https://vercel.com/janet-duffys-projects/drjanetduffy.com/settings/domains) — set **www.drjanetduffy.com** as primary. If apex still returns **307**, change the domain redirect to **Permanent (308)** in the UI (Vercel’s default domain redirect can override `vercel.json`).
+
+**Cloudflare:** Nameservers point to Cloudflare (`amit.ns.cloudflare.com`). Use **DNS only (gray cloud)** on A/CNAME records to Vercel — no Cloudflare “Forwarding URL” or duplicate apex→www rules (those cause redirect chains with Vercel).
 
 ## URLs
 

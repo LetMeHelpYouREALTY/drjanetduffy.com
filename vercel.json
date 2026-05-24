@@ -7,6 +7,7 @@
       "source": "/:path*",
       "has": [{ "type": "host", "value": "drjanetduffy.com" }],
       "destination": "https://www.drjanetduffy.com/:path*",
+      "permanent": true,
       "statusCode": 308
     }
   ],
