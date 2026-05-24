@@ -22,7 +22,7 @@ export const siteConfig = {
   },
   hours: 'Mo-Su 08:00-20:00',
   googleAnalyticsId: 'G-CPD9RR8GTX',
-  ogImage: '/og-image.png',
+  ogImage: '/favicon.png',
 } as const;
 
 export type SiteConfig = typeof siteConfig;

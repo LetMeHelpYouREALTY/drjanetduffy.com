@@ -14,6 +14,7 @@ export const globalSchemaGraph = [
     email: siteConfig.email,
     url: siteConfig.url,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
+    worksFor: { '@id': `${siteConfig.url}#business` },
     specialty: [
       'Las Vegas Real Estate',
       'Summerlin Luxury',
@@ -52,6 +53,11 @@ export const globalSchemaGraph = [
     '@type': 'LocalBusiness',
     '@id': `${siteConfig.url}#business`,
     name: siteConfig.legalName,
+    parentOrganization: {
+      '@type': 'Organization',
+      name: siteConfig.brokerage,
+      url: siteConfig.brokerageUrl,
+    },
     alternateName: `${siteConfig.alternateName} - Las Vegas Real Estate Expert`,
     telephone: siteConfig.phone,
     email: siteConfig.email,

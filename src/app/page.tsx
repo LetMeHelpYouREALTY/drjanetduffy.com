@@ -2,14 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CalendlyEmbed } from '@/components/calendly/CalendlyEmbed';
 import { RealScoutListings } from '@/components/realscout/RealScoutListings';
+import { pageMetadata } from '@/lib/metadata';
 import { siteConfig } from '@/config/site.config';
 
-export const metadata: Metadata = {
-  title: 'Las Vegas Luxury & Relocation REALTOR | Dr. Janet Duffy',
-  description:
-    'Dr. Janet Duffy — Las Vegas REALTOR® serving Summerlin, Henderson, Skye Canyon, and the valley. Buy, sell, or relocate. Call (702) 766-7668.',
-  alternates: { canonical: siteConfig.url },
-};
+const homeTitle = 'Las Vegas Luxury & Relocation REALTOR | Dr. Janet Duffy';
+const homeDescription =
+  'Dr. Janet Duffy — Las Vegas REALTOR® serving Summerlin, Henderson, Skye Canyon, and the valley. Buy, sell, or relocate. Call (702) 766-7668.';
+
+export const metadata: Metadata = pageMetadata({
+  title: homeTitle,
+  description: homeDescription,
+  path: '',
+});
 
 const faqs = [
   {

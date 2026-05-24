@@ -9,6 +9,7 @@ import { GlobalListingsSection } from '@/components/realscout/GlobalListingsSect
 import { RealScoutImageConstraints } from '@/components/realscout/RealScoutImageConstraints';
 import { ScheduleCTA } from '@/components/sections/ScheduleCTA';
 import { siteConfig } from '@/config/site.config';
+import { rootLayoutMetadata } from '@/lib/metadata';
 import { globalSchemaGraph } from '@/lib/schema';
 import './globals.css';
 
@@ -18,14 +19,7 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.title,
-    template: `%s | ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-};
+export const metadata: Metadata = rootLayoutMetadata;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
