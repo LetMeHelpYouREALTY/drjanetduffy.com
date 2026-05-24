@@ -11,16 +11,8 @@ const csp = [
 ].join('; ');
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'drjanetduffy.com' }],
-        destination: 'https://www.drjanetduffy.com/:path*',
-        permanent: true,
-      },
-    ];
-  },
+  // Apex → www redirects live in vercel.json (308 at the edge). Do not duplicate here —
+  // double redirects caused GSC "Redirect error" (307 chains on non-www URLs).
   async headers() {
     return [
       {

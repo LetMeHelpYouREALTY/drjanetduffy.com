@@ -5,15 +5,9 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [
-        {
-          "type": "header",
-          "key": "host",
-          "value": "drjanetduffy.com"
-        }
-      ],
+      "has": [{ "type": "host", "value": "drjanetduffy.com" }],
       "destination": "https://www.drjanetduffy.com/:path*",
-      "permanent": true
+      "statusCode": 308
     }
   ],
   "headers": [

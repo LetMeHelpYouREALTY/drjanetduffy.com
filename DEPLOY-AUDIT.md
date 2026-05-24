@@ -56,6 +56,24 @@ vercel link --project drjanetduffy.com --scope janet-duffys-projects --yes
 vercel --prod
 ```
 
+## Google Search Console — Redirect error (fixed 2026-05-24)
+
+**Cause:** Duplicate apex → www rules in `next.config.ts` and `vercel.json` produced **307** hop(s) on `https://drjanetduffy.com/*` and multi-step chains from `http://drjanetduffy.com/`.
+
+**Fix:**
+- Single **308** redirect in `vercel.json` (`statusCode: 308` → `https://www.drjanetduffy.com/:path*`)
+- Removed `redirects()` from `next.config.ts`
+- Added `src/middleware.ts` as a 308 failsafe for bare `drjanetduffy.com`
+- Removed root layout `canonical: '/'` (pages keep full www canonical URLs)
+- Removed static `public/robots.txt` (use `src/app/robots.ts` only)
+
+**After deploy — in Search Console:**
+1. URL Inspection → test `https://www.drjanetduffy.com/property-types/luxury-homes` → should be **200**, indexed.
+2. Validate fix on the **Redirect error** report.
+3. Request indexing for key URLs if needed.
+
+**Vercel dashboard:** [Domains](https://vercel.com/janet-duffys-projects/drjanetduffy.com/settings/domains) — set **www.drjanetduffy.com** as primary; `drjanetduffy.com` should redirect to www (not serve duplicate content).
+
 ## URLs
 
 - Production: https://www.drjanetduffy.com (still old Svelte until new prod deploy)
