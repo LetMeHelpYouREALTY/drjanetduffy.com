@@ -1,4 +1,6 @@
 <script>
+import SEO from '$lib/components/SEO.svelte';
+
 // This could be expanded to load dynamic content from a CMS
 const achievements = [
   {
@@ -38,25 +40,36 @@ const certifications = [
   'Luxury Home Marketing Specialist',
   'Certified Negotiation Expert (CNE)',
 ];
+
+// Breadcrumb schema for SEO
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: 'https://drjanduffy.com'
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'About',
+			item: 'https://drjanduffy.com/about'
+		}
+	]
+};
 </script>
 
-<svelte:head>
-	<title>About Dr. Jan Duffy | Las Vegas REALTOR</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
-	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/about" />
-	<meta property="og:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="og:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/about" />
-	<meta property="twitter:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
-</svelte:head>
+<SEO
+	title="About Dr. Jan Duffy | Las Vegas REALTOR® - Experience & Credentials"
+	description="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR® with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume. CRS, ABR, GRI certified. Specializing in luxury homes, first-time buyers, and investment properties."
+	keywords="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials, CRS, ABR, GRI, luxury home specialist"
+	url="https://drjanduffy.com/about"
+	type="profile"
+	schema={breadcrumbSchema}
+/>
 
 <div class="container mx-auto px-4 py-8">
 	<!-- Hero Section -->
