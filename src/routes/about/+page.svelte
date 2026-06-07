@@ -1,4 +1,47 @@
-<script>
+<script lang="ts">
+import SEO from '$lib/components/SEO.svelte';
+import { createBreadcrumbSchema } from '$lib/utils/schema';
+
+// Breadcrumb schema for better navigation context
+const breadcrumbSchema = createBreadcrumbSchema([
+	{ name: 'Home', url: 'https://drjanduffy.com' },
+	{ name: 'About Dr. Janet Duffy' }
+]);
+
+const personSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	'@id': 'https://drjanduffy.com/#person',
+	name: 'Dr. Janet Duffy',
+	alternateName: 'Dr. Jan Duffy',
+	jobTitle: 'REALTOR®',
+	description: 'Experienced Las Vegas REALTOR® with 15+ years in luxury real estate, specializing in West Summerlin properties and executive relocations.',
+	url: 'https://drjanduffy.com',
+	image: 'https://drjanduffy.com/dr-janet-duffy.jpg',
+	telephone: '+1-702-222-1964',
+	email: 'drduffy@bhhsnv.com',
+	worksFor: {
+		'@type': 'Organization',
+		name: 'Berkshire Hathaway HomeServices Nevada Properties'
+	},
+	knowsAbout: ['Real Estate', 'Luxury Homes', 'Property Investment', 'Relocation Services'],
+	award: ['Certified Residential Specialist (CRS)', 'Accredited Buyer\'s Representative (ABR)', 'Graduate, REALTOR Institute (GRI)']
+};
+
+const pageSchema = {
+	'@context': 'https://schema.org',
+	'@graph': [breadcrumbSchema, personSchema]
+};
+
+const seoData = {
+	title: 'About Dr. Janet Duffy | Luxury Las Vegas REALTOR® with 15+ Years Experience',
+	description: 'Meet Dr. Janet Duffy, a trusted Las Vegas REALTOR® with 15+ years of experience, 150+ properties sold, $50M+ sales volume, and expertise in West Summerlin luxury real estate.',
+	keywords: 'Dr. Jan Duffy, Las Vegas REALTOR, about, real estate agent, experience, credentials, West Summerlin expert, luxury real estate specialist',
+	canonical: 'https://drjanduffy.com/about',
+	schema: pageSchema,
+	ogImage: 'https://drjanduffy.com/dr-janet-duffy.jpg'
+};
+
 // This could be expanded to load dynamic content from a CMS
 const achievements = [
   {
@@ -40,23 +83,7 @@ const certifications = [
 ];
 </script>
 
-<svelte:head>
-	<title>About Dr. Jan Duffy | Las Vegas REALTOR</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
-	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/about" />
-	<meta property="og:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="og:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/about" />
-	<meta property="twitter:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
-</svelte:head>
+<SEO {...seoData} />
 
 <div class="container mx-auto px-4 py-8">
 	<!-- Hero Section -->

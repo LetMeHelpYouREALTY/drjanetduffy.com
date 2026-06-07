@@ -1,32 +1,61 @@
-<script>
+<script lang="ts">
 import ContactForm from '$lib/components/ContactForm.svelte';
+import SEO from '$lib/components/SEO.svelte';
+import { createBreadcrumbSchema } from '$lib/utils/schema';
+
+// Breadcrumb and ContactPage schema
+const breadcrumbSchema = createBreadcrumbSchema([
+	{ name: 'Home', url: 'https://drjanduffy.com' },
+	{ name: 'Contact' }
+]);
+
+const contactPageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ContactPage',
+	mainEntity: {
+		'@type': 'RealEstateAgent',
+		name: 'Dr. Janet Duffy',
+		telephone: '+1-702-222-1964',
+		email: 'drduffy@bhhsnv.com',
+		address: {
+			'@type': 'PostalAddress',
+			addressLocality: 'Las Vegas',
+			addressRegion: 'NV',
+			postalCode: '89144',
+			addressCountry: 'US'
+		},
+		openingHoursSpecification: [
+			{
+				'@type': 'OpeningHoursSpecification',
+				dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+				opens: '09:00',
+				closes: '18:00'
+			},
+			{
+				'@type': 'OpeningHoursSpecification',
+				dayOfWeek: 'Saturday',
+				opens: '10:00',
+				closes: '16:00'
+			}
+		]
+	}
+};
+
+const pageSchema = {
+	'@context': 'https://schema.org',
+	'@graph': [breadcrumbSchema, contactPageSchema]
+};
+
+const seoData = {
+	title: 'Contact Dr. Janet Duffy, REALTOR® | 702-222-1964 | West Summerlin Expert',
+	description: 'Contact Dr. Janet Duffy for luxury Las Vegas real estate expertise. Direct: 702-222-1964 | drduffy@bhhsnv.com. West Summerlin specialist for executives and California relocations. Available 7 days a week.',
+	keywords: 'Dr. Janet Duffy REALTOR, contact, Berkshire Hathaway Nevada Properties, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-222-1964',
+	canonical: 'https://drjanduffy.com/contact',
+	schema: pageSchema
+};
 </script>
 
-<svelte:head>
-	<title>Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties</title>
-	<meta name="description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-222-1964 | drduffy@bhhsnv.com. West Summerlin specialist for executives and California relocations." />
-	<meta name="keywords" content="Dr. Janet Duffy REALTOR, Berkshire Hathaway Nevada Properties, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-222-1964" />
-	
-	<!-- Schema.org structured data -->
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "ContactPage",
-		"mainEntity": {
-			"@type": "RealEstateAgent",
-					"name": "Dr. Janet Duffy",
-		"telephone": "702-222-1964",
-		"email": "drduffy@bhhsnv.com",
-			"address": {
-				"@type": "PostalAddress",
-				"addressLocality": "Las Vegas",
-				"addressRegion": "NV",
-				"addressCountry": "US"
-			}
-		}
-	}
-	</script>
-</svelte:head>
+<SEO {...seoData} />
 
 <div class="container mx-auto px-4 py-16">
 	<div class="max-w-4xl mx-auto">

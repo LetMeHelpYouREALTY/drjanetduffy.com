@@ -1,0 +1,29 @@
+{
+	"name": "Dr. Janet Duffy - Las Vegas REALTOR®",
+	"short_name": "Dr. Jan Duffy",
+	"description": "Luxury Las Vegas real estate expert specializing in West Summerlin properties, executive relocations, and California buyer relocations",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#f59e0b",
+	"orientation": "portrait-primary",
+	"categories": ["business", "lifestyle"],
+	"lang": "en-US",
+	"dir": "ltr",
+	"icons": [
+		{
+			"src": "/favicon.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/favicon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"scope": "/",
+	"prefer_related_applications": false
+}

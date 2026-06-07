@@ -2,7 +2,21 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+		<!-- PWA Manifest for Mobile Optimization -->
+		<link rel="manifest" href="/manifest.json" />
+
+		<!-- Apple Mobile Web App -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="Dr. Jan Duffy" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
+
+		<!-- Microsoft Tiles -->
+		<meta name="msapplication-TileColor" content="#f59e0b" />
+		<meta name="msapplication-TileImage" content="/favicon.png" />
+
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

@@ -1,31 +1,44 @@
-<script>
+<script lang="ts">
 import { onMount } from 'svelte';
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
+import SEO from '$lib/components/SEO.svelte';
+import { createBreadcrumbSchema } from '$lib/utils/schema';
 
 let mounted = false;
 
 onMount(() => {
   mounted = true;
 });
+
+// Breadcrumb and ItemList schema for properties
+const breadcrumbSchema = createBreadcrumbSchema([
+	{ name: 'Home', url: 'https://drjanduffy.com' },
+	{ name: 'Properties for Sale' }
+]);
+
+const itemListSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ItemList',
+	name: 'Las Vegas Properties for Sale by Dr. Janet Duffy',
+	description: 'Current luxury and residential properties available in Las Vegas, Summerlin, and Henderson',
+	numberOfItems: 0
+};
+
+const pageSchema = {
+	'@context': 'https://schema.org',
+	'@graph': [breadcrumbSchema, itemListSchema]
+};
+
+const seoData = {
+	title: 'Las Vegas Luxury Homes for Sale | West Summerlin Properties | Dr. Janet Duffy',
+	description: 'Browse luxury Las Vegas homes for sale in West Summerlin (89138, 89144, 89135). Updated MLS listings, virtual tours, and expert guidance from Dr. Janet Duffy. Contact: 702-222-1964.',
+	keywords: 'Las Vegas homes for sale, West Summerlin properties, luxury homes Las Vegas, MLS listings, real estate 89138, 89144, 89135, Dr. Janet Duffy',
+	canonical: 'https://drjanduffy.com/properties',
+	schema: pageSchema
+};
 </script>
 
-<svelte:head>
-	<title>Las Vegas Homes for Sale | Dr. Jan Duffy REALTOR</title>
-	<meta name="description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS. Contact Dr. Jan Duffy for showings." />
-	<meta name="keywords" content="Las Vegas homes for sale, property listings, MLS, real estate, Dr. Jan Duffy" />
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/properties" />
-	<meta property="og:title" content="Las Vegas Homes for Sale | Dr. Jan Duffy REALTOR" />
-	<meta property="og:description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS." />
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/properties" />
-	<meta property="twitter:title" content="Las Vegas Homes for Sale | Dr. Jan Duffy REALTOR" />
-	<meta property="twitter:description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS." />
-</svelte:head>
+<SEO {...seoData} />
 
 <div class="container mx-auto px-4 py-8">
 	<div class="mb-8">

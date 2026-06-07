@@ -1,6 +1,6 @@
 <script>
 import { onMount } from 'svelte';
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 
 let _realScoutReady = false;
 let mobileMenuOpen = false;
