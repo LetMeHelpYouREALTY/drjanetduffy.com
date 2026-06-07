@@ -14,9 +14,10 @@ const defaultOgImage = {
   alt: `${siteConfig.name} — Las Vegas real estate`,
 };
 
-/** Shared Open Graph / Twitter defaults for marketing pages. */
+/** Shared Open Graph / Twitter defaults for marketing pages with 2026 freshness signals. */
 export function socialMetadata(title: string, description: string, path: string) {
   const url = canonicalUrl(path);
+  const now = new Date().toISOString();
   return {
     openGraph: {
       type: 'website' as const,
@@ -26,6 +27,7 @@ export function socialMetadata(title: string, description: string, path: string)
       title,
       description,
       images: [defaultOgImage],
+      modifiedTime: now,
     },
     twitter: {
       card: 'summary_large_image' as const,

@@ -1,13 +1,13 @@
 import { MigratedPage } from '@/components/pages/MigratedPage';
 import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: "About Las Vegas Luxury & Relocation REALTOR | Dr. Jan Duffy",
-  description: "Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume.",
-  alternates: {
-    canonical: 'https://www.drjanetduffy.com/about',
-  },
-};
+export const metadata: Metadata = pageMetadata({
+  title: 'About Dr. Janet Duffy | 35+ Years Las Vegas Real Estate Experience',
+  description:
+    'Dr. Janet Duffy is a Las Vegas REALTOR® with 35+ years experience, $127M+ in career sales, specializing in luxury homes, relocation, and investment properties. Licensed S.0197614.LLC with Berkshire Hathaway HomeServices.',
+  path: 'about',
+});
 
 export default function Page() {
   return <MigratedPage slug="about" />;
