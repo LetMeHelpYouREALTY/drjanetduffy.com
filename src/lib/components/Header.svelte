@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import { page } from '$app/stores';
 
 let _realScoutReady = false;
 let mobileMenuOpen = false;
@@ -16,7 +17,7 @@ onMount(() => {
         customElements.get('realscout-simple-search') ||
         customElements.get('realscout-your-listings'))
     ) {
-      realScoutReady = true;
+      _realScoutReady = true;
     } else {
       // Wait for the components to be defined
       const checkInterval = setInterval(() => {
@@ -42,7 +43,7 @@ onMount(() => {
   }
 });
 
-function _toggleMobileMenu() {
+function toggleMobileMenu() {
   mobileMenuOpen = !mobileMenuOpen;
 }
 </script>
@@ -52,7 +53,7 @@ function _toggleMobileMenu() {
 	<div class="bg-primary-600 text-white py-3">
 		<div class="container mx-auto px-4">
 			<div class="max-w-4xl mx-auto">
-				{#if realScoutReady}
+				{#if _realScoutReady}
 					<realscout-simple-search 
 						agent-encoded-id="QWdlbnQtMjI1MDUw">
 					</realscout-simple-search>

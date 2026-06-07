@@ -41,21 +41,109 @@ const certifications = [
 </script>
 
 <svelte:head>
-	<title>About Dr. Jan Duffy | Las Vegas REALTOR</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
-	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
-	
+	<title>About Dr. Janet Duffy | West Summerlin REALTOR® | 15+ Years Experience</title>
+	<meta name="description" content="Meet Dr. Janet Duffy - West Summerlin's premier REALTOR® with 15+ years serving 89138, 89144, 89135. 150+ properties sold, $50M+ volume, CRS & ABR certified. Berkshire Hathaway Nevada Properties." />
+	<meta name="keywords" content="Dr. Janet Duffy REALTOR, about Janet Duffy, West Summerlin real estate agent, Las Vegas REALTOR experience, CRS certified realtor, ABR realtor Las Vegas, Berkshire Hathaway agent" />
+	<link rel="canonical" href="https://drjanduffy.com/about" />
+
 	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="profile" />
 	<meta property="og:url" content="https://drjanduffy.com/about" />
-	<meta property="og:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="og:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
-	
+	<meta property="og:title" content="About Dr. Janet Duffy | West Summerlin REALTOR®" />
+	<meta property="og:description" content="15+ years experience, 150+ properties sold, $50M+ in sales volume. West Summerlin's trusted luxury real estate expert." />
+
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://drjanduffy.com/about" />
-	<meta property="twitter:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
+	<meta property="twitter:title" content="About Dr. Janet Duffy | West Summerlin REALTOR®" />
+	<meta property="twitter:description" content="15+ years experience, 150+ properties sold, $50M+ in sales volume." />
+
+	<!-- Person Schema -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Dr. Janet Duffy",
+		"alternateName": "Dr. Jan Duffy",
+		"jobTitle": "REALTOR®",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "Berkshire Hathaway Nevada Properties"
+		},
+		"url": "https://drjanduffy.com",
+		"image": "https://drjanduffy.com/favicon.png",
+		"telephone": "+1-702-222-1964",
+		"email": "drduffy@bhhsnv.com",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Las Vegas",
+			"addressRegion": "NV",
+			"addressCountry": "US"
+		},
+		"knowsAbout": [
+			"Luxury Real Estate",
+			"West Summerlin Properties",
+			"Executive Relocation",
+			"Real Estate Investment",
+			"First-Time Home Buyers",
+			"California to Nevada Relocation"
+		],
+		"hasCredential": [
+			{
+				"@type": "EducationalOccupationalCredential",
+				"credentialCategory": "Professional Certification",
+				"name": "Certified Residential Specialist",
+				"description": "CRS - Highest credential in residential real estate"
+			},
+			{
+				"@type": "EducationalOccupationalCredential",
+				"credentialCategory": "Professional Certification",
+				"name": "Accredited Buyer's Representative",
+				"description": "ABR - Buyer representation specialist"
+			},
+			{
+				"@type": "EducationalOccupationalCredential",
+				"credentialCategory": "Professional Certification",
+				"name": "Graduate REALTOR Institute",
+				"description": "GRI - Advanced real estate education"
+			}
+		],
+		"award": [
+			"150+ Properties Sold",
+			"$50M+ in Sales Volume",
+			"98% Client Satisfaction Rating"
+		]
+	}
+	</script>
+
+	<!-- ProfilePage Schema -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ProfilePage",
+		"mainEntity": {
+			"@type": "RealEstateAgent",
+			"name": "Dr. Janet Duffy",
+			"description": "West Summerlin's premier luxury real estate expert with 15+ years of experience serving executives and families in Las Vegas, Nevada",
+			"url": "https://drjanduffy.com",
+			"telephone": "+1-702-222-1964",
+			"areaServed": [
+				{
+					"@type": "PostalCodeArea",
+					"postalCode": "89138"
+				},
+				{
+					"@type": "PostalCodeArea",
+					"postalCode": "89144"
+				},
+				{
+					"@type": "PostalCodeArea",
+					"postalCode": "89135"
+				}
+			]
+		}
+	}
+	</script>
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">

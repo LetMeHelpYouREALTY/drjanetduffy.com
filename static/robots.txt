@@ -1,3 +1,44 @@
-# allow crawling everything by default
+# Robots.txt for drjanduffy.com
+# Updated 2026 for optimal crawling
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://drjanduffy.com/sitemap.xml
+
+# Common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# AI Crawlers (important for AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Crawl-delay for politeness
+Crawl-delay: 1
