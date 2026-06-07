@@ -1,3 +1,46 @@
-# allow crawling everything by default
+# Robots.txt for drjanduffy.com
+# Updated for 2026 SEO, GEO, and AEO best practices
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Allow AI/LLM crawlers for GEO/AEO optimization (2026 best practice)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bard
+Allow: /
+
+# Sitemap location
+Sitemap: https://drjanduffy.com/sitemap.xml

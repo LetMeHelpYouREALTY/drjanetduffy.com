@@ -1,4 +1,22 @@
 <script>
+import FAQSchema from '$lib/components/FAQSchema.svelte';
+
+// FAQ data for AEO optimization
+const faqs = [
+	{
+		question: "What certifications does Dr. Janet Duffy hold?",
+		answer: "Dr. Janet Duffy holds multiple professional certifications including Certified Residential Specialist (CRS), Accredited Buyer's Representative (ABR), Graduate REALTOR Institute (GRI), Luxury Home Marketing Specialist, and Certified Negotiation Expert (CNE)."
+	},
+	{
+		question: "How long has Dr. Janet Duffy been selling real estate in Las Vegas?",
+		answer: "Dr. Janet Duffy has been a licensed REALTOR in Las Vegas for over 15 years, with extensive experience in luxury properties, executive relocations, and serving California buyers moving to Nevada."
+	},
+	{
+		question: "What is Dr. Janet Duffy's success rate?",
+		answer: "Dr. Janet Duffy has achieved a 98% client satisfaction rate with over 150 properties sold and more than $50 million in total sales volume throughout her career in Las Vegas real estate."
+	}
+];
+
 // This could be expanded to load dynamic content from a CMS
 const achievements = [
   {
@@ -41,21 +59,51 @@ const certifications = [
 </script>
 
 <svelte:head>
-	<title>About Dr. Jan Duffy | Las Vegas REALTOR</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
-	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
-	
+	<title>About Dr. Janet Duffy - West Summerlin REALTOR® | 15+ Years Experience</title>
+	<meta name="description" content="Meet Dr. Janet Duffy, luxury real estate specialist in West Summerlin with 15+ years experience, 150+ properties sold, $50M+ sales volume. CRS, ABR, GRI certified. Serving 89138, 89144, 89135." />
+	<meta name="keywords" content="Dr. Janet Duffy, West Summerlin REALTOR, Las Vegas luxury real estate agent, CRS, ABR, GRI, executive relocation specialist, California to Nevada" />
+
 	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="profile" />
 	<meta property="og:url" content="https://drjanduffy.com/about" />
-	<meta property="og:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="og:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
-	
+	<meta property="og:title" content="About Dr. Janet Duffy - West Summerlin REALTOR®" />
+	<meta property="og:description" content="15+ years luxury real estate experience in West Summerlin. 150+ properties sold, $50M+ sales volume." />
+
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://drjanduffy.com/about" />
-	<meta property="twitter:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
+	<meta property="twitter:title" content="About Dr. Janet Duffy - West Summerlin REALTOR®" />
+	<meta property="twitter:description" content="15+ years luxury real estate experience. CRS, ABR, GRI certified." />
+
+	<!-- ProfilePage Schema -->
+	<script type="application/ld+json">
+		{JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "ProfilePage",
+			"mainEntity": {
+				"@id": "https://drjanduffy.com/#person"
+			},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Home",
+						"item": "https://drjanduffy.com/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "About",
+						"item": "https://drjanduffy.com/about"
+					}
+				]
+			}
+		})}
+	</script>
+
+	<link rel="canonical" href="https://drjanduffy.com/about" />
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
@@ -172,6 +220,11 @@ const certifications = [
 		</div>
 	</div>
 	
+	<!-- FAQ Section -->
+	<div class="mb-16">
+		<FAQSchema {faqs} />
+	</div>
+
 	<!-- CTA Section -->
 	<div class="bg-primary-600 text-white rounded-lg p-8 text-center">
 		<h2 class="text-2xl font-bold mb-4">Ready to Work Together?</h2>
@@ -182,8 +235,8 @@ const certifications = [
 			<a href="/contact" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
 				Get in Touch
 			</a>
-			<a href="tel:+17025551234" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-				Call (702) 555-1234
+			<a href="tel:+17022221964" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
+				Call 702-222-1964
 			</a>
 		</div>
 	</div>

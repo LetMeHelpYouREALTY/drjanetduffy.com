@@ -1,12 +1,32 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import FAQSchema from '$lib/components/FAQSchema.svelte';
 
 let mounted = false;
 
 onMount(() => {
   mounted = true;
 });
+
+const faqs = [
+	{
+		question: "How accurate is the online home value estimate?",
+		answer: "The online home value tool provides an instant estimate based on recent comparable sales, property characteristics, and current market conditions. For the most accurate valuation, Dr. Janet Duffy provides a comprehensive Comparative Market Analysis (CMA) that includes a detailed inspection and analysis of your specific property."
+	},
+	{
+		question: "Is the home valuation service free?",
+		answer: "Yes, both the online instant home value estimate and the professional Comparative Market Analysis (CMA) from Dr. Janet Duffy are completely free with no obligation."
+	},
+	{
+		question: "How often should I check my home's value?",
+		answer: "It's recommended to check your home's value quarterly if you're considering selling, or annually for financial planning purposes. The Las Vegas market can change rapidly, so regular updates help you stay informed about your home's equity."
+	},
+	{
+		question: "What factors affect my home's value in Summerlin?",
+		answer: "Key factors include location (specific neighborhood and zip code), property size, condition, upgrades, golf course or mountain views, proximity to schools and shopping, and current market demand in Summerlin areas like 89138, 89144, and 89135."
+	}
+];
 </script>
 
 <svelte:head>
@@ -146,6 +166,11 @@ onMount(() => {
 			</div>
 		</div>
 		
+		<!-- FAQ Section -->
+		<div class="mb-12">
+			<FAQSchema {faqs} />
+		</div>
+
 		<!-- CTA Section -->
 		<div class="bg-primary-600 text-white rounded-lg p-8 text-center">
 			<h2 class="text-2xl font-bold mb-4">Need a Professional Valuation?</h2>
@@ -156,8 +181,8 @@ onMount(() => {
 				<a href="/contact" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
 					Request Professional Valuation
 				</a>
-				<a href="tel:+17025551234" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-					Call (702) 555-1234
+				<a href="tel:+17022221964" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
+					Call 702-222-1964
 				</a>
 			</div>
 		</div>
