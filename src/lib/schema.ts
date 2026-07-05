@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site.config';
 
-/** Global JSON-LD graphs from legacy app.html — matches GBP NAP */
+/** Global JSON-LD graphs with 2026 Schema.org v30.0 enhancements for GEO/AEO */
 export const globalSchemaGraph = [
   {
     '@context': 'https://schema.org',
@@ -15,6 +15,16 @@ export const globalSchemaGraph = [
     url: siteConfig.url,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
     worksFor: { '@id': `${siteConfig.url}#business` },
+    priceRange: '$$$',
+    knowsAbout: [
+      'Las Vegas Real Estate Market',
+      'Luxury Home Sales',
+      'Relocation Services',
+      'Investment Property Analysis',
+      '55+ Active Adult Communities',
+      'First-Time Home Buyers',
+      'Executive Relocation',
+    ],
     specialty: [
       'Las Vegas Real Estate',
       'Summerlin Luxury',
@@ -30,6 +40,10 @@ export const globalSchemaGraph = [
       },
       { '@type': 'City', name: 'Summerlin' },
       { '@type': 'City', name: 'Henderson' },
+      { '@type': 'City', name: 'North Las Vegas' },
+      { '@type': 'Neighborhood', name: 'Skye Canyon' },
+      { '@type': 'Neighborhood', name: 'Inspirada' },
+      { '@type': 'Neighborhood', name: 'The Lakes' },
     ],
     memberOf: [
       { '@type': 'Organization', name: 'Nevada Real Estate Division' },
@@ -38,6 +52,7 @@ export const globalSchemaGraph = [
         name: siteConfig.brokerage,
         url: siteConfig.brokerageUrl,
       },
+      { '@type': 'Organization', name: 'National Association of REALTORS' },
     ],
     hasCredential: [
       {
@@ -46,6 +61,14 @@ export const globalSchemaGraph = [
         recognizedBy: { '@type': 'Organization', name: 'Nevada Real Estate Division' },
         credentialNumber: siteConfig.license,
       },
+    ],
+    knowsLanguage: ['en-US'],
+    serviceType: [
+      'Buyer Representation',
+      'Seller Representation',
+      'Relocation Services',
+      'Investment Consulting',
+      'Market Analysis',
     ],
   },
   {
@@ -63,6 +86,7 @@ export const globalSchemaGraph = [
     email: siteConfig.email,
     url: siteConfig.url,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
+    logo: `${siteConfig.url}${siteConfig.ogImage}`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: siteConfig.address.street,
@@ -70,6 +94,11 @@ export const globalSchemaGraph = [
       addressRegion: siteConfig.address.region,
       postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.country,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '36.1485',
+      longitude: '-115.3274',
     },
     openingHours: siteConfig.hours,
     openingHoursSpecification: [
@@ -88,6 +117,18 @@ export const globalSchemaGraph = [
         closes: '20:00',
       },
     ],
+    priceRange: '$$$',
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Cash, Check, Credit Card',
+    areaServed: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: '36.1699',
+        longitude: '-115.1398',
+      },
+      geoRadius: '50000',
+    },
   },
   {
     '@context': 'https://schema.org',
