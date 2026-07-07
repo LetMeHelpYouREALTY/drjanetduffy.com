@@ -7,7 +7,7 @@ export const siteConfig = {
     'Las Vegas real estate expert serving buyers, sellers, and investors across Summerlin, Henderson, and the valley. Call (702) 766-7668.',
   url: 'https://www.drjanetduffy.com',
   phone: '(702) 766-7668',
-  phoneTel: '+17027667668',
+  phoneTel: 'tel:+17027667668',
   email: 'info@DrJanetDuffy.com',
   license: 'S.0197614.LLC',
   brokerage: 'Berkshire Hathaway HomeServices Nevada Properties',
