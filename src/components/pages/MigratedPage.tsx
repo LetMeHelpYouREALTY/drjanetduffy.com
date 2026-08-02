@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { CalendlyEmbed } from '@/components/calendly/CalendlyEmbed';
+import { GeoAreaPage } from '@/components/pages/GeoAreaPage';
 import { RealScoutListings } from '@/components/realscout/RealScoutListings';
+import { ServiceAreasSection } from '@/components/sections/ServiceAreasSection';
 import { siteConfig } from '@/config/site.config';
+import { getGeoArea } from '@/content/geo';
 import { getPageContent } from '@/lib/page-content';
 
 type MigratedPageProps = {
@@ -9,6 +12,11 @@ type MigratedPageProps = {
 };
 
 export function MigratedPage({ slug }: MigratedPageProps) {
+  const geoArea = getGeoArea(slug);
+  if (geoArea) {
+    return <GeoAreaPage area={geoArea} />;
+  }
+
   const page = getPageContent(slug);
   const showListings =
     slug.includes('properties') ||
@@ -68,6 +76,8 @@ export function MigratedPage({ slug }: MigratedPageProps) {
             ))}
           </section>
         ))}
+
+        <ServiceAreasSection />
 
         <div className="mt-12">
           <CalendlyEmbed

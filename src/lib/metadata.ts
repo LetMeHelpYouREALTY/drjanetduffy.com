@@ -9,9 +9,9 @@ export function canonicalUrl(path = ''): string {
 
 const defaultOgImage = {
   url: `${siteConfig.url}${siteConfig.ogImage}`,
-  width: 1200,
-  height: 630,
-  alt: `${siteConfig.name} — Las Vegas real estate`,
+  width: 1600,
+  height: 900,
+  alt: 'Las Vegas valley at golden hour, from the western foothills toward the Strip skyline',
 };
 
 /** Shared Open Graph / Twitter defaults for marketing pages. */

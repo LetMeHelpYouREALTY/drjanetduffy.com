@@ -244,13 +244,6 @@
       }
     ]
   },
-  "google[verification_code]": {
-    "title": "Google Search Console Verification",
-    "description": "",
-    "heading": "Google Search Console Verification",
-    "lead": "",
-    "sections": []
-  },
   "home-value": {
     "title": "Home Value Calculator | Dr. Janet Duffy REALTOR®",
     "description": "Get an instant estimate of your home's value with Dr. Janet Duffy's advanced valuation tool. Free, accurate, and based on current Las Vegas market data.",
@@ -1101,20 +1094,6 @@
         "title": "Overview",
         "paragraphs": [
           "Social media marketing services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, showcasing listings and expertise across Facebook, Instagram, LinkedIn, YouTube, and more."
-        ]
-      }
-    ]
-  },
-  "sitemap": {
-    "title": "Sitemap | Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate",
-    "description": "Complete site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website. Browse all pages including properties, communities, services, and resources for buying and selling homes in Las Vegas, Summerlin, Henderson, and surrounding areas.",
-    "heading": "Las Vegas Real Estate Website Sitemap",
-    "lead": "Complete site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website. Browse all pages including properties, communities, services, and resources for buying and selling homes in Las Vegas, Summerlin, Henderson, and surrounding areas.",
-    "sections": [
-      {
-        "title": "Overview",
-        "paragraphs": [
-          "Complete site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website. Browse all pages including properties, communities, services, and resources for buying and selling homes in Las Vegas, Summerlin, Henderson, and surrounding areas."
         ]
       }
     ]

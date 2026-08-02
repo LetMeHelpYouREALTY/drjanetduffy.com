@@ -22,7 +22,7 @@ export const siteConfig = {
   },
   hours: 'Mo-Su 08:00-20:00',
   googleAnalyticsId: 'G-CPD9RR8GTX',
-  ogImage: '/favicon.png',
+  ogImage: '/images/las-vegas-valley.jpg',
 } as const;
 
 export type SiteConfig = typeof siteConfig;

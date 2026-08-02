@@ -12,7 +12,7 @@ const routesDir = path.join(root, 'legacy-sveltekit', 'src', 'routes');
 const appDir = path.join(root, 'src', 'app');
 
 const SKIP_TOP = new Set(['api', 'sitemap.xml', 'todos', 'v0', 'google[verification_code]']);
-const CUSTOM_PAGES = new Set(['contact']);
+const CUSTOM_PAGES = new Set(['contact', 'sitemap']);
 
 function decodeHtml(s) {
   return s
