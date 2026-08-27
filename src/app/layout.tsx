@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${siteConfig.googleAnalyticsId}');
           `}
         </Script>
+        <Analytics />
       </body>
     </html>
   );
