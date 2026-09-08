@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <CalendlyRoot />
         <RealScoutImageConstraints />
+        <SpeedInsights />
 
         <Script
           src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
