@@ -5,6 +5,7 @@ import { RealScoutListings } from '@/components/realscout/RealScoutListings';
 import { ServiceAreasSection } from '@/components/sections/ServiceAreasSection';
 import { siteConfig } from '@/config/site.config';
 import { getGeoArea } from '@/content/geo';
+import { eventForSlug } from '@/lib/calendly';
 import { getPageContent } from '@/lib/page-content';
 
 type MigratedPageProps = {
@@ -81,6 +82,7 @@ export function MigratedPage({ slug }: MigratedPageProps) {
 
         <div className="mt-12">
           <CalendlyEmbed
+            event={eventForSlug(slug)}
             utmContent={`page_${slug.replace(/\//g, '_')}`}
             title="Questions about this topic?"
             subtitle="Book a time online — your appointment syncs to our CRM (no contact form required)."
