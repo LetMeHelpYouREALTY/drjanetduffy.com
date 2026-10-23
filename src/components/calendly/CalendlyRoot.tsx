@@ -24,6 +24,17 @@ export function CalendlyRoot() {
     else window.addEventListener('load', init, { once: true });
   }, [badgeUrl]);
 
+  useEffect(() => {
+    const onMessage = (e: MessageEvent) => {
+      if (e.origin !== 'https://calendly.com' || e.data?.event !== 'calendly.event_scheduled') return;
+      (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'calendly_booked', {
+        page_path: window.location.pathname,
+      });
+    };
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, []);
+
   return (
     <>
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
