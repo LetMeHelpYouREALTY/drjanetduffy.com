@@ -46,7 +46,7 @@ const certifications = [
 
 <svelte:head>
 	<title>About Las Vegas Luxury &amp; Relocation REALTOR | Dr. Jan Duffy</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
+	<meta name="description" content="Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience, 150+ team sales in 2026, and $50M+ in team sales volume in 2026." />
 	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
 	
 	<!-- Open Graph / Facebook -->
@@ -140,7 +140,7 @@ const certifications = [
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
 						<Award class="w-5 h-5 text-primary-600" />
 					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">18 Years Licensed</h3>
 					<p class="text-gray-600">Extensive knowledge of the Las Vegas real estate market</p>
 				</div>
 
@@ -218,7 +218,7 @@ const certifications = [
 				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Are Dr. Janet Duffy's Real Estate Achievements?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
 				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-					Dr. Janet Duffy's real estate achievements include 150+ properties sold across Las Vegas, $50M+ in total sales volume, 15 years of dedicated real estate expertise, and 98% client satisfaction based on client feedback and reviews that demonstrate proven results and exceptional service.
+					Dr. Janet Duffy's real estate achievements include 150+ team sales in 2026 across Las Vegas, $50M+ in total sales volume, 15 years of dedicated real estate expertise, and 98% client satisfaction based on client feedback and reviews that demonstrate proven results and exceptional service.
 				</p>
 			</div>
                 <div class="grid-premium md:grid-cols-4 gap-8">

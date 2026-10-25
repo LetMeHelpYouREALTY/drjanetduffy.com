@@ -75,7 +75,7 @@ onMount(() => {
 				<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Are Dr. Janet Duffy's Success Statistics?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
-					Dr. Janet Duffy's success statistics include 150+ properties sold, $50M+ in total sales volume, 98% client satisfaction rate, and 15 years of Las Vegas real estate experience. These numbers demonstrate proven results, exceptional service, and deep market expertise that help buyers, sellers, and investors achieve their real estate goals.
+					Dr. Janet Duffy's success statistics include 150+ team sales in 2026, $50M+ in total sales volume, 98% client satisfaction rate, and 15 years of Las Vegas real estate experience. These numbers demonstrate proven results, exceptional service, and deep market expertise that help buyers, sellers, and investors achieve their real estate goals.
 				</p>
 			</div>
 			<div class="grid-premium md:grid-cols-4 gap-8">
@@ -107,7 +107,7 @@ onMount(() => {
 			<div class="relative z-10 text-center">
 				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3); letter-spacing: -0.02em;">Ready to Be Dr. Janet Duffy's Next Success Story?</h2>
 				<p class="text-xl mb-10 text-white/95 max-w-2xl mx-auto leading-relaxed" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-					Let me help you buy or sell your property with the same dedication and expertise that has made me successful. With 150+ properties sold, $50M+ in sales volume, and 98% client satisfaction, I'll guide you through every step of your Las Vegas real estate transaction with proven results and exceptional service.
+					Let me help you buy or sell your property with the same dedication and expertise that has made me successful. With 150+ team sales in 2026, $50M+ in team sales volume in 2026, and 98% client satisfaction, I'll guide you through every step of your Las Vegas real estate transaction with proven results and exceptional service.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-6 justify-center">
 					<a href="/contact" class="group relative overflow-hidden bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
