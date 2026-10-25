@@ -9,7 +9,7 @@ export const globalSchemaGraph = [
     name: siteConfig.name,
     alternateName: siteConfig.alternateName,
     description:
-      'Las Vegas real estate expert with 35+ years experience and $127M+ in career sales. Nevada-licensed real estate agent serving buyers, sellers, and investors across Las Vegas, Summerlin, Henderson, and the surrounding valley.',
+      'Las Vegas real estate expert with 35 years of Las Vegas experience and $127M+ in Dr. Duffy Group career sales. Nevada-licensed real estate agent serving buyers, sellers, and investors across Las Vegas, Summerlin, Henderson, and the surrounding valley.',
     telephone: siteConfig.phone,
     email: siteConfig.email,
     url: siteConfig.url,

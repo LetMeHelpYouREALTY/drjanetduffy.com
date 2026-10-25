@@ -118,7 +118,7 @@
 			questions: [
 				{
 					q: 'What makes you different from other real estate agents?',
-					a: `With 15+ years of experience, 150+ properties sold, and over $50M in closed volume, I bring both deep local knowledge and a calm, process-driven approach to every transaction. Clients often highlight my ability to anticipate issues before they become problems, explain complex topics in plain English, and negotiate firmly without creating unnecessary conflict. I also operate as a concierge, coordinating lenders, inspectors, contractors, and escrow so you can focus on big decisions rather than logistics.`
+					a: `With 15+ years of experience, 150+ team sales in 2026, and over $50M in closed volume, I bring both deep local knowledge and a calm, process-driven approach to every transaction. Clients often highlight my ability to anticipate issues before they become problems, explain complex topics in plain English, and negotiate firmly without creating unnecessary conflict. I also operate as a concierge, coordinating lenders, inspectors, contractors, and escrow so you can focus on big decisions rather than logistics.`
 				},
 				{
 					q: 'How do you communicate with clients?',
