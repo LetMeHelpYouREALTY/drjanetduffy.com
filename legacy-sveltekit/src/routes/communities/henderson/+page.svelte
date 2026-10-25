@@ -9,7 +9,7 @@
 	}
 
 	const features: string[] = [
-		'Family-friendly community',
+		'Master-planned community',
 		'Excellent schools',
 		'Safe neighborhoods',
 		'Growing economy',
@@ -35,14 +35,14 @@
 
 <svelte:head>
 	<title>Henderson Luxury &amp; Relocation Real Estate | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Explore Henderson luxury and relocation real estate with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover family-friendly neighborhoods, top schools, and safe communities just outside Las Vegas." />
+	<meta name="description" content="Explore Henderson luxury and relocation real estate with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover master-planned neighborhoods, parks, and commute options just outside Las Vegas." />
 
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "Place",
 		"name": "Henderson, Nevada",
-		"description": "Family-friendly city just southeast of Las Vegas with excellent schools, safe neighborhoods, and diverse housing options.",
+		"description": "Master-planned city just southeast of Las Vegas with parks, trails, and well-kept neighborhoods, and diverse housing options.",
 		"address": {
 			"@type": "PostalAddress",
 			"addressLocality": "Henderson",
@@ -80,7 +80,7 @@
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Family-friendly community with excellent schools, safe neighborhoods, and affordable housing
+				Master-planned community with parks, trails, and affordable housing
 			</p>
 		</div>
 
@@ -108,7 +108,7 @@
 		<div class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Henderson a Great Place to Live?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Henderson is Nevada's second-largest city and consistently ranked as one of the safest cities in America. Located just southeast of Las Vegas, Henderson offers a family-friendly atmosphere with excellent schools, beautiful parks, affordable housing, and a strong sense of community that makes it an ideal choice for families, professionals, and retirees.
+				Henderson is Nevada's second-largest city and consistently ranked as one of the safest cities in America. Located just southeast of Las Vegas, Henderson offers a community atmosphere with excellent schools, beautiful parks, affordable housing, and a strong sense of community that makes it an ideal choice for families, professionals, and retirees.
 			</p>
 		</div>
 

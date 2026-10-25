@@ -65,7 +65,7 @@
 						</div>
 						<div>
 							<h3 class="text-xl font-bold text-gray-900 mb-2">Family-Focused Service</h3>
-							<p class="text-gray-600">Consideration of schools, family amenities, and community features important to military families.</p>
+							<p class="text-gray-600">Consideration of schools, community amenities, and community features important to military families.</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@
 							Nellis Air Force Base, located in North Las Vegas, is one of the area's largest military installations. The base is home to the U.S. Air Force Warfare Center and hosts numerous training exercises and operations. Military families assigned to Nellis have excellent housing options in North Las Vegas, Centennial Hills, and other northern Las Vegas communities.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
-							North Las Vegas offers affordable housing options with newer construction and good value. Communities like Aliante, Skye Canyon, and Centennial Hills provide excellent options for military families, with commute times to Nellis typically ranging from 15 to 30 minutes. These areas offer family-friendly amenities, good schools, and convenient access to base facilities. Properties in these areas typically range from $300,000 to $800,000, offering excellent value for military families.
+							North Las Vegas offers affordable housing options with newer construction and good value. Communities like Aliante, Skye Canyon, and Centennial Hills provide excellent options for military families, with commute times to Nellis typically ranging from 15 to 30 minutes. These areas offer parks, pools, and community amenities, good schools, and convenient access to base facilities. Properties in these areas typically range from $300,000 to $800,000, offering excellent value for military families.
 						</p>
 					</div>
 
@@ -95,7 +95,7 @@
 							Creech Air Force Base, located in Indian Springs about 45 miles northwest of Las Vegas, serves as a major drone operations center. Military families assigned to Creech often choose to live in Las Vegas or nearby communities, commuting to the base daily.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
-							For Creech personnel, communities in northwest Las Vegas, including Centennial Hills and Skye Canyon, offer convenient access with commute times typically under an hour. These areas provide excellent housing options, good schools, and family amenities. Some families also choose to live in Las Vegas proper, accepting a longer commute for access to more amenities and housing options.
+							For Creech personnel, communities in northwest Las Vegas, including Centennial Hills and Skye Canyon, offer convenient access with commute times typically under an hour. These areas provide excellent housing options, good schools, and community amenities. Some families also choose to live in Las Vegas proper, accepting a longer commute for access to more amenities and housing options.
 						</p>
 					</div>
 
@@ -161,10 +161,10 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-4">Family-Focused Neighborhood Selection</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Military families have unique needs, from good schools to family-friendly amenities and safe neighborhoods. We help you identify neighborhoods that meet your family's specific needs, considering schools, parks, community amenities, and proximity to base facilities.
+							Military families have unique needs, from school options to parks and commute times. We help you identify neighborhoods that meet your family's specific needs, considering schools, parks, community amenities, and proximity to base facilities.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
-							We'll help you understand school districts, evaluate neighborhood safety, and identify communities with family-friendly amenities. We'll discuss commute times, access to shopping and services, and how different neighborhoods might work for your family's lifestyle. Our goal is to help you find a neighborhood where your family can thrive during your Las Vegas assignment.
+							We'll help you understand school districts, and identify communities with parks, pools, and recreation centers. We'll discuss commute times, access to shopping and services, and how different neighborhoods might work for your family's lifestyle. Our goal is to help you find a neighborhood where your family can thrive during your Las Vegas assignment.
 						</p>
 					</div>
 

@@ -104,7 +104,7 @@
 		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Townhome in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Las Vegas townhomes offer low-maintenance lifestyle, more space than condos, private entrances, community amenities, affordable pricing, family-friendly features, investment potential, and prime locations that make them ideal for growing families, first-time buyers, and investors seeking the perfect balance between space and convenience.
+				Las Vegas townhomes offer low-maintenance lifestyle, more space than condos, private entrances, community amenities, affordable pricing, open floor plans and outdoor space, investment potential, and prime locations that make them ideal for move-up buyers, first-time buyers, and investors seeking the perfect balance between space and convenience.
 			</p>
 		</div>
 
@@ -129,7 +129,7 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Growing Families</h3>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Move-Up Buyers</h3>
 							<p class="text-gray-700">More space than condos with less maintenance than single-family homes, perfect for families</p>
 						</div>
 					</div>
@@ -159,7 +159,7 @@
 		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Townhomes Are Available in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Las Vegas townhomes include affordable starter homes, family-friendly residences, and upscale properties featuring low-maintenance living, private entrances, community amenities, and excellent value. Properties range from affordable townhomes to luxury residences in premier communities throughout the Las Vegas Valley.
+				Las Vegas townhomes include affordable starter homes, larger-floor-plan residences, and upscale properties featuring low-maintenance living, private entrances, community amenities, and excellent value. Properties range from affordable townhomes to luxury residences in premier communities throughout the Las Vegas Valley.
 			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">

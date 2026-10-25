@@ -179,7 +179,7 @@ export const menuStructure = {
     {
       name: 'Henderson',
       href: '/communities/henderson',
-      description: 'Family-friendly area with excellent schools and safe neighborhoods',
+      description: 'Master-planned area with parks and trails',
       icon: '🏞️'
     },
     {

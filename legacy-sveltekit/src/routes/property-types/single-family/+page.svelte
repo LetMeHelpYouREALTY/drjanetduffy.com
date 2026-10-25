@@ -14,7 +14,7 @@
 		'Room to grow',
 		'Investment value',
 		'Customization options',
-		'Family-friendly',
+		'Community amenities',
 		'Pet-friendly',
 		'Storage space'
 	];
@@ -104,7 +104,7 @@
 		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Single Family Home in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Las Vegas single family homes offer privacy and space, yards for outdoor living, room to grow, strong investment value, customization options, family-friendly environments, pet-friendly spaces, and storage space that make them ideal for growing families, long-term investors, and buyers seeking independence and space.
+				Las Vegas single family homes offer privacy and space, yards for outdoor living, room to grow, strong investment value, customization options, park-rich setting, pet-friendly spaces, and storage space that make them ideal for move-up buyers, long-term investors, and buyers seeking independence and space.
 			</p>
 		</div>
 
@@ -129,7 +129,7 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Growing Families</h3>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Move-Up Buyers</h3>
 							<p class="text-gray-700">Spacious homes with yards provide space for children and room to expand as families grow</p>
 						</div>
 					</div>
@@ -195,7 +195,7 @@
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Single Family Home in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect single family home in Las Vegas. With deep knowledge of Las Vegas neighborhoods, family-friendly communities, and single family home markets, I'll guide you through every step of your home buying journey.
+				Let me help you find your perfect single family home in Las Vegas. With deep knowledge of Las Vegas neighborhoods, master-planned communities, and single family home markets, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

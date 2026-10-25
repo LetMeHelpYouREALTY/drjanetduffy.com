@@ -28,8 +28,8 @@
 		},
 		{
 			name: 'Henderson',
-			description: 'Family-friendly community with excellent schools and parks',
-			features: ['Excellent Schools', 'Family Parks', 'Safe Neighborhoods', 'Growing Economy'],
+			description: 'Master-planned community with excellent schools and parks',
+			features: ['Excellent Schools', 'Neighborhood Parks', 'Safe Neighborhoods', 'Growing Economy'],
 			avgPrice: '$550K',
 			zipCode: '89014',
 			href: '/properties?neighborhood=henderson'
@@ -92,7 +92,7 @@
 			<div class="mb-12 text-center">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Best Las Vegas Neighborhoods to Live In?</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
-					The best Las Vegas neighborhoods to live in include West Summerlin with luxury homes and world-class amenities, The Ridges with exclusive gated communities and mountain views, Red Rock Country Club with resort-style living, Henderson with family-friendly communities and excellent schools, Green Valley with established neighborhoods, and Seven Hills with upscale custom homes and scenic views.
+					The best Las Vegas neighborhoods to live in include West Summerlin with luxury homes and world-class amenities, The Ridges with exclusive gated communities and mountain views, Red Rock Country Club with resort-style living, Henderson with master-planned communities and excellent schools, Green Valley with established neighborhoods, and Seven Hills with upscale custom homes and scenic views.
 				</p>
 			</div>
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

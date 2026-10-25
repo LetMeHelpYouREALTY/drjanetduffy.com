@@ -690,7 +690,7 @@
 <h3>Recreation</h3>
 <p>In Inspirada, recreation abounds. Aside from the already existing amphitheaters, recreation centers, playgrounds, and outdoor children’s playgrounds, ground breaking projects have begun to include the construction of a one-acre dog park, basketball and tennis courts, splash and play pad areas, and a new five-acre neighborhood park that includes a skate plaza and more. The community of Inspirada is a pedestrian-friendly community that caters to its active residents.</p>
 <p>Within Solista Park, central to the community, there are two private swimming pools, an outdoor amphitheater, recreation center, playgrounds, bocce ball courts, open grass areas, picnic and BBQ facilities, and a wide variety of walking and hiking trails.</p>
-<p>Some of the city’s most aesthetically pleasing parks are located just minutes from Inspirada. Madeira Canyon, Esselmont, and Siene Heights are just a few that have reputations for being fun, clean, and family-friendly.</p>
+<p>Some of the city’s most aesthetically pleasing parks are located just minutes from Inspirada. Madeira Canyon, Esselmont, and Siene Heights are just a few that have reputations for being fun, clean, and well-kept.</p>
 <p>Located at 2390 Democracy Drive, Madeira Canyon Park features 20 beautiful acres filled with lighted softball fields, lighted basketball courts, age-appropriate playgrounds, open grass areas, picnic areas, walking courses, covered shelters, and the popular splash pad.</p>
 <h3>Dining</h3>
 <p>Inspirada residents looking for good eats will find them just minutes from home. From fast food to fine dining, and everything in between, Inspirada residents are sure to find a new favorite dish every time they visit one of the great establishments in the area.</p>

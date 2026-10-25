@@ -138,7 +138,7 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Downsizers and Empty Nesters</h3>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Downsizers</h3>
 							<p class="text-gray-700">Low-maintenance lifestyle perfect for those seeking convenience without yard work</p>
 						</div>
 					</div>

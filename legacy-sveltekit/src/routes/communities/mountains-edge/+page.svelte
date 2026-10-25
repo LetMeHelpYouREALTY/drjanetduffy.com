@@ -10,7 +10,7 @@
 
 	const features: string[] = [
 		'Master-planned community',
-		'Family-friendly',
+		'Community amenities',
 		'Parks and trails',
 		'Top-rated schools',
 		'Community centers',
@@ -35,14 +35,14 @@
 
 <svelte:head>
 	<title>Mountains Edge Family &amp; Relocation Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Explore Mountains Edge family and relocation real estate with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover affordable, family-friendly homes with parks, trails, and great schools in southwest Las Vegas." />
+	<meta name="description" content="Explore Mountains Edge family and relocation real estate with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover affordable homes with parks, trails, and great schools in southwest Las Vegas." />
 
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "Place",
 		"name": "Mountains Edge, Las Vegas, Nevada",
-		"description": "Master-planned community in southwest Las Vegas with family-friendly neighborhoods, parks, trails, and affordable homes.",
+		"description": "Master-planned community in southwest Las Vegas with park-rich neighborhoods, parks, trails, and affordable homes.",
 		"address": {
 			"@type": "PostalAddress",
 			"addressLocality": "Las Vegas",
@@ -76,11 +76,11 @@
 
 		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-				Find Family-Friendly Homes in Mountains Edge
+				Find Homes in Mountains Edge
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Master-planned community with family-friendly atmosphere, parks, trails, and affordable housing
+				Master-planned community with parks, trails, and affordable housing
 			</p>
 		</div>
 
@@ -106,9 +106,9 @@
 
 		<!-- About Mountains Edge -->
 		<div class="mb-16">
-			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Mountains Edge a Great Family-Friendly Community?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Mountains Edge a Great Master-Planned Community?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Mountains Edge is a master-planned community located in southwest Las Vegas, offering affordable housing and a family-friendly atmosphere. The community spans over 3,500 acres and features numerous parks, walking trails, excellent schools, safe neighborhoods, and convenient access to shopping, dining, and employment centers that appeal to first-time buyers, growing families, and investors.
+				Mountains Edge is a master-planned community located in southwest Las Vegas, offering affordable housing and a community atmosphere. The community spans over 3,500 acres and features numerous parks, walking trails, excellent schools, safe neighborhoods, and convenient access to shopping, dining, and employment centers that appeal to first-time buyers, move-up buyers, and investors.
 			</p>
 		</div>
 
@@ -119,7 +119,7 @@
 					Mountains Edge features numerous parks, walking trails, and community amenities within a master-planned environment designed for families. The area is known for its excellent schools, safe neighborhoods, and convenient access to shopping, dining, and employment centers.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					With new construction and established neighborhoods, Mountains Edge appeals to first-time buyers, growing families, and investors seeking value. The community's affordable pricing and family-friendly atmosphere create an ideal environment for raising children.
+					With new construction and established neighborhoods, Mountains Edge appeals to first-time buyers, move-up buyers, and investors seeking value. The community's affordable pricing and community events create an active neighborhood.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -169,7 +169,7 @@
 		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Mountains Edge?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Mountains Edge offers diverse property types including new construction homes, established single-family homes, townhomes, and condos. Properties provide excellent value with affordable pricing, family-friendly features, and access to parks, trails, and excellent schools.
+				Mountains Edge offers diverse property types including new construction homes, established single-family homes, townhomes, and condos. Properties provide excellent value with affordable pricing, open floor plans and outdoor space, and access to parks, trails, and excellent schools.
 			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
@@ -205,7 +205,7 @@
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Mountains Edge?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in this family-friendly community. With deep knowledge of Mountains Edge's neighborhoods, schools, and affordable housing options, I'll guide you through every step of your home buying journey.
+				Let me help you find your perfect home in this master-planned community. With deep knowledge of Mountains Edge's neighborhoods, schools, and affordable housing options, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

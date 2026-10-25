@@ -670,7 +670,7 @@ solid #333;-webkit-background-clip:padding-box;background-clip:padding-box}</sty
 <h3>Las Vegas Recreation</h3>
 <p>Las Vegas is the entertainment capital of the world. That means there are plenty of recreational opportunities for people with varying hobbies and interests. Las Vegas is home to world-class gaming, entertainment, dining, golf, outdoor recreation, and shopping. So whether it’s shopping at the world-famous Caesar Forum shops or hiking through Floyd Lamb Park – Las Vegas has it all, and then some.</p>
 <h2>Las Vegas Lifestyle</h2>
-<p>Las Vegas offers lifestyle choices for people of all ages and walks of life. From retirees to young families, Las Vegas has the perfect home in the perfect location. There are hundreds of developments specifically designed for outdoor enthusiasts, golf lovers, shopaholics, 55+, and families. The only hard part is choosing from all of the great locations out there.</p>
+<p>Las Vegas offers lifestyle choices for people of all ages and walks of life. From first-time buyers to retirees, Las Vegas has the perfect home in the perfect location. There are hundreds of developments specifically designed for outdoor enthusiasts, golf lovers, shopaholics, 55+, and families. The only hard part is choosing from all of the great locations out there.</p>
 <p id="browse"><div class="communities-nav">
     <h4>Browse Listings in Popular Las Vegas Neighborhoods</h4>
     <ul class="nav">

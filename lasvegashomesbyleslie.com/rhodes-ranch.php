@@ -694,7 +694,7 @@
 <h3>Golf</h3>
 <p>Among the Rhodes Ranch community is the beautifully landscaped 18-hole Ted Robinson designed golf course, the Rhodes Ranch Golf Club. Lush fairways are a golfer’s muse. The area provides scenic views of vistas and meticulously landscaped roughs. The onsite golf shop is stocked with the latest apparel and golfing equipment from some of the most elite brands and biggest names in the sport. Golf instruction is also available at the club.</p>
 <h3>Recreation</h3>
-<p>In addition to the Rhodes Ranch Recreation Center, the surrounding community offers plenty of things to do for all ages and interests. Outdoor lovers will particularly enjoy city parks such as the 26-acre Red Ridge Park located at 7027 El Capitan Way. The family-friendly park is an excellent location to enjoy the outdoors and let the kids burn off some energy</p>
+<p>In addition to the Rhodes Ranch Recreation Center, the surrounding community offers plenty of things to do for all ages and interests. Outdoor lovers will particularly enjoy city parks such as the 26-acre Red Ridge Park located at 7027 El Capitan Way. The park is an excellent location to enjoy the outdoors and let everyone burn off some energy</p>
 <p>Red Ridge Park includes two regulation size little league baseball fields, restrooms, picnic pavilion, disc golf course, two age-appropriate playgrounds, walking path, full-size outdoor, lighted basketball court, and a water park area.</p>
 <p>Also located within close proximity to Rhodes Ranch is Las Vegas’ only outdoor, 18-hole mini-golf course, The Putt Park. The park is designed for kids, families and golf pros alike, and features the popular Cosmic Golf on Friday and Saturday nights.</p>
 <h3>Dining</h3>

@@ -11,7 +11,7 @@
 	const features: string[] = [
 		'Established community',
 		'Mature trees and landscaping',
-		'Family-friendly atmosphere',
+		'Community atmosphere',
 		'Excellent schools',
 		'Community centers',
 		'Parks and trails',
