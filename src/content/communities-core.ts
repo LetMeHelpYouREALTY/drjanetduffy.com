@@ -587,7 +587,7 @@ export const coreCommunitites: GeoArea[] = [
     heading: 'Southern Highlands Real Estate — South Las Vegas Master Plan',
     title: 'Southern Highlands Homes for Sale | 89141 REALTOR® | Dr. Janet Duffy',
     description:
-      'Southern Highlands real estate (89141) with Dr. Janet Duffy, REALTOR®. Guard-gated golf estates, family parks, and I-15/St. Rose access in south Las Vegas. Call (702) 766-7668.',
+      'Southern Highlands real estate (89141) with Dr. Janet Duffy, REALTOR®. Guard-gated golf estates, neighborhood parks, and I-15/St. Rose access in south Las Vegas. Call (702) 766-7668.',
     lead: 'Southern Highlands pairs a private Robert Trent Jones Sr./Jr. golf club with 2,700 acres of parks and paseos at the valley’s southern gateway — minutes from the I-15/St. Rose interchange and the south Strip.',
     hero: {
       src: '/images/communities/southern-highlands.jpg',

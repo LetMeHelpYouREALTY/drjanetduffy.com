@@ -169,7 +169,7 @@
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Summerlin features multiple villages, each with its own character and amenities, from upscale gated communities to family-friendly neighborhoods. The community represents the pinnacle of Las Vegas living with carefully planned development, exceptional amenities, and strong property values.
+					Summerlin features multiple villages, each with its own character and amenities, from upscale gated communities to park-rich neighborhoods. The community represents the pinnacle of Las Vegas living with carefully planned development, exceptional amenities, and strong property values.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
 					With over 22,500 acres of master-planned development, Summerlin offers diverse housing options from luxury estates to family homes, all within a beautifully maintained environment with extensive parks, trails, and community facilities.

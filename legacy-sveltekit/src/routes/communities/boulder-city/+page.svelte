@@ -108,7 +108,7 @@
 		<div class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Boulder City a Unique Las Vegas Area Community?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Boulder City is a unique community located just 30 minutes southeast of Las Vegas, offering a peaceful small-town atmosphere with easy access to big city amenities. Founded in 1931 during the construction of Hoover Dam, Boulder City maintains its historic charm while providing modern conveniences, family-friendly environment, and world-class outdoor recreation at Lake Mead.
+				Boulder City is a unique community located just 30 minutes southeast of Las Vegas, offering a peaceful small-town atmosphere with easy access to big city amenities. Founded in 1931 during the construction of Hoover Dam, Boulder City maintains its historic charm while providing modern conveniences, park-rich setting, and world-class outdoor recreation at Lake Mead.
 			</p>
 		</div>
 
@@ -116,7 +116,7 @@
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Boulder City is known for its prohibition on gambling, creating a family-friendly environment distinct from Las Vegas. The historic downtown features unique shops, restaurants, and community events that celebrate the city's heritage while providing modern amenities.
+					Boulder City is known for its prohibition on gambling, which keeps it quieter than Las Vegas. The historic downtown features unique shops, restaurants, and community events that celebrate the city's heritage while providing modern amenities.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
 					With Lake Mead National Recreation Area nearby, residents enjoy world-class outdoor recreation including boating, fishing, hiking, and water sports. The city's small-town charm, low crime rate, and strong community make it an ideal choice for those seeking peaceful living near Las Vegas.
@@ -169,7 +169,7 @@
 		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Boulder City?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Boulder City offers diverse property types including single-family homes, historic properties, and newer construction. Properties feature peaceful settings, scenic views, and excellent value within a family-friendly community just 30 minutes from Las Vegas.
+				Boulder City offers diverse property types including single-family homes, historic properties, and newer construction. Properties feature peaceful settings, scenic views, and excellent value within a master-planned community just 30 minutes from Las Vegas.
 			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">

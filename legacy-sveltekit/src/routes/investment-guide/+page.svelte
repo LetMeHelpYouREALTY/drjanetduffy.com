@@ -229,7 +229,7 @@
 				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
 					<h3 class="text-2xl font-bold text-gray-900 mb-3">What Are the Best Las Vegas Neighborhoods for Real Estate Investment?</h3>
 					<p class="text-gray-700 leading-relaxed">
-						Top Las Vegas investment neighborhoods include Summerlin (strong appreciation, high rental demand), Henderson (family-friendly, stable values), North Las Vegas (affordable entry, growth potential), and areas near the Strip (high rental demand, tourism-driven). The best neighborhood depends on your investment strategy, budget, and risk tolerance.
+						Top Las Vegas investment neighborhoods include Summerlin (strong appreciation, high rental demand), Henderson (master-planned, stable values), North Las Vegas (affordable entry, growth potential), and areas near the Strip (high rental demand, tourism-driven). The best neighborhood depends on your investment strategy, budget, and risk tolerance.
 					</p>
 				</div>
 			</div>

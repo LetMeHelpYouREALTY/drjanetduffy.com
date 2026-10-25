@@ -252,10 +252,10 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">Family Market Pricing</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Family-oriented neighborhoods like Summerlin, Henderson, and Green Valley have strong buyer demand and consistent pricing patterns. We understand what families value in these markets and how to price properties to appeal to family buyers while maximizing value.
+							Amenity-focused neighborhoods like Summerlin, Henderson, and Green Valley have strong buyer demand and consistent pricing patterns. We understand what families value in these markets and how to price properties to appeal to move-up buyers while maximizing value.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
-							Family markets prioritize factors like schools, safety, and community amenities. We'll help you understand how these factors affect pricing in your specific neighborhood and position your property to appeal to family buyers. Properties in family-oriented neighborhoods often have consistent demand, and we'll help you price competitively while maximizing value.
+							Family markets prioritize factors like schools, safety, and community amenities. We'll help you understand how these factors affect pricing in your specific neighborhood and position your property to appeal to move-up buyers. Properties in amenity-focused neighborhoods often have consistent demand, and we'll help you price competitively while maximizing value.
 						</p>
 					</div>
 

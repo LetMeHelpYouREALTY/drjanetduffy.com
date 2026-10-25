@@ -182,7 +182,7 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">West Summerlin & Summerlin</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Summerlin stands as one of Las Vegas's premier master-planned communities, offering exceptional amenities, top-rated schools, and beautiful parks. West Summerlin, in particular, features newer construction, modern floor plans, and proximity to Red Rock Canyon. We help buyers navigate this competitive market, from family-friendly neighborhoods with community pools to luxury estates with mountain views.
+							Summerlin stands as one of Las Vegas's premier master-planned communities, offering exceptional amenities, top-rated schools, and beautiful parks. West Summerlin, in particular, features newer construction, modern floor plans, and proximity to Red Rock Canyon. We help buyers navigate this competitive market, from park-rich neighborhoods with community pools to luxury estates with mountain views.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
 							Properties in Summerlin range from starter homes in the $300,000s to luxury estates exceeding $2 million. The area's strong HOA management, extensive trail systems, and proximity to shopping and dining make it ideal for families and professionals alike. We understand the nuances of each Summerlin village and can guide you to the perfect community within this expansive development.
@@ -202,7 +202,7 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">Henderson & Green Valley</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Henderson offers a family-friendly alternative to Las Vegas, with excellent schools, lower crime rates, and a strong sense of community. Green Valley, one of Henderson's most established neighborhoods, features mature landscaping, well-maintained homes, and convenient access to shopping and dining. We help buyers find everything from starter homes to luxury properties in this desirable area.
+							Henderson offers a master-planned alternative to Las Vegas, with parks, trails, and a strong sense of community. Green Valley, one of Henderson's most established neighborhoods, features mature landscaping, well-maintained homes, and convenient access to shopping and dining. We help buyers find everything from starter homes to luxury properties in this desirable area.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
 							The Green Valley area includes master-planned communities like Green Valley Ranch, which offers resort-style amenities including pools, parks, and walking trails. Properties range from condos and townhomes in the $200,000s to luxury homes exceeding $1 million. We understand the unique characteristics of each Henderson neighborhood and can match buyers with communities that align with their lifestyle and budget.
@@ -225,7 +225,7 @@
 							North Las Vegas and Centennial Hills offer excellent value for buyers seeking newer construction and more affordable options. These areas feature master-planned communities with modern amenities, good schools, and convenient access to employment centers. We help buyers find quality homes in these growing neighborhoods.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
-							Centennial Hills, in particular, has seen significant development in recent years, with new construction homes offering modern floor plans and energy-efficient features. Properties in this area typically range from $300,000 to $800,000, providing excellent value for first-time buyers and growing families. The area's proximity to the Las Vegas Motor Speedway and growing commercial development makes it an attractive option for many buyers.
+							Centennial Hills, in particular, has seen significant development in recent years, with new construction homes offering modern floor plans and energy-efficient features. Properties in this area typically range from $300,000 to $800,000, providing excellent value for first-time buyers and move-up buyers. The area's proximity to the Las Vegas Motor Speedway and growing commercial development makes it an attractive option for many buyers.
 						</p>
 					</div>
 

@@ -104,7 +104,7 @@
 		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a 55+ Community in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Las Vegas 55+ active adult communities offer age-restricted living, active adult lifestyle, low-maintenance living, social activities and clubs, recreation centers, age-appropriate amenities, quiet neighborhoods, and affordable pricing that make them ideal for retirees, empty nesters, and active adults seeking community, convenience, and lifestyle benefits.
+				Las Vegas 55+ active adult communities offer age-restricted living, active adult lifestyle, low-maintenance living, social activities and clubs, recreation centers, age-appropriate amenities, quiet neighborhoods, and affordable pricing that make them ideal for retirees, downsizers, and active adults seeking community, convenience, and lifestyle benefits.
 			</p>
 		</div>
 

@@ -74,7 +74,7 @@
 
 <svelte:head>
 	<title>North Las Vegas Luxury &amp; Relocation Real Estate | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments in this family-friendly Las Vegas area community." />
+	<meta name="description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments in this master-planned Las Vegas area community." />
 	<meta name="keywords" content="North Las Vegas real estate, North Las Vegas homes, affordable Las Vegas homes, no HOA Las Vegas, larger lots Las Vegas" />
 	<meta name="robots" content="index, follow" />
 	
@@ -85,7 +85,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/communities/north-las-vegas" />
 	<meta property="og:title" content="North Las Vegas Luxury &amp; Relocation Real Estate | Dr. Janet Duffy REALTOR®" />
-	<meta property="og:description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments in this family-friendly Las Vegas area community." />
+	<meta property="og:description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments in this master-planned Las Vegas area community." />
 	<meta property="og:site_name" content="Las Vegas Luxury & Relocation REALTOR" />
 	
 	<!-- Twitter -->
@@ -100,7 +100,7 @@
 		"@context": "https://schema.org",
 		"@type": "Place",
 		"name": "North Las Vegas",
-		"description": "Affordable housing, growing economy, and new developments in this family-friendly Las Vegas area community",
+		"description": "Affordable housing, growing economy, and new developments in this master-planned Las Vegas area community",
 		"address": {
 			"@type": "PostalAddress",
 			"addressLocality": "North Las Vegas",
@@ -171,7 +171,7 @@
 		<div class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes North Las Vegas an Affordable Home Buying Opportunity?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				North Las Vegas offers more affordable options with larger lots and homes without HOA restrictions, making it ideal for buyers seeking more house for their money. With many no-HOA neighborhoods, larger lots (up to half-acre), and a growing area with new development, North Las Vegas provides excellent value for first-time buyers, growing families, and investors seeking affordable housing in the Las Vegas area.
+				North Las Vegas offers more affordable options with larger lots and homes without HOA restrictions, making it ideal for buyers seeking more house for their money. With many no-HOA neighborhoods, larger lots (up to half-acre), and a growing area with new development, North Las Vegas provides excellent value for first-time buyers, move-up buyers, and investors seeking affordable housing in the Las Vegas area.
 			</p>
 		</div>
 
@@ -182,7 +182,7 @@
 					North Las Vegas features new master-planned communities, excellent schools, and numerous parks and recreational facilities. With ongoing development and infrastructure improvements, the area represents excellent value for homebuyers and investors seeking affordable housing in the Las Vegas area.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					The city's rapid growth has created opportunities for new construction, established neighborhoods, and diverse housing options that appeal to first-time buyers, growing families, and investors seeking value and growth potential.
+					The city's rapid growth has created opportunities for new construction, established neighborhoods, and diverse housing options that appeal to first-time buyers, move-up buyers, and investors seeking value and growth potential.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -220,7 +220,7 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Family-Friendly Environment</h3>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Parks And Recreation</h3>
 							<p class="text-gray-700">Great schools, parks, safe neighborhoods, and community amenities for families</p>
 						</div>
 					</div>

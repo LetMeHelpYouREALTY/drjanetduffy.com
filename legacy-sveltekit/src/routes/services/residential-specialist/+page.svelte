@@ -178,7 +178,7 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">Starter Home Markets</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Las Vegas offers excellent options for first-time buyers, with affordable homes in growing communities like North Las Vegas, Centennial Hills, and newer developments. These markets provide good value, newer construction, and family-friendly amenities. We help first-time buyers navigate these markets, understand financing options, and find homes that match their budgets and needs.
+							Las Vegas offers excellent options for first-time buyers, with affordable homes in growing communities like North Las Vegas, Centennial Hills, and newer developments. These markets provide good value, newer construction, and parks, pools, and community amenities. We help first-time buyers navigate these markets, understand financing options, and find homes that match their budgets and needs.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
 							Starter home markets in Las Vegas typically feature newer construction, modern floor plans, and good value. Properties in these areas often range from $250,000 to $500,000, offering excellent opportunities for first-time buyers. We'll help you understand these markets, identify properties that match your criteria, and navigate the purchase process successfully.
@@ -188,7 +188,7 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">Family Home Markets</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Family-oriented neighborhoods like Summerlin, Henderson, and Green Valley offer excellent schools, community amenities, and family-friendly environments. These markets attract families seeking quality neighborhoods, good schools, and community amenities. We help families find homes in these desirable areas, understanding what makes each neighborhood attractive to families.
+							Amenity-focused neighborhoods like Summerlin, Henderson, and Green Valley offer excellent schools, community amenities, and park-rich setting. These markets attract buyers seeking quality neighborhoods, good schools, and community amenities. We help families find homes in these desirable areas, understanding what makes each neighborhood attractive to families.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
 							Family home markets in Las Vegas typically feature established neighborhoods, good schools, and community amenities. Properties in these areas often range from $400,000 to $1 million, offering options for various family budgets. We'll help you understand these markets, identify neighborhoods that match your family's needs, and find homes that provide the lifestyle you're seeking.

@@ -30,13 +30,13 @@
 		
 		// Communities
 		{ url: '/communities/summerlin', title: 'Summerlin Real Estate', description: 'Luxury master-planned community', category: 'Communities' },
-		{ url: '/communities/henderson', title: 'Henderson Real Estate', description: 'Family-friendly community', category: 'Communities' },
+		{ url: '/communities/henderson', title: 'Henderson Real Estate', description: 'Master-planned community', category: 'Communities' },
 		{ url: '/communities/green-valley', title: 'Green Valley Real Estate', description: 'Established Henderson community', category: 'Communities' },
 		{ url: '/communities/north-las-vegas', title: 'North Las Vegas Real Estate', description: 'Affordable housing and growth', category: 'Communities' },
 		{ url: '/communities/boulder-city', title: 'Boulder City Real Estate', description: 'Small town charm with Lake Mead access', category: 'Communities' },
 		{ url: '/communities/seven-hills', title: 'Seven Hills Real Estate', description: 'Upscale community with custom luxury homes', category: 'Communities' },
 		{ url: '/communities/southern-highlands', title: 'Southern Highlands Real Estate', description: 'Golf course living and resort amenities', category: 'Communities' },
-		{ url: '/communities/mountains-edge', title: 'Mountains Edge Real Estate', description: 'Family-friendly master-planned community', category: 'Communities' },
+		{ url: '/communities/mountains-edge', title: 'Mountains Edge Real Estate', description: 'Master-planned community with parks and trails', category: 'Communities' },
 		{ url: '/communities/anthem', title: 'Anthem Real Estate', description: 'Premier golf and country club community', category: 'Communities' },
 		
 		// Property Types

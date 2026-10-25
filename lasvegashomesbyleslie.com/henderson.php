@@ -681,7 +681,7 @@
 </div>
 </p>
 <h2 id="below">Henderson Communities</h2>
-<p>Henderson homes are conveniently located southeast of the Las Vegas Strip and McCarran Airport, and a mile north of Lake Mead’s 500 miles of scenic shoreline. The city is recognized for its family-friendly master planned residential areas and meticulously designed parks and residential amenities. The convenience of Lake Mead makes Henderson a highly sought after community for those who adore water sports and the great outdoors.</p>
+<p>Henderson homes are conveniently located southeast of the Las Vegas Strip and McCarran Airport, and a mile north of Lake Mead’s 500 miles of scenic shoreline. The city is recognized for its amenity-rich master-planned residential areas and meticulously designed parks and residential amenities. The convenience of Lake Mead makes Henderson a highly sought after community for those who adore water sports and the great outdoors.</p>
 <p>In addition to several master-planned communities, there are a number of small Henderson neighborhoods also located in the area for those who prefer something a bit more intimate and cozy. A good way to compare homes and prices is to view the <strong><a title="Recently sold homes in Henderson" href="/henderson-sold-homes.php">recently sold homes in Henderson</a></strong>.</p>
 <h2>Henderson Amenities</h2>
 <p>As the second largest city in Nevada, Henderson offers a wide range of community amenities and cultural activities. With an ever-increasing number of shopping centers, restaurants, casino resorts, and municipal parks, Henderson residents are fortunate to have several leisure activities to choose from.</p>
@@ -691,7 +691,7 @@
 <p>Residents of Henderson are anything but short on recreational opportunities. In fact, most residents living in Henderson breathe recreation right outside their doorstep. Henderson is located just one mile from Lake Mead, which offers 500 miles of uncompromising shoreline. Boating, sailing, jet skiing, fishing, windsurfing, swimming, camping, and water skiing are all available at the largest man-made lake in the world.</p>
 <p>City parks are scattered throughout the area and include a large number of athletic fields, tennis courts, indoor and outdoor swimming pools, and more. Residents of Henderson may take advantage of swimming year round.</p>
 <p>Henderson was recently voted in the top ten of walkable cities by Prevention magazine with nearly 40 miles of trails within its borders.</p>
-<p>Henderson is filled with family-friendly neighborhoods and is home to a variety of master planned residential areas including:</p>
+<p>Henderson is filled with park-rich neighborhoods and is home to a variety of master planned residential areas including:</p>
 <p><div class="communities-nav">
     <h4>Browse Henderson Communities</h4>
     <ul class="nav">

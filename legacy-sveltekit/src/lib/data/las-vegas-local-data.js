@@ -34,7 +34,7 @@ export const lasVegasLocalData = {
 				description: 'Family-focused with top schools',
 				propertyTypes: ['Single-family homes'],
 				hoaFee: { min: 200, max: 300 },
-				features: ['Arbor View High School (9/10 rated)', 'Willows Park and Pool', 'Single-family homes with yards'],
+				features: ['Arbor View High School (9/10 rated)', 'Willows Park and Pool', 'Single-family homes'],
 				schools: ['Arbor View High School'],
 				zipCode: '89138'
 			},
@@ -195,7 +195,7 @@ export const lasVegasLocalData = {
 			greenValleyRanch: {
 				name: 'Green Valley Ranch',
 				priceRange: { min: 500000, max: 800000 },
-				features: ['Tree-lined streets', 'Established schools', 'Family-friendly']
+				features: ['Tree-lined streets', 'Established schools', 'Community amenities']
 			},
 			sevenHills: {
 				name: 'Seven Hills',

@@ -197,17 +197,17 @@
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">Henderson & Green Valley</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							Henderson offers excellent value and strong buyer demand, particularly in family-friendly neighborhoods like Green Valley. The area's excellent schools, lower crime rates, and community amenities make it highly attractive to buyers. We understand how to position Henderson properties to maximize appeal and value.
+							Henderson offers excellent value and strong buyer demand, particularly in park-rich neighborhoods like Green Valley. The area's excellent schools, lower crime rates, and community amenities make it highly attractive to buyers. We understand how to position Henderson properties to maximize appeal and value.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
-							Henderson's diverse housing stock, from starter homes to luxury properties, requires different marketing approaches. We'll help you understand your property's position in the Henderson market and develop strategies that highlight your home's best features while appealing to Henderson's typical buyer demographics. The area's strong sense of community and family-friendly atmosphere are key selling points we emphasize in our marketing.
+							Henderson's diverse housing stock, from starter homes to luxury properties, requires different marketing approaches. We'll help you understand your property's position in the Henderson market and develop strategies that highlight your home's best features while appealing to Henderson's typical buyer demographics. The area's strong sense of community and community atmosphere are key selling points we emphasize in our marketing.
 						</p>
 					</div>
 
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">North Las Vegas & Growing Areas</h3>
 						<p class="text-gray-700 mb-4 leading-relaxed">
-							North Las Vegas and newer communities like Centennial Hills offer excellent value and appeal to first-time buyers and growing families. These areas have seen significant development and growth, creating strong buyer demand. We understand how to market properties in these growing communities effectively.
+							North Las Vegas and newer communities like Centennial Hills offer excellent value and appeal to first-time buyers and move-up buyers. These areas have seen significant development and growth, creating strong buyer demand. We understand how to market properties in these growing communities effectively.
 						</p>
 						<p class="text-gray-700 leading-relaxed">
 							Properties in North Las Vegas and newer communities often appeal to value-conscious buyers seeking newer construction and modern amenities. We'll help you position your property to highlight its value, modern features, and community amenities. These areas' growth and development are positive selling points we emphasize, along with the excellent value they offer compared to other Las Vegas areas.

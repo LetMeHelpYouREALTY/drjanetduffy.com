@@ -709,7 +709,7 @@
 <h3>Shopping</h3>
 <p>Living in Providence allows people to escape the hustle and bustle of the city by retreating to their very own desert oasis. While far removed from the tourist traps and bright lights of the strip, there are several retail outlets conveniently located just a stone’s throw from Providence. Sam’s Club, Costco, Walmart Supercenter, and Target are just a few of the area’s popular retail locations that serve Providence area residents.</p>
 <p>Just a few minutes to the west is Tivoli Village, a European style mall where visitors can enjoy premium shopping, dining and entertainment. Shops include Brighton Collectibles, Ethan Allen, Kidville, Mina Olive Custom Bridal, Mugsy &amp; Moxie’s Bully Couture, Vasari, and more. In addition to the shops, there are 11 different dining options to choose from such as Brio Tuscan Grille, Cantina Laredo, Kabuki Japanese, La Casa Cigars &amp; Lounge, and The View Wine Bar &amp; Kitchen.</p>
-<p>Throughout the year Tivoli offers several family-friendly events including the fresh52 Farmers and Artisan Market, Live Music at Tivoli Village, Story time for Children, Santa’s Parade, and Monthly Pet Adoptions.</p>
+<p>Throughout the year Tivoli offers several community events including the fresh52 Farmers and Artisan Market, Live Music at Tivoli Village, Story time for Children, Santa’s Parade, and Monthly Pet Adoptions.</p>
 <h2>Providence Schools</h2>
 <p>Located within the Clark County School District are the following schools serving the Providence neighborhood:</p>
 <h3><em>Providence Public Schools</em></h3>
