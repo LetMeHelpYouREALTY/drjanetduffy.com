@@ -108,13 +108,13 @@ function Get-ContentTemplate {
 <p>Las Vegas offers diverse communities, each with unique character and amenities. From master-planned communities like Summerlin and Green Valley Ranch to established neighborhoods throughout the valley, there's a perfect community for every lifestyle and budget.</p>
 
 <h3>Summerlin Real Estate</h3>
-<p>Summerlin stands as one of Las Vegas's premier master-planned communities, offering luxury homes, world-class golf courses, and extensive park systems. Summerlin real estate includes everything from starter homes to multi-million dollar estates, all within a carefully planned community with excellent schools and amenities.</p>
+<p>Summerlin stands as one of Las Vegas's premier master-planned communities, offering luxury homes, world-class golf courses, and extensive park systems. Summerlin real estate includes everything from starter homes to multi-million dollar estates, all within a master-planned community with 150+ parks and Palo Verde High School zoning for many villages.</p>
 
 <h3>Henderson Real Estate</h3>
-<p>Henderson, Nevada's second-largest city, offers park-rich neighborhoods, excellent schools, and a strong sense of community. Henderson real estate includes both established neighborhoods and new construction, with options ranging from affordable condos to luxury homes with mountain views.</p>
+<p>Henderson, Nevada's second-largest city, offers 60+ city parks, CCSD schools zoned by address, and a mix of established and new neighborhoods. Henderson real estate includes both established neighborhoods and new construction, with options ranging from affordable condos to luxury homes with mountain views.</p>
 
 <h3>Green Valley Real Estate</h3>
-<p>Green Valley provides a suburban feel within easy reach of Las Vegas amenities. Green Valley real estate features well-maintained homes, excellent schools, and convenient access to shopping, dining, and entertainment. The community appeals to families and professionals seeking quality living.</p>
+<p>Green Valley provides a suburban feel within easy reach of Las Vegas amenities. Green Valley real estate features well-maintained homes, Green Valley and Coronado High School zones, and convenient access to shopping, dining, and entertainment.</p>
 
 <h2>Our Real Estate Services</h2>
 <p>Leslie Hoke provides comprehensive real estate services designed to meet every client's needs. Whether buying or selling Las Vegas real estate, her expertise and dedication ensure successful outcomes.</p>
@@ -193,7 +193,7 @@ Email: LeslieHoke@LasVegasHomesByLeslie.com</p>
 <p>$CommunityName real estate offers strong investment potential, with property values supported by the community's desirable location, quality amenities, and ongoing development. Whether purchasing a primary residence or investment property, $CommunityName represents a sound real estate investment.</p>
 
 <h2>Schools Near $CommunityName</h2>
-<p>Families considering $CommunityName will appreciate the area's access to quality educational institutions. The community's proximity to well-regarded schools makes it an attractive option for families with children.</p>
+<p>$CommunityName is served by the Clark County School District. Confirm zoning for any address with the CCSD Zoning Search.</p>
 
 <h3>Elementary and Middle Schools</h3>
 <p>$CommunityName is served by several elementary and middle schools that provide quality education and support student success. These institutions contribute to the community's reputation and appeal.</p>
