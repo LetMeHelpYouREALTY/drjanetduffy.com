@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "School Districts & Schools | Las Vegas | Dr. Janet Duffy REALTOR®",
-  description: "Information about Las Vegas area school districts and top-rated schools. Find the best schools for your family in Henderson, Summerlin, and Clark County.",
+  description: "Clark County School District zoning for Henderson, Summerlin, and Las Vegas. Look up the schools assigned to any address.",
   alternates: {
     canonical: 'https://www.drjanetduffy.com/resources/school-districts',
   },

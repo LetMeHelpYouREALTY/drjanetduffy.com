@@ -97,10 +97,10 @@ function Get-ContentToAdd {
 <p>The $CommunityName real estate market has shown stability and growth over recent years, making it an attractive option for both primary residence buyers and real estate investors. Property values in $CommunityName are supported by the community's desirable location, quality amenities, and ongoing development. Market trends indicate continued interest from buyers seeking quality living in a well-established Las Vegas community.</p>
 
 <h2>$CommunityName Schools and Education</h2>
-<p>Families considering $CommunityName will appreciate the area's access to quality educational institutions. The community is served by well-regarded schools that provide quality education and support student success. These institutions contribute to the community's reputation and appeal, making $CommunityName an excellent choice for buyers with school-age children.</p>
+<p>$CommunityName is served by the Clark County School District. Confirm zoning for any address with the CCSD Zoning Search.</p>
 
 <h3>Elementary and Middle Schools Near $CommunityName</h3>
-<p>$CommunityName is served by several elementary and middle schools that provide quality education and support student success. These institutions offer comprehensive educational programs, extracurricular activities, and support services that help students achieve their academic goals. The proximity of quality schools enhances the community's appeal for families.</p>
+<p>$CommunityName is served by several CCSD elementary, middle, and high schools. School assignments follow the address, so check the CCSD Zoning Search before you write an offer.</p>
 
 <h3>High Schools and Higher Education</h3>
 <p>High school students in $CommunityName have access to quality secondary education, and the area's proximity to higher education institutions provides opportunities for continuing education and professional development. The educational opportunities available to $CommunityName residents contribute to the community's reputation as an excellent place to raise a family.</p>
