@@ -5,6 +5,7 @@ import { CalendlyEmbed } from '@/components/calendly/CalendlyEmbed';
 import { RealScoutListings } from '@/components/realscout/RealScoutListings';
 import { pageMetadata } from '@/lib/metadata';
 import { siteConfig } from '@/config/site.config';
+import FeaturedListing from '@/components/sections/FeaturedListing';
 
 const homeTitle = 'Las Vegas Luxury & Relocation REALTOR | Dr. Janet Duffy';
 const homeDescription =
@@ -137,6 +138,12 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <FeaturedListing
+        phone={siteConfig.phone}
+        phoneHref={siteConfig.phoneTel}
+        siteHost="drjanetduffy.com"
+      />
 
       <section id="featured-properties" className="container-premium py-16">
         <RealScoutListings
