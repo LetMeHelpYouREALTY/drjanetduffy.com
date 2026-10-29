@@ -256,7 +256,7 @@ export const coreCommunitites: GeoArea[] = [
       {
         title: 'Henderson’s sub-markets',
         paragraphs: [
-          'Henderson is really a collection of distinct markets. Green Valley and Green Valley Ranch (89014, 89074, 89052) offer mature neighborhoods around The District’s shops and Green Valley Ranch Resort. The western hills hold Anthem, Seven Hills, and guard-gated MacDonald Highlands with elevated Strip views. To the east, Cadence (89011 and 89015) delivers new construction near the Water Street District, and Lake Las Vegas wraps a 320-acre private lake in resort living.',
+          'Henderson is really a collection of distinct markets. Green Valley and Green Valley Ranch (89014, 89074, 89052) offer older neighborhoods around The District’s shops and Green Valley Ranch Resort. The western hills hold Anthem, Seven Hills, and guard-gated MacDonald Highlands with elevated Strip views. To the east, Cadence (89011 and 89015) delivers new construction near the Water Street District, and Lake Las Vegas wraps a 320-acre private lake in resort living.',
           'Inspirada (89044) in the far southwest corner stacks pool complexes and parks into a walkable grid beneath the Sloan Canyon National Conservation Area, with the new West Henderson employment corridor — including the Raiders’ headquarters and Lifeguard Arena’s sister facilities — minutes away.',
         ],
       },
