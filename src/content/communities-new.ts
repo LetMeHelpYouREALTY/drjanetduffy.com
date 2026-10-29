@@ -470,7 +470,7 @@ export const newCommunities: GeoArea[] = [
     title: 'Silverado Ranch Homes for Sale | 89183 & 89123 | Dr. Janet Duffy REALTOR®',
     description:
       'Silverado Ranch real estate (89183, 89123) with Dr. Janet Duffy, REALTOR®. Homes near Silverado Ranch Park, the South Point corridor, and I-15 in south Las Vegas. Call (702) 766-7668.',
-    lead: 'Silverado Ranch delivers the south valley’s convenience play — established neighborhoods around Silverado Ranch Park, minutes from the I-15/St. Rose interchange, the South Point corridor, and the airport.',
+    lead: 'Silverado Ranch delivers the south valley’s convenience play — older neighborhoods around Silverado Ranch Park, minutes from the I-15/St. Rose interchange, the South Point corridor, and the airport.',
     hero: {
       src: '/images/communities/silverado-ranch.jpg',
       alt: 'Suburban homes and park in Silverado Ranch, south Las Vegas',
