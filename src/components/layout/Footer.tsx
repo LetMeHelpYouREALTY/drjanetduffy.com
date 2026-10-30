@@ -65,8 +65,9 @@ export function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-400">
-              © {year} {siteConfig.name}, REALTOR®. License {siteConfig.license}. All rights
-              reserved.
+              © {year} {siteConfig.name}, REALTOR®. All rights reserved.
+              <br />
+              Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/privacy" className="text-gray-400 no-underline hover:text-white">

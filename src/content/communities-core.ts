@@ -56,7 +56,7 @@ export const coreCommunitites: GeoArea[] = [
       {
         title: 'Selling a Summerlin home',
         paragraphs: [
-          'Summerlin buyers shop by village and amenity set, so listings are positioned against hyper-local comparables — not valley-wide averages. Expect a room-by-room prep plan, professional photography that captures Red Rock backdrops, and syndication to relocation networks through Berkshire Hathaway HomeServices Nevada Properties.',
+          'Summerlin buyers shop by village and amenity set, so listings are positioned against hyper-local comparables — not valley-wide averages. Expect a room-by-room prep plan, professional photography that captures Red Rock backdrops, and syndication to relocation networks through her brokerage.',
         ],
       },
     ],
@@ -343,7 +343,7 @@ export const coreCommunitites: GeoArea[] = [
       {
         title: 'Buying in Green Valley',
         paragraphs: [
-          'Older Green Valley homes reward careful inspection — original galvanized plumbing, aging HVAC, and pool equipment are negotiation points Dr. Duffy prices into every offer. In Green Valley Ranch’s gated sections, she tracks off-market and coming-soon inventory through the Berkshire Hathaway HomeServices network.',
+          'Older Green Valley homes reward careful inspection — original galvanized plumbing, aging HVAC, and pool equipment are negotiation points Dr. Duffy prices into every offer. In Green Valley Ranch’s gated sections, she tracks off-market and coming-soon inventory through her brokerage network.',
         ],
       },
       {
@@ -556,7 +556,7 @@ export const coreCommunitites: GeoArea[] = [
       {
         title: 'Selling in Seven Hills',
         paragraphs: [
-          'Twilight photography that captures Strip-light views, drone elevation context, and golf-frontage framing materially change buyer perception. Listings are also fed to luxury and golf-community buyer networks through Berkshire Hathaway HomeServices.',
+          'Twilight photography that captures Strip-light views, drone elevation context, and golf-frontage framing materially change buyer perception. Listings are also fed to luxury and golf-community buyer networks through her brokerage.',
         ],
       },
     ],
@@ -751,7 +751,7 @@ export const coreCommunitites: GeoArea[] = [
       {
         title: 'Selling in Anthem',
         paragraphs: [
-          'Anthem sellers benefit from two deep buyer pools — golf/club buyers and active-adult relocators. Listings are marketed to both with elevation photography, amenity storytelling, and Berkshire Hathaway HomeServices’ national relocation reach.',
+          'Anthem sellers benefit from two deep buyer pools — golf/club buyers and active-adult relocators. Listings are marketed to both with elevation photography, amenity storytelling, and national relocation reach.',
         ],
       },
     ],

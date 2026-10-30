@@ -24,7 +24,7 @@ export default function CommunitiesHubPage() {
       <p className="mb-10 max-w-3xl text-xl leading-relaxed text-gray-600">
         Hyperlocal profiles of the valley’s master plans and neighborhoods — zip codes, parks,
         golf courses, commute times, and what actually drives value in each. Written by{' '}
-        {siteConfig.name}, REALTOR® with {siteConfig.brokerage}, License {siteConfig.license}.
+        {siteConfig.name}, REALTOR®.
       </p>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
