@@ -114,7 +114,7 @@ export default function HomePage() {
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-xl text-white/90">
             Dr. Janet Duffy guides you through Summerlin, Henderson, Skye Canyon, and valley-wide
-            moves with concierge-level service. License {siteConfig.license}.
+            moves with concierge-level service.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

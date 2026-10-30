@@ -373,7 +373,7 @@ export const newCommunities: GeoArea[] = [
       {
         title: 'Selling at Lake Las Vegas',
         paragraphs: [
-          'This is a lifestyle purchase, and marketing has to sell the lifestyle: water-level photography, drone lake context, and placement in front of out-of-state resort-buyer pipelines through Berkshire Hathaway HomeServices’ network.',
+          'This is a lifestyle purchase, and marketing has to sell the lifestyle: water-level photography, drone lake context, and placement in front of out-of-state resort-buyer pipelines through a national brokerage network.',
         ],
       },
     ],
@@ -627,7 +627,7 @@ export const newCommunities: GeoArea[] = [
       {
         title: 'Buying in The Ridges',
         paragraphs: [
-          'A meaningful share of Ridges inventory trades quietly. Dr. Duffy sources off-market and coming-soon estates through the Berkshire Hathaway HomeServices luxury network, engages builder and architect diligence for custom projects, and negotiates on view-corridor value — the asset that actually drives price here.',
+          'A meaningful share of Ridges inventory trades quietly. Dr. Duffy sources off-market and coming-soon estates through a national luxury brokerage network, engages builder and architect diligence for custom projects, and negotiates on view-corridor value — the asset that actually drives price here.',
         ],
       },
       {

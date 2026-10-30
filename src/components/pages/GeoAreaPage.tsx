@@ -146,7 +146,7 @@ export function GeoAreaPage({ area }: GeoAreaPageProps) {
             REALTOR® services in {area.name}
           </h2>
           <p className="mb-6 text-gray-600">
-            {siteConfig.name}, {siteConfig.brokerage} · License {siteConfig.license} ·{' '}
+            {siteConfig.name} ·{' '}
             {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.region}{' '}
             {siteConfig.address.postalCode} · {siteConfig.phone}
           </p>

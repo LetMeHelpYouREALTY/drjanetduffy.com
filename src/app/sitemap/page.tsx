@@ -94,8 +94,7 @@ export default function SitemapPage() {
       <h1 className="font-display mb-4 text-4xl font-bold text-gray-900 md:text-5xl">Sitemap</h1>
       <p className="mb-10 max-w-3xl text-xl leading-relaxed text-gray-600">
         Every page on {siteConfig.url.replace('https://', '')} — community and zip-code guides,
-        property searches, services, and resources from {siteConfig.name}, REALTOR® with{' '}
-        {siteConfig.brokerage}. Call {siteConfig.phone}.
+        property searches, services, and resources from {siteConfig.name}, REALTOR®. Call {siteConfig.phone}.
       </p>
 
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">

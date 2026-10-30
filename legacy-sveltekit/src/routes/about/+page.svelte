@@ -46,7 +46,7 @@ const certifications = [
 
 <svelte:head>
 	<title>About Las Vegas Luxury &amp; Relocation REALTOR | Dr. Jan Duffy</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
+	<meta name="description" content="Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR licensed since 2008 · 35 years in Las Vegas, with 500+ homes sold and $127M+ in sales volume." />
 	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
 	
 	<!-- Open Graph / Facebook -->

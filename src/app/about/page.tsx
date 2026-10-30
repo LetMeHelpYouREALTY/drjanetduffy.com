@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "About Las Vegas Luxury & Relocation REALTOR | Dr. Jan Duffy",
-  description: "Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume.",
+  description: "Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR licensed since 2008 · 35 years in Las Vegas, with 500+ homes sold and $127M+ in sales volume.",
   alternates: {
     canonical: 'https://www.drjanetduffy.com/about',
   },
