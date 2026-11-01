@@ -10,6 +10,9 @@ function labelFromSegment(segment: string): string {
     .join(' ');
 }
 
+/** Parent segments that have no index page; render them as text, not links (avoids 404 links). */
+const PARENTS_WITHOUT_PAGE = new Set(['/property-types', '/listings']);
+
 export function Breadcrumbs() {
   const pathname = usePathname();
   if (!pathname || pathname === '/') return null;
@@ -36,6 +39,8 @@ export function Breadcrumbs() {
                 <span className="font-medium text-gray-900" aria-current="page">
                   {crumb.label}
                 </span>
+              ) : PARENTS_WITHOUT_PAGE.has(crumb.href) ? (
+                <span>{crumb.label}</span>
               ) : (
                 <Link href={crumb.href} className="text-primary-600 no-underline hover:underline">
                   {crumb.label}
