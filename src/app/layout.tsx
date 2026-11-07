@@ -12,6 +12,8 @@ import { siteConfig } from '@/config/site.config';
 import { rootLayoutMetadata } from '@/lib/metadata';
 import { globalSchemaGraph } from '@/lib/schema';
 import './globals.css';
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({
@@ -58,6 +60,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${siteConfig.googleAnalyticsId}');
           `}
         </Script>
+        <VercelAnalytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
