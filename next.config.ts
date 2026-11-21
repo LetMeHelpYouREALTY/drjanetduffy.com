@@ -2,12 +2,12 @@ import type { NextConfig } from 'next';
 
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://widgets.realscout.com https://em.realscout.com https://assets.calendly.com",
-  "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://widgets.realscout.com https://em.realscout.com https://www.realscout.com https://calendly.com",
-  "img-src 'self' data: https: blob:",
+  "script-src https://widgetbe.com https://*.widgetbe.com 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://widgets.realscout.com https://em.realscout.com https://assets.calendly.com",
+  "connect-src https://widgetbe.com https://*.widgetbe.com 'self' https://www.googletagmanager.com https://www.google-analytics.com https://widgets.realscout.com https://em.realscout.com https://www.realscout.com https://calendly.com",
+  "img-src https://widgetbe.com https://*.widgetbe.com 'self' data: https: blob:",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com",
   "font-src 'self' https://fonts.gstatic.com data:",
-  "frame-src 'self' https://www.google.com https://maps.google.com https://calendly.com https://assets.calendly.com",
+  "frame-src https://widgetbe.com https://*.widgetbe.com 'self' https://www.google.com https://maps.google.com https://calendly.com https://assets.calendly.com",
 ].join('; ');
 
 const nextConfig: NextConfig = {
